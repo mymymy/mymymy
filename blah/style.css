@@ -1,0 +1,42 @@
+html, body { height:100%; padding:0; margin:0; }
+
+#image-parent {
+	width:50%;
+	max-width:50%;
+	max-height:100%;
+	float:left;
+	}
+	
+#image-child {
+	
+	}
+	
+	
+#text-parent {
+	width:50%;
+	float:right;
+	}
+	
+#text-child {
+	margin-top:5%;
+	max-width:400px;
+	float:left;
+	}
+	
+img.cover {
+	max-height:90%;
+	max-width:90%;
+	padding:5%;
+	float:right;
+	}
+	
+h3{
+	font-family: "p22-underground";
+	font-size: 1em;
+	letter-spacing: 1px;
+}
+
+p{
+	font-family: "skolar";
+	font-size: 1em;
+}

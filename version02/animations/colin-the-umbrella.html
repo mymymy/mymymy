@@ -1,0 +1,689 @@
+<!DOCTYPE html> 
+ 
+ 
+ 
+<html> 
+ 
+ 
+ 
+<head> 
+ 
+ 
+ 
+<meta charset="utf-8" /> 
+ 
+ 
+ 
+<meta http-equiv="X-UA-Compatible" content="chrome=1" /> 
+ 
+ 
+ 
+<title>MY MY MY - Matthew Young</title> 
+ 
+ 
+ 
+<meta name="description" content="The online portfolio of Matthew Young - animator and graphic designer extraordinaire" /> 
+ 
+ 
+ 
+<link rel="stylesheet" href="/style.css" media="screen" /> 
+ 
+ 
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script> 
+ 
+ 
+ 
+<script type="text/javascript" src="http://use.typekit.com/jqy4jam.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+ 
+ 
+ 
+<script> 
+ 
+$(document).ready(function() {
+ 
+$("#accordion section h1").click(function(e) {
+ 
+$(this).parents().siblings("section").addClass("ac_hidden");
+ 
+$(this).parents("section").removeClass("ac_hidden");
+ 
+ 
+ 
+e.preventDefault();
+ 
+});
+ 
+});
+ 
+</script> 
+ 
+ 
+ 
+<script type="text/javascript"><!--
+ 
+ 
+ 
+$(document).ready(function() {
+ 
+$("#slide1-1").click(function() {
+ 
+$("#slide1_content").css("left","0");
+ 
+$("#slide1_controls span").removeClass("selected");
+ 
+$("#slide5_content").css("top","0");
+ 
+$("#slide5_controls span").removeClass("selected");
+ 
+$(this).addClass("selected");
+ 
+});
+ 
+$("#slide1-2").click(function() {
+
+$("#slide1_content").css("left","-657px");
+
+$("#slide1_controls span").removeClass("selected");
+
+$("#slide5_content").css("top","-40px");
+
+$("#slide5_controls span").removeClass("selected");
+
+$(this).addClass("selected");
+
+});
+ 
+$("#slide1-3").click(function() {
+ 
+$("#slide1_content").css("left","-2488px");
+ 
+$("#slide1_controls span").removeClass("selected");
+ 
+$(this).addClass("selected");
+ 
+});
+ 
+$("#slide1-4").click(function() {
+ 
+$("#slide1_content").css("left","-3732px");
+ 
+$("#slide1_controls span").removeClass("selected");
+ 
+$(this).addClass("selected");
+ 
+});
+ 
+$("#slide2-1").click(function() {
+ 
+$("#slide2_content").css("left","0");
+ 
+$("#slide2_controls span").removeClass("selected");
+ 
+$("#slide3_content").css("top","0");
+ 
+$("#slide3_controls span").removeClass("selected");
+ 
+$(this).addClass("selected");
+ 
+});
+ 
+$("#slide2-2").click(function() {
+ 
+$("#slide2_content").css("left","-768px");
+ 
+$("#slide2_controls span").removeClass("selected");
+ 
+$("#slide3_content").css("top","-40px");
+ 
+$("#slide3_controls span").removeClass("selected");
+ 
+$(this).addClass("selected");
+ 
+});
+ 
+$("#slide2-3").click(function() {
+ 
+$("#slide2_content").css("left","-1536px");
+ 
+$("#slide2_controls span").removeClass("selected");
+ 
+$("#slide3_content").css("top","-80px");
+ 
+$("#slide3_controls span").removeClass("selected");
+ 
+$(this).addClass("selected");
+ 
+});
+ 
+$("#slide2-4").click(function() {
+ 
+$("#slide2_content").css("left","-768px");
+ 
+$("#slide2_controls span").removeClass("selected");
+ 
+$("#slide3_content").css("top","-40px");
+ 
+$("#slide3_controls span").removeClass("selected");
+ 
+$(this).addClass("selected");
+ 
+});
+ 
+$("#slide4-1").click(function() {
+ 
+$("#slide4_content").css("right","0");
+ 
+$("#slide4_controls span").removeClass("selected");
+ 
+$(this).addClass("selected");
+ 
+});
+ 
+$("#slide4-2").click(function() {
+ 
+$("#slide4_content").css("right","-60px");
+ 
+$("#slide4_controls span").removeClass("selected");
+ 
+$(this).addClass("selected");
+ 
+});
+ 
+$("#slide4-3").click(function() {
+ 
+$("#slide4_content").css("right","-60px");
+ 
+$("#slide4_controls span").removeClass("selected");
+ 
+$(this).addClass("selected");
+ 
+});
+ 
+ 
+ 
+});
+ 
+// --></script> 
+ 
+ 
+ 
+<style> 
+ 
+#accordion section, #accordion #accordion h1, #accordion p {
+ 
+-webkit-transition: all 0.5s ease-in-out;
+ 
+-moz-transition: all 0.5s ease-in-out;
+ 
+-o-transition: all 0.5s ease-in-out;
+ 
+transition: all 0.5s ease-in-out;
+ 
+}
+ 
+ 
+ 
+#accordion {
+ 
+margin-bottom:30px;
+ 
+}
+ 
+ 
+ 
+#accordion h1 {
+ 
+font-size:40px;
+ 
+line-height:20px;
+ 
+margin:0;
+ 
+}
+ 
+ 
+ 
+#accordion h1 a {
+ 
+color:black;
+ 
+}
+ 
+ 
+ 
+#accordion section {
+ 
+overflow:hidden;
+ 
+height:304px;
+ 
+}
+ 
+ 
+ 
+#accordion section.ac_hidden {
+ 
+height:87px;
+ 
+}
+ 
+ 
+ 
+#accordion .pointer {
+ 
+padding:0;
+ 
+margin:10px 0 0 6px;
+ 
+line-height:20px;
+ 
+width:13px;
+ 
+position:absolute;
+ 
+}
+ 
+ 
+ 
+#accordion section:not(.ac_hidden) h1 {
+ 
+}
+ 
+ 
+ 
+#slide1_controls{
+ 
+position:relative;
+ 
+float:right;
+ 
+text-align:right;
+ 
+}
+ 
+ 
+ 
+#slide1_controls span {
+ 
+cursor:pointer;
+ 
+}
+ 
+ 
+ 
+#slide1_container {
+ 
+width:1080px;
+ 
+height:200px;
+ 
+overflow:hidden;
+ 
+position:relative;
+ 
+margin:0 auto;
+ 
+}
+ 
+ 
+ 
+#slide1_content {
+ 
+position:absolute;
+ 
+left:0px;
+ 
+width:2160px;
+ 
+height:200px;
+ 
+-webkit-transition:all 1.0s ease-in-out;
+ 
+-moz-transition:all 1.0s ease-in-out;
+ 
+-o-transition:all 1.0s ease-in-out;
+ 
+-transition:all 1.0s ease-in-out;
+ 
+}
+ 
+ 
+ 
+#slide2_controls{
+ 
+position:relative;
+ 
+height:40px;
+ 
+}
+ 
+ 
+ 
+#slide2_controls span {
+ 
+cursor:pointer;
+ 
+}
+ 
+ 
+ 
+#slide2_container {
+ 
+width:768px;
+ 
+height:432px;
+ 
+overflow:hidden;
+ 
+position:relative;
+ 
+margin:0 auto;
+ 
+}
+ 
+ 
+ 
+#slide2_content {
+ 
+position:absolute;
+ 
+left:0px;
+ 
+width:2304px;
+ 
+height:432px;
+ 
+-webkit-transition:all 1.0s ease-in-out;
+ 
+-moz-transition:all 1.0s ease-in-out;
+ 
+-o-transition:all 1.0s ease-in-out;
+ 
+-transition:all 1.0s ease-in-out;
+ 
+}
+ 
+ 
+ 
+#slide3_container {
+ 
+width:120px;
+ 
+height:40px;
+ 
+overflow:hidden;
+ 
+position:relative;
+ 
+margin:0 auto;
+ 
+}
+ 
+ 
+ 
+#slide3_content {
+ 
+position:absolute;
+ 
+top:0px;
+ 
+width:120px;
+ 
+height:40px;
+ 
+-webkit-transition:all 0.0s ease-in-out;
+ 
+-moz-transition:all 0.0s ease-in-out;
+ 
+-o-transition:all 0.0s ease-in-out;
+ 
+-transition:all 0.0s ease-in-out;
+ 
+}
+ 
+ 
+ 
+#slide4_container {
+ 
+width:40px;
+ 
+height:22px;
+ 
+overflow:hidden;
+ 
+position:relative;
+ 
+float:right;
+ 
+}
+ 
+ 
+ 
+#slide4_content {
+ 
+position:absolute;
+ 
+right:0px;
+ 
+width:40px;
+ 
+height:22px;
+ 
+text-align:right;
+ 
+-webkit-transition:all 1.0s ease-in-out;
+ 
+-moz-transition:all 1.0s ease-in-out;
+ 
+-o-transition:all 1.0s ease-in-out;
+ 
+-transition:all 1.0s ease-in-out;
+ 
+}
+ 
+ 
+ 
+#slide5_container {
+ 
+width:40px;
+ 
+height:22px;
+ 
+overflow:hidden;
+ 
+position:relative;
+ 
+float:right;
+ 
+}
+ 
+ 
+ 
+#slide5_content {
+ 
+position:absolute;
+ 
+right:0px;
+ 
+width:40px;
+ 
+height:44px;
+ 
+-webkit-transition:all 0.0s ease-in-out;
+ 
+-moz-transition:all 0.0s ease-in-out;
+ 
+-o-transition:all 0.0s ease-in-out;
+ 
+-transition:all 0.0s ease-in-out;
+ 
+}
+ 
+ 
+ 
+#slide6_container {
+ 
+width:1080px;
+ 
+height:200px;
+ 
+overflow:hidden;
+ 
+position:relative;
+ 
+margin:0 auto;
+ 
+}
+ 
+ 
+ 
+#slide6_content {
+ 
+position:absolute;
+ 
+left:0px;
+ 
+width:2160px;
+ 
+height:200px;
+ 
+-webkit-transition:all 1.0s ease-in-out;
+ 
+-moz-transition:all 1.0s ease-in-out;
+ 
+-o-transition:all 1.0s ease-in-out;
+ 
+-transition:all 1.0s ease-in-out;
+ 
+}
+ 
+ 
+ 
+</style> 
+ 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25261156-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ 
+</head> 
+ 
+ 
+ 
+<body>
+<div id="box">
+<div id="header">COLIN THE UMBRELLA</div>
+<div id="linebreak"><img src="/symbols/line1.jpg" /></div>
+<div id="main">
+<div id="content">
+<div id="slide2_container">
+<div id="slide2_content">
+<div id="content1"><iframe src="http://player.vimeo.com/video/6986263?portrait=0&amp;color=ffffff&amp;autoplay=1" width="768" height="432" frameborder="0"></iframe></div>
+</div>
+</div>
+</div>
+<div id="sidebox">
+<div id="sidebox-content-no-arrows">
+<p>As part of a university brief we were told to "celebrate the ordinary".</p>
+<p>I had to pick an ordinary object, and make it seem extraordinary, in whatever way I felt was best.</p>
+<p>I was given just seven days to do it.</p>
+<p>Needless to say, those were the most sleep deprived seven days of my life.</p>
+</div>
+</div>
+</div>
+<div id="nav">
+<div id="accordion"><section id="item1">
+<div id="linebreak"><img src="/symbols/line2.jpg" /></div>
+<div id="navheader">
+<h1><a href="#"><span id="slide4-1">ANIMATIONS</span></a></h1>
+</div>
+<div id="slide4_container">
+<div id="slide4_content">
+<div id="slide5_container">
+<div id="slide5_content">
+<div id="1ofx">
+<div id="slide1_controls">
+<div id="navarrow1"><img src="/symbols/arrowleftgrey.jpg" /></div>
+<div id="navarrow2"><span id="slide1-2"><img class="bottom" src="/symbols/arrowrighthover.jpg" /><img class="top" src="/symbols/arrowright.jpg" /></span></div>
+</div>
+</div>
+<div id="2ofx">
+<div id="slide1_controls">
+<div id="navarrow1"><span id="slide1-1"><img class="bottom" src="/symbols/arrowlefthover.jpg" /><img class="top" src="/symbols/arrowleft.jpg" /></span></div>
+<div id="navarrow2"><img src="/symbols/arrowrightgrey.jpg" /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="dropdown">
+<div id="slide1_container">
+<div id="slide1_content">
+<div id="thumb1"><a href="/animations/fish-in-your-ear.html"><img src="/thumbnails/fish-in-your-ear.jpg" />Is That A Fish In Your Ear?</a></div>
+<div id="thumb2"><a href="/animations/books-vs-ebooks.html"><img src="/thumbnails/books-vs-ebooks.jpg" />Books vs. eBooks</a></div>
+<div id="thumb3"><a href="/animations/the-city.html"><img src="/thumbnails/the-city.jpg" />The City (D&amp;AD)</a></div>
+<div id="thumb4"><a href="/animations/remember-my-name.html"><img src="/thumbnails/remember-my-name.jpg" />Remember My Name</a></div>
+<div id="thumb5"><a href="/animations/colin-the-umbrella.html"><img src="/thumbnails/colin-the-umbrella.jpg" />Colin the Umbrella</a></div>
+<div id="thumb6"><a href="/animations/e-sting.html"><img src="/thumbnails/e-sting.jpg" />E-Sting</a></div>
+<div id="thumb7"><a href="/animations/science-museum.html"><img src="/thumbnails/science-museum.jpg" />Science Museum</a></div>
+<div id="thumb8"><a href="/animations/classic-fm.html"><img src="/thumbnails/classic-fm.jpg" />Classic FM</a></div>
+</div>
+</div>
+</div>
+</section> <section id="item2" class="ac_hidden">
+<div id="linebreak"><img src="/symbols/line3.jpg" /></div>
+<div id="navheader">
+<h1><a href="#"><span id="slide4-2">GRAPHIC DESIGN</span></a></h1>
+</div>
+<div id="dropdown">
+<div id="slide6_container">
+<div id="slide6_content">
+<div id="thumb1"><a href="/graphic-design/inprint-books.html"><img src="/thumbnails/inprint-books.jpg" />Inprint Books</a></div>
+<div id="thumb2"><a href="/graphic-design/twinings-cubed.html"><img src="/thumbnails/twinings-cubed.jpg" />Twinings Cubed</a></div>
+<div id="thumb3"><a href="/graphic-design/bibliophobia.html"><img src="/thumbnails/bibliophobia.jpg" />Bibliophobia</a></div>
+<div id="thumb4"><a href="/graphic-design/third-space.html"><img src="/thumbnails/third-space.jpg" />Third Space</a></div>
+<div id="thumb5"><a href="/graphic-design/patterns.html"><img src="/thumbnails/patterns.jpg" />Patterns</a></div>
+</div>
+</div>
+</div>
+</section> <section id="item3" class="ac_hidden">
+<div id="linebreak"><img src="/symbols/line4.jpg" /></div>
+<div id="navheader">
+<h1><a href="#"><span id="slide4-3">PERSONAL PROJECTS</span></a></h1>
+</div>
+<div id="dropdown">
+<div id="thumb1"><a href="/personal-projects/a-seaside-rendezvous.html"><img src="/thumbnails/a-seaside-rendezvous.jpg" />A Seaside Rendezvous</a></div>
+<div id="thumb2"><a href="/personal-projects/cartograph.html"><img src="/thumbnails/cartograph.jpg" />CartoGraph</a></div>
+<div id="thumb3"><a href="/personal-projects/musique-pour-le-joshua.html"><img src="/thumbnails/musique-pour-le-joshua.jpg" />Musique pour le Joshua</a></div>
+<div id="thumb4"><a href="/personal-projects/click-and-drag.html"><img src="/thumbnails/click-and-drag.jpg" />Click and Drag</a></div>
+</div>
+</section>
+<div id="linebreak"><img src="/symbols/line5.jpg" /></div>
+<div id="navheader">
+<h1><a href="/about-me.html">ABOUT ME</a></h1>
+</div>
+</div>
+</div>
+<div id="footer">&copy; Copyright 2009-2012<br />All work property of Matthew Young - so don't you dare copy it</div>
+</div>
+</body> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</html>
