@@ -55,7 +55,6 @@ a.about-me:hover{
 
 #content_animations{
 	width: 100%;
-	height: 9500px;
 }
 
 #content_about-me{
@@ -183,4 +182,8 @@ h3{
 
 #single-animation{
 	margin-bottom:50px;
+}
+
+.clear-float {
+	clear: both;
 }
