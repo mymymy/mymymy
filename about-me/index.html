@@ -9,6 +9,9 @@
 	<link rel="stylesheet" href="../style.css" media="screen" />
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	
+	<script src="../js/mustache.js"></script>
+	<script src="../js/templates.js"></script>
 
 	<script type="text/javascript" src="http://use.typekit.com/jqy4jam.js"></script>
 
@@ -33,21 +36,9 @@
 
 <div id="page">
 	
-	<div id="MYMYMY" class="johnston">
-	
-		<a class="black" href="/">MY MY MY</a>
-	
-	</div>
-	
-	<div id="new_nav" class="johnston">
-	
-		<a class="book-covers" href="/book-covers"><span class="no-wrap">BOOK COVERS</span></a> &nbsp;&nbsp; 
-		<a class="animations" href="/animations">ANIMATIONS</a> &nbsp;&nbsp; 
-		<a class="about-me" href="/about-me"><span class="no-wrap">ABOUT ME</span></a>
-		
-	</div>
-	
-	<div id="line"></div>
+	<script>
+		$('#page').append(header);
+	</script>
 	
 	<div id="content_about-me">
 		
@@ -85,11 +76,9 @@
 
 	<div id="line"></div>
 	
-	<div id="new_footer">
-	
-		<p>&copy; Copyright 2009-2015. All work property of Matthew Young &mdash; so don't you dare copy it</p>
-	
-	</div>
+		<script>
+			$('#new_footer').append(footer);
+		</script>
 
 </div>
 

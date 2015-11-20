@@ -26,6 +26,11 @@ background-image:url('images/background.gif');
 	letter-spacing: 2px;
 }
 
+#new_nav a {
+	white-space: nowrap;
+	text-transform: uppercase;
+}
+
 a.book-covers{
 	color: #000;
 	text-decoration: none;
@@ -90,7 +95,7 @@ p.list{
 }
 
 .no-wrap{
-	white-space:nowrap;
+	white-space: nowrap;
 }
 
 a{
