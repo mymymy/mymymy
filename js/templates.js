@@ -2,7 +2,7 @@ var header = '<div id="MYMYMY" class="johnston"><a class="black" href="/">MY MY 
 
 var header_data = {
 	"book-covers-link": "/book-covers",
-	"animations-link": "/animation",
+	"animations-link": "/animations",
 	"about-link": "/about"
 }
 
