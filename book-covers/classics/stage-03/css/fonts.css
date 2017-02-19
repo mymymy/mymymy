@@ -1,0 +1,67 @@
+
+
+
+@font-face {
+    font-family: 'futuraextendedregular';
+    src: url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/futuraextended-webfont.eot');
+    src: url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/futuraextended-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/futuraextended-webfont.woff') format('woff'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/futuraextended-webfont.ttf') format('truetype'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/futuraextended-webfont.svg#futuraextendedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'baskervillebold_italic';
+    src: url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillebolditalic-webfont.eot');
+    src: url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillebolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillebolditalic-webfont.woff') format('woff'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillebolditalic-webfont.ttf') format('truetype'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillebolditalic-webfont.svg#new_baskervillebold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'baskervillebold';
+    src: url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillebold-webfont.eot');
+    src: url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillebold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillebold-webfont.woff') format('woff'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillebold-webfont.ttf') format('truetype'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillebold-webfont.svg#newbskvll_btbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'baskerville';
+    src: url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskerville-webfont.eot');
+    src: url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskerville-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskerville-webfont.woff') format('woff'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskerville-webfont.ttf') format('truetype'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskerville-webfont.svg#newbskvll_btroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'baskerville_italic';
+    src: url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillestd-italic-webfont.eot');
+    src: url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillestd-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillestd-italic-webfont.woff') format('woff'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillestd-italic-webfont.ttf') format('truetype'),
+         url('http://www.penguinclassics.co.uk/static/penguinclassicsredesign2013/fonts/newbaskervillestd-italic-webfont.svg#itc_new_baskerville_stditalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
