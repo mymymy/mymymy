@@ -1,15 +1,16 @@
-html, body
-	// width: 100%
-	// height: 100%
-	// font-size: 24px
-	background: white
-	// color: black
-	// font-family: 'Johnston', serif
-	// line-height: 1.4em
-	
-	+below(900px)
-		background: red
+html
+	-ms-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%
 
+html, body
+	font-size: 24px
+
+body
+	background-color: white
+	color: black
+	font-family: Baskerville
+	line-height: 1.4
+	
 flex()
 	display: flex
 	flex-wrap: nowrap
@@ -26,6 +27,4 @@ flexCenter()
 	flex()
 	justify-content: center
 	align-content: center
-
-
 
