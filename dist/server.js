@@ -11,10 +11,17 @@ server.register([Inert], function (err) {
 	server.route([
 		{
 			method: 'GET',
-			path: '/{p*}',
+			path: '/{page?}',
+			config: {
+				validate: {
+					params: {
+						page: Joi.string().regex(/\.html$/).optional()
+					}
+				}
+			},
 			handler: function (request, reply) {
 				
-				reply.file('./dist/index.html')
+				reply.file('./dist/'+ (request.params.page || 'index.html'))
 			}
 		},
 		{

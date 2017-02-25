@@ -3,14 +3,20 @@ html
 	-webkit-text-size-adjust: 100%
 
 html, body
+	width: 100%
+	height: 100%
 	font-size: 24px
+
+body-padding = 5vw
+image-wrapper-height = "calc(100vh - calc(2 * %s))" % body-padding
 
 body
 	background-color: white
 	color: black
 	font-family: Baskerville
 	line-height: 1.4
-	
+	padding: body-padding
+		
 flex()
 	display: flex
 	flex-wrap: nowrap
@@ -27,4 +33,16 @@ flexCenter()
 	flex()
 	justify-content: center
 	align-content: center
+	
+section.book-cover
+	background: blue
+	&.simple
+		figure
+			div.image-wrapper
+				height: image-wrapper-height
+				width: "calc(%s * 0.722)" % image-wrapper-height
+			img
+				opacity: 0.9
+				background: red
+				width: 100%
 
