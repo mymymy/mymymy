@@ -35,14 +35,12 @@ flexCenter()
 	align-content: center
 	
 section.book-cover
-	background: blue
 	&.simple
 		figure
 			div.image-wrapper
-				height: image-wrapper-height
-				width: "calc(%s * 0.722)" % image-wrapper-height
+				max-height: image-wrapper-height
+				width: "calc(calc(%s * 0.757) * 1.435)" % image-wrapper-height
 			img
-				opacity: 0.9
-				background: red
 				width: 100%
+				margin: -20%
 

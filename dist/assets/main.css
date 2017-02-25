@@ -150,15 +150,11 @@ body {
   line-height: 1.4;
   padding: 5vw;
 }
-section.book-cover {
-  background: #0000e6;
-}
 section.book-cover.simple figure div.image-wrapper {
-  height: calc(100vh - calc(2 * 5vw));
-  width: calc(calc(100vh - calc(2 * 5vw)) * 0.722);
+  max-height: calc(100vh - calc(2 * 5vw));
+  width: calc(calc(calc(100vh - calc(2 * 5vw)) * 0.757) * 1.435);
 }
 section.book-cover.simple figure img {
-  opacity: 0.9;
-  background: #d20050;
   width: 100%;
+  margin: -20%;
 }
