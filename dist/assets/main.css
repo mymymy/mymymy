@@ -147,7 +147,8 @@ body {
   background-color: #ebebe6;
   color: #141414;
   font-family: "baskerville-urw", "Baskerville URW++", "Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
-  line-height: 1.4;
+  font-weight: 400;
+  line-height: 1.4rem;
   padding: 10vh;
   display: -ms-flexbox;
   display: flex;
@@ -159,6 +160,24 @@ body {
 nav {
   padding-right: calc(10vh + 1vh);
   border-right: 1px solid #141414;
+}
+nav h1 {
+  font-family: "Johnston", "p22-underground", "Gill Sans", "Gill Sans MT", sans-serif;
+  font-weight: 900;
+  font-size: 1.5em;
+  padding-bottom: 1.4rem;
+}
+nav h1 a:link,
+nav h1 a:visited {
+  color: #141414;
+  text-decoration: none;
+}
+nav p {
+  padding-bottom: 1.4rem;
+}
+nav p a:link,
+nav p a:visited {
+  color: #b4b4af;
 }
 figure.book-cover {
   padding-left: 1vh;
@@ -172,8 +191,10 @@ figure.book-cover.simple {
       flex-wrap: nowrap;
   -ms-flex-direction: row;
       flex-direction: row;
+  -ms-flex-align: end;
+      align-items: flex-end;
 }
 figure.book-cover.simple img {
   height: 100vh;
-  margin-top: calc(-1 * 10vh);
+  margin-bottom: calc(-1 * 10vh);
 }
