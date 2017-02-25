@@ -148,13 +148,32 @@ body {
   color: #141414;
   font-family: "baskerville-urw", "Baskerville URW++", "Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
   line-height: 1.4;
-  padding: 5vw;
+  padding: 10vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
 }
-section.book-cover.simple figure div.image-wrapper {
-  max-height: calc(100vh - calc(2 * 5vw));
-  width: calc(calc(calc(100vh - calc(2 * 5vw)) * 0.757) * 1.435);
+nav {
+  padding-right: calc(10vh + 1vh);
+  border-right: 1px solid #141414;
 }
-section.book-cover.simple figure img {
+figure.book-cover {
+  padding-left: 1vh;
+}
+figure.book-cover.simple {
   width: 100%;
-  margin: -20%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+figure.book-cover.simple img {
+  height: 100vh;
+  margin-top: calc(-1 * 10vh);
 }

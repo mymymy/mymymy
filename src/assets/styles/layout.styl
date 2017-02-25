@@ -1,21 +1,6 @@
 html
 	-ms-text-size-adjust: 100%
 	-webkit-text-size-adjust: 100%
-
-html, body
-	width: 100%
-	height: 100%
-	font-size: 24px
-
-body-padding = 5vw
-image-wrapper-height = "calc(100vh - calc(2 * %s))" % body-padding
-
-body
-	background-color: white
-	color: black
-	font-family: Baskerville
-	line-height: 1.4
-	padding: body-padding
 		
 flex()
 	display: flex
@@ -33,14 +18,34 @@ flexCenter()
 	flex()
 	justify-content: center
 	align-content: center
+
+html, body
+	width: 100%
+	height: 100%
+	font-size: 24px
+
+body-padding = 10vh
+
+body
+	background-color: white
+	color: black
+	font-family: Baskerville
+	line-height: 1.4
+	padding: body-padding
+	flexRow()
 	
-section.book-cover
+nav
+	padding-right: "calc(%s + 1vh)" % body-padding
+	border-right: 1px solid black
+		
+figure.book-cover
+	padding-left: 1vh
 	&.simple
-		figure
-			div.image-wrapper
-				max-height: image-wrapper-height
-				width: "calc(calc(%s * 0.757) * 1.435)" % image-wrapper-height
-			img
-				width: 100%
-				margin: -20%
+		width: 100%
+		height: 100%
+		flexRow()
+		
+		img
+			height: 100vh
+			margin-top: "calc(-1 * %s)" % body-padding
 
