@@ -1,16 +1,14 @@
 @font-face {
-  font-family: system;
-  font-style: normal;
-  font-weight: 300;
-  src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+	font-family: "New Hero";
+	font-style: bold;
+ 	font-weight: 600;	
+	src:	url("@@root_path/assets/fonts/heronew-bold.eot") format("eot"),
+			url("@@root_path/assets/fonts/heronew-bold.woff") format("woff"),
+			url("@@root_path/assets/fonts/heronew-bold.ttf") format("truetype")
 }
 
-Baskerville = "baskerville-urw", "Baskerville URW++", "Baskerville", "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif
-Courier = "courier-prime", "Courier Prime", "Courier New", "Courier", monospace
-Johnston = "Johnston", "p22-underground", "Gill Sans", "Gill Sans MT", sans-serif
-Gill = "Gill Sans", "Gill Sans MT", sans-serif
-System = "system"
-
+basic = "ff-basic-gothic-web-pro"
+newHero = "New Hero"
 
 body
 	text-rendering: optimizeLegibility
@@ -29,3 +27,8 @@ smallcaps()
 fontSmoothing()
 	-moz-osx-font-smoothing: grayscale
 	-webkit-font-smoothing: antialiased
+	
+basic()
+	font-family: "ff-basic-gothic-web-pro"
+	letter-spacing: -0.015em
+

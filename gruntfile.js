@@ -76,7 +76,7 @@ module.exports = function(grunt) {
 				files: [
 					{ expand: true, flatten: true, src: ['dist/assets/app.js'], dest: 'dist/assets/' },
 					{ expand: true, flatten: true, src: ['dist/assets/main.css'], dest: 'dist/assets/' },
-					{ expand: true, flatten: true, cwd: "dist", src: ['*.html'], dest: 'dist/' }
+					{ expand: true, flatten: true, cwd: "dist", src: ['*'], dest: 'dist/' }
 				]
 			},
 			local: {
@@ -89,7 +89,7 @@ module.exports = function(grunt) {
 				files: [
 					{ expand: true, flatten: true, src: ['dist/assets/app.js'], dest: 'dist/assets/' },
 					{ expand: true, flatten: true, src: ['dist/assets/main.css'], dest: 'dist/assets/' },
-					{ expand: true, flatten: true, cwd: "dist", src: ['*.html'], dest: 'dist/' }
+					{ expand: true, flatten: true, cwd: "dist", src: ['*'], dest: 'dist/' }
 				]
 			}
 		},
