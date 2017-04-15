@@ -25,6 +25,7 @@ html
 	font-size: 24px
 
 body-padding = 10vh
+body-padding-mobile = 10vw
 line-height = 1.4em
 line-height-rem = 1.4rem
 
@@ -41,12 +42,24 @@ body
 	padding: body-padding
 	flexRow()
 	
+	+below(600px)
+		overflow-x: hidden
+		overflow-y: scroll
+		display: block 
+		padding: body-padding-mobile
+
 nav
 	padding-right: body-padding
 	width: 555px
 	flex: none
 	// border-right: 1px solid black
 	// margin-right: body-padding
+		
+	+below(600px)
+		width: auto
+		
+		ul
+			display: none
 
 	h1
 		font-family: Johnston
@@ -67,7 +80,6 @@ nav
 		
 figure.book-cover
 	width: 100%
-	height: 100%
 	flexRow()
 	align-items: flex-end
 	
@@ -75,10 +87,14 @@ figure.book-cover
 		height: 100vh
 		margin-bottom: (-1 * body-padding)
 		margin-left: @margin-bottom
+		
+	+below(600px)
+		img
+			width: 100%
+			height: auto
 
 figure.text-design
 	width: 100%
-	height: 100%
 	flexRow()
 	align-items: flex-end
 	
