@@ -436,12 +436,22 @@ buttonfocus,
 #street-london #b {
   width: 80%;
 }
+@media only screen and (max-width: 900px) {
+  #street-london #b {
+    width: 100%;
+  }
+}
 #street-london #d {
   width: 17.8%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: space-around;
+}
+@media only screen and (max-width: 900px) {
+  #street-london #d {
+    display: none;
+  }
 }
 #street-london #e {
   margin-bottom: 1vw;
@@ -584,5 +594,12 @@ buttonfocus,
 #thank-you {
   background: #283038;
   color: #fafcfe;
-  padding-bottom: calc(5vh - 2em);
+}
+@media only screen and (max-width: 700px) {
+  #thank-you {
+    padding-bottom: 5vh;
+  }
+}
+#thank-you .text-area {
+  margin-bottom: 2em;
 }

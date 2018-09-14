@@ -222,10 +222,16 @@ button, .button
 	#b
 		width: 80%
 		
+		+below(900px)
+			width: 100%
+		
 	#d
 		width: 17.8%
 		flexColumn()
 		justify-content: space-around
+		
+		+below(900px)
+			display: none
 		
 	#e
 		margin-bottom: 1vw
@@ -342,7 +348,12 @@ button, .button
 #thank-you
 	background: deepBlue
 	color: white
-	padding-bottom: calc(5vh - 2em)
+	
+	+below(700px)
+		padding-bottom: 5vh
+	
+	.text-area
+		margin-bottom: 2em
 
 
 
