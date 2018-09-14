@@ -1,7 +1,21 @@
 body
 {
 background-image:url('images/background.gif');
+margin: 0;
 }
+
+#oh-the-shame {
+	width: 90vw;
+	padding: 1em 5vw;
+	background: #d6e9e5;
+	text-align: center;
+	font-family: "freight-text-pro";
+}
+
+span.keep {
+	display: inline-block;
+}
+
 
 #page{
 	margin: 2em auto;
