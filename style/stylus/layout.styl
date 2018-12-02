@@ -1,13 +1,13 @@
 html, body
 	width: 100%
+	background: white
+	color: black
 	font-size: 22px
-	background: black
-	color: white
 	font-family: sans-serif
-	line-height: 1.4
 	
 body
 	padding: 0 5vw
+	min-height: 100vh
 
 flex()
 	display: flex
@@ -26,6 +26,16 @@ flexCenter()
 	justify-content: center
 	align-content: center
 	
-img.book
-	max-width: 100%
+.horizontal-scroll
+	flexRow()
+	width: 100vw
+	height: 90vh
+	overflow-x: scroll
+	overflow-y: hidden
+	
+.book
+	width: 80vw
 	max-height: 90vh
+	
+	img
+		width: 80vw

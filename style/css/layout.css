@@ -1,16 +1,28 @@
 html,
 body {
   width: 100%;
+  background: #fff;
+  color: #000;
   font-size: 22px;
-  background: #000;
-  color: #fff;
   font-family: sans-serif;
-  line-height: 1.4;
 }
 body {
   padding: 0 5vw;
+  min-height: 100vh;
 }
-img.book {
-  max-width: 100%;
+.horizontal-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100vw;
+  height: 90vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.book {
+  width: 80vw;
   max-height: 90vh;
+}
+.book img {
+  width: 80vw;
 }
