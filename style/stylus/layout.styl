@@ -6,7 +6,20 @@ html, body
 	font-family: sans-serif
 	
 body
+	display: grid
 	padding: 0 5%
+	grid-template-columns: 1fr 1fr 1fr
+	grid-template-rows: 100px auto
+	grid-gap: 5%
+	justify-items: center
+	align-items: start
+	grid-template-areas: 
+		"header header header"
+			
+h1
+	grid-area: header
+	justify-self: start
+	align-self: end
 	
 .book
 	width: 100%

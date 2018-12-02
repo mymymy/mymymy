@@ -154,41 +154,6 @@ template {
 * {
   box-sizing: border-box;
 }
-@media (max-aspect-ratio: 1/2) {
-  body {
-    background: #f00 !important;
-  }
-}
-@media (min-aspect-ratio: 1/2) {
-  body {
-    background: #ffa500 !important;
-  }
-}
-@media (min-aspect-ratio: 4/5) {
-  body {
-    background: #ff0 !important;
-  }
-}
-@media (min-aspect-ratio: 6/5) {
-  body {
-    background: #008000 !important;
-  }
-}
-@media (min-aspect-ratio: 16/9) {
-  body {
-    background: #00f !important;
-  }
-}
-@media (min-aspect-ratio: 12/5) {
-  body {
-    background: #4b0082 !important;
-  }
-}
-@media (min-aspect-ratio: 4/1) {
-  body {
-    background: #ee82ee !important;
-  }
-}
 html,
 body {
   width: 100%;
@@ -198,7 +163,19 @@ body {
   font-family: sans-serif;
 }
 body {
+  display: grid;
   padding: 0 5%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px auto;
+  grid-gap: 5%;
+  justify-items: center;
+  align-items: start;
+  grid-template-areas: "header header header";
+}
+h1 {
+  grid-area: header;
+  justify-self: start;
+  align-self: end;
 }
 .book {
   width: 100%;
