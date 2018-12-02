@@ -163,22 +163,11 @@ body {
   font-family: sans-serif;
 }
 body {
-  padding: 0 5vw;
-  min-height: 100vh;
-}
-.horizontal-scroll {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  width: 100vw;
-  height: 90vh;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  padding: 0 5%;
 }
 .book {
-  width: 80vw;
-  max-height: 90vh;
+  width: 100%;
 }
 .book img {
-  width: 80vw;
+  width: 100%;
 }
