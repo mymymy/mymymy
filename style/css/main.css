@@ -11,7 +11,7 @@ main {
 }
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 hr {
   box-sizing: content-box; /* 1 */
@@ -154,6 +154,41 @@ template {
 * {
   box-sizing: border-box;
 }
+@media (max-aspect-ratio: 1/2) {
+  body {
+    background: #f00 !important;
+  }
+}
+@media (min-aspect-ratio: 1/2) {
+  body {
+    background: #ffa500 !important;
+  }
+}
+@media (min-aspect-ratio: 4/5) {
+  body {
+    background: #ff0 !important;
+  }
+}
+@media (min-aspect-ratio: 6/5) {
+  body {
+    background: #008000 !important;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  body {
+    background: #00f !important;
+  }
+}
+@media (min-aspect-ratio: 12/5) {
+  body {
+    background: #4b0082 !important;
+  }
+}
+@media (min-aspect-ratio: 4/1) {
+  body {
+    background: #ee82ee !important;
+  }
+}
 html,
 body {
   width: 100%;
@@ -169,5 +204,6 @@ body {
   width: 100%;
 }
 .book img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100vh;
 }
