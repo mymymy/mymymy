@@ -9,9 +9,19 @@ body {
   font-size: 22px;
   font-family: Cutive;
   letter-spacing: -0.02em;
+below(500px)
 }
 body {
   align-items: flex-end;
+}
+@media (max-aspect-ratio: 1/1) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 5vw;
+    align-items: center;
+    text-align: center;
+  }
 }
 body p {
   margin-top: 1em;
@@ -20,20 +30,41 @@ header,
 footer {
   flex-shrink: 0;
   align-self: center;
+  min-width: 600px;
+below(700px)
 }
 header {
   width: calc(100vw - 100vh);
   padding: 0 5% 5% 5%;
+below(1500px)
+}
+@media (max-aspect-ratio: 1/1) {
+  header {
+    width: 100%;
+    margin: 4em auto 2em;
+    padding: 0;
+  }
 }
 header h1 {
   font-family: Myeongjo;
   font-weight: normal;
   margin-bottom: 0.5em;
+below(500px)
+}
+header p.links {
+  line-height: 150%;
 }
 footer {
   width: calc(100vw - 100vh + 8%);
   padding: 0 5% 5% 5%;
   padding-right: 15%;
+}
+@media (max-aspect-ratio: 1/1) {
+  footer {
+    width: 100%;
+    padding-right: 5%;
+    padding-bottom: 5em;
+  }
 }
 .book {
   height: 100vh;
@@ -44,9 +75,27 @@ footer {
 .book img {
   height: 100%;
 }
+.book +.b-format {
+  height: 93%;
+}
 .book +.a-format {
   height: 90%;
 }
-.book +.b-format {
-  height: 93%;
+@media (max-aspect-ratio: 1/1) {
+  .book {
+    height: auto;
+    width: 90vw;
+  }
+  .book img {
+    width: 100%;
+    height: auto;
+  }
+  .book +.b-format {
+    width: 93%;
+    height: auto;
+  }
+  .book +.a-format {
+    width: 90%;
+    height: auto;
+  }
 }
