@@ -288,3 +288,8 @@ template {
 * {
   box-sizing: border-box;
 }
+a:link,
+a:active,
+a:visited {
+  color: inherit;
+}

@@ -1,30 +1,52 @@
 html,
 body {
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
   background: #fff;
   color: #000;
   font-size: 22px;
-  font-family: sans-serif;
+  font-family: Cutive;
+  letter-spacing: -0.02em;
 }
 body {
-  display: grid;
-  padding: 0 5%;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px auto;
-  grid-gap: 5%;
-  justify-items: center;
-  align-items: start;
-  grid-template-areas: "header header header";
+  align-items: flex-end;
 }
-h1 {
-  grid-area: header;
-  justify-self: start;
-  align-self: end;
+body p {
+  margin-top: 1em;
+}
+header,
+footer {
+  flex-shrink: 0;
+  align-self: center;
+}
+header {
+  width: calc(100vw - 100vh);
+  padding: 0 5% 5% 5%;
+}
+header h1 {
+  font-family: Myeongjo;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+footer {
+  width: calc(100vw - 100vh + 8%);
+  padding: 0 5% 5% 5%;
+  padding-right: 15%;
 }
 .book {
-  width: 100%;
+  height: 100vh;
+  display: inline-block;
+  align-items: flex-end;
+  flex-shrink: 0;
 }
 .book img {
-  max-width: 100%;
-  max-height: 100vh;
+  height: 100%;
+}
+.book +.a-format {
+  height: 90%;
+}
+.book +.b-format {
+  height: 93%;
 }
