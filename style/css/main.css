@@ -175,12 +175,6 @@ body {
   font-family: 'Cutive Mono', monospace;
   letter-spacing: -0.02em;
 }
-@media (min-resolution: 150dpi) {
-  html,
-  body {
-    font-size: 1.8em;
-  }
-}
 body {
   display: flex;
   flex-wrap: nowrap;
@@ -247,18 +241,8 @@ header h1 {
     font-size: 1.6em;
   }
 }
-@media (min-resolution: 150dpi) {
-  header h1 {
-    font-size: 1.6em;
-  }
-}
 header p.links {
   line-height: 150%;
-}
-@media only screen and (max-width: 1500px) and (min-resolution: 150dpi) {
-  header p {
-    max-width: 900px;
-  }
 }
 footer {
   width: calc(100vw - 100vh + 8%);
