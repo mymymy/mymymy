@@ -2,6 +2,7 @@ Cutive = 'Cutive Mono', monospace
 WorkSans = 'Work Sans', sans-serif
 Franklin = 'Libre Franklin', sans-serif
 Myeongjo = 'Nanum Myeongjo', serif
+Baskerville = 'Libre Baskerville', 'Baskerville', serif
 
 uppercase()
 	text-transform: uppercase
@@ -19,3 +20,24 @@ a {
 	text-decoration: none
 	border-bottom: 1px solid
 }
+
+span.hyphen
+	display: inline-block
+	transform: translateY(4px)
+	
+ul
+	padding-left: 1.1em
+	
+	li
+		list-style-type: none
+		text-indent: -0.6em
+		
+		&::before
+			content: '—'
+			position: relative
+			left: -0.5em
+			
+		&.done
+			border-bottom: 1px solid
+			display: inline-block
+			line-height: 0

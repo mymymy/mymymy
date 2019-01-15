@@ -1,17 +1,19 @@
-html, body
+html
 	width: 100vw
 	height: 100vh
-	overflow-x: scroll
-	overflow-y: hidden
 	background: white
 	color: black
 	font-size: 22px
 	font-family: Cutive
 	letter-spacing: -0.02em
 	
-body
+html body#home
+	width: 100vw
+	height: 100vh
 	flexRow()
 	align-items: flex-end
+	overflow-x: scroll
+	overflow-y: hidden
 	
 	@media (max-aspect-ratio: 1/1)
 		flexColumn()
@@ -21,8 +23,23 @@ body
 		align-items: center
 		text-align: center
 	
-	p
-		margin-top: 1em
+p
+	margin-top: 1em
+	
+h1
+	font-family: Myeongjo
+	font-weight: normal
+	margin-bottom: 0.5em
+	
+	+below(500px)
+		font-size: 1.6em
+		
+h2
+	font-size: 1em
+	font-weight: 400
+	border-bottom: 1px solid
+	display: inline-block
+	margin-top: 2em
 	
 header, footer
 	flex-shrink: 0
@@ -50,18 +67,10 @@ header
 		p
 			margin-left: auto
 			margin-right: auto
-	
-	h1
-		font-family: Myeongjo
-		font-weight: normal
-		margin-bottom: 0.5em
-		
-		+below(500px)
-			font-size: 1.6em
 			
-	p.links
-		line-height: 150%
-		
+p.links
+	line-height: 150%
+	
 footer
 	width: calc(100vw - 100vh + 8%)
 	padding: 0 5% 5% 5%

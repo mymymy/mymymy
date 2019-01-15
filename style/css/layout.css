@@ -1,20 +1,21 @@
-html,
-body {
+html {
   width: 100vw;
   height: 100vh;
-  overflow-x: scroll;
-  overflow-y: hidden;
   background: #fff;
   color: #000;
   font-size: 22px;
   font-family: Cutive;
   letter-spacing: -0.02em;
 }
-body {
+html body#home {
+  width: 100vw;
+  height: 100vh;
   align-items: flex-end;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 @media (max-aspect-ratio: 1/1) {
-  body {
+  html body#home {
     overflow-x: hidden;
     overflow-y: scroll;
     padding: 5vw;
@@ -22,8 +23,21 @@ body {
     text-align: center;
   }
 }
-body p {
+p {
   margin-top: 1em;
+}
+h1 {
+  font-family: Myeongjo;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+below(500px)
+}
+h2 {
+  font-size: 1em;
+  font-weight: 400;
+  border-bottom: 1px solid;
+  display: inline-block;
+  margin-top: 2em;
 }
 header,
 footer {
@@ -48,13 +62,7 @@ below(1500px)
     margin-right: auto;
   }
 }
-header h1 {
-  font-family: Myeongjo;
-  font-weight: normal;
-  margin-bottom: 0.5em;
-below(500px)
-}
-header p.links {
+p.links {
   line-height: 150%;
 }
 footer {
