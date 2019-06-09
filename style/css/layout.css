@@ -3,16 +3,17 @@ body {
   width: 100vw;
 }
 body {
-  width: 100%;
-  padding: 1em 5vw;
-landscape()
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
 square()
   justify-items: stretch;
   align-items: stretch;
-  background: #fff;
+  width: 100%;
+  padding: 1em 5vw;
+landscape()
+  background: #000;
+  color: #fff;
 }
 header {
   grid-column: 1/span 12;

@@ -1,32 +1,83 @@
+@import layout
+
 #home
-	col = calc((100vw - 13em) / 12)
-	
-	h1, h2
-		font-size: 1.2em
-		fontSmoothing()
+
+	header
+		grid-column: 1 / span 11
 	
 	figure
 		position: relative
 		grid-column: 2 / span 10
 		margin: 2em 0
 		
+		&#persistence-of-sound
+			grid-column: 1 / span 12
+			display: block
+			
+			+square()
+				grid-12()
+				grid-template-rows: repeat(7, col)
+			
+			.images
+				grid-column: 1 / span 12
+				display: grid
+				grid-gap: 10px
+				
+				+square()
+					grid-gap: 1em
+					
+				+square()
+					grid-column: 5 / span 8
+					
+				#the-eccentric-press
+					grid-column: 3 / span 5
+					grid-row: 1 / span 5
+					z-index: 2
+					
+				#factitious-airs
+					grid-column: 1 / span 5
+					grid-row: 2 / span 5
+					z-index: 1
+										
+				#thames
+					grid-column: 4 / span 5
+					grid-row: 3 / span 5
+					z-index: 3
+			
+			figcaption
+				grid-column: 1 / span 12
+				margin-bottom: "calc(%s * 3)" % col
+
+				+square()
+					grid-column: 1 / span 4
+		
 		+square()
-			margin: calc((100vw - 13em) / 12) 0
+			margin: col 0
 			
 			&#japanese-short-stories
-				grid-column: 8 / span 5
-				margin-bottom: "calc(%s * -5)" % col
+				grid-column: 2 / span 5
+				margin-top: "calc(%s * -1)" % col
 			
 			&#contemporary-british-short-story
-				grid-column: 2 / span 5
+				grid-column: 8 / span 5
 				
 			&#statistics-without-tears
-				grid-column: 9 / span 4
-				top: "calc(%s * 6)" % col
+				grid-column: 2 / span 4
+				margin-top: "calc(%s * -1)" % col
+				
+			&#the-language-of-cities
+				grid-column: 2 / span 4
+				
+			&#b-is-for-bauhaus
+				grid-column: 8 / span 4
 				
 			&#shakespeares-sonnets
-				grid-column: 3 / span 4
+				grid-column: 8 / span 4
 				
 	figcaption
 		margin-top: 0.6em
 		font-size: 0.8em
+		max-width: 28em
+		
+	.feature figcaption
+		font-size: 1em

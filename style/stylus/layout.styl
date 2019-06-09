@@ -1,13 +1,7 @@
 html, body
 	width: 100vw
-			
-body
-	width: 100%
-	padding: 1em 5vw
-	
-	+landscape()
-		padding: 1em 2em
-	
+
+grid-12()
 	display: grid
 	grid-template-columns: repeat(12, 1fr)
 	grid-gap: 10px
@@ -18,7 +12,19 @@ body
 	justify-items: stretch
 	align-items: stretch
 	
-	background: white
+col = calc((100vw - 13em) / 12)
+			
+body
+	grid-12()
+	width: 100%
+	padding: 1em 5vw
+	
+	+landscape()
+		padding: 1em 2em
+	
+	background: black
+	color: white
+	fontSmoothing()
 	
 header
 	grid-column: 1 / span 12

@@ -1,6 +1,33 @@
-#home h1,
-#home h2 {
-  font-size: 1.2em;
+html,
+body {
+  width: 100vw;
+}
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+square()
+  justify-items: stretch;
+  align-items: stretch;
+  width: 100%;
+  padding: 1em 5vw;
+landscape()
+  background: #000;
+  color: #fff;
+}
+header {
+  grid-column: 1/span 12;
+}
+figure img {
+  max-width: 100%;
+}
+@media (min-height: 500px) {
+  figure img {
+    max-height: 90vh;
+  }
+}
+#home header {
+  grid-column: 1/span 11;
 }
 #home figure {
   position: relative;
@@ -8,7 +35,43 @@
   margin: 2em 0;
 square()
 }
+#home figure#persistence-of-sound {
+  grid-column: 1/span 12;
+  display: block;
+square()
+}
+#home figure#persistence-of-sound .images {
+  grid-column: 1/span 12;
+  display: grid;
+  grid-gap: 10px;
+square()
+square()
+}
+#home figure#persistence-of-sound .images #the-eccentric-press {
+  grid-column: 3/span 5;
+  grid-row: 1/span 5;
+  z-index: 2;
+}
+#home figure#persistence-of-sound .images #factitious-airs {
+  grid-column: 1/span 5;
+  grid-row: 2/span 5;
+  z-index: 1;
+}
+#home figure#persistence-of-sound .images #thames {
+  grid-column: 4/span 5;
+  grid-row: 3/span 5;
+  z-index: 3;
+}
+#home figure#persistence-of-sound figcaption {
+  grid-column: 1/span 12;
+  margin-bottom: calc(calc((100vw - 13em) / 12) * 3);
+square()
+}
 #home figcaption {
   margin-top: 0.6em;
   font-size: 0.8em;
+  max-width: 28em;
+}
+#home .feature figcaption {
+  font-size: 1em;
 }
