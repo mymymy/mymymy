@@ -1,6 +1,6 @@
 // NB: Aspect ratio can only accept integers. Can't parse '1.8:1' for example.
 
-// < 0.56
+// < 0.5
 // This is a 'max', all the others are 'min'. This value should be the same as the 'portrait' value.
 tall()
 	@media (max-aspect-ratio: 1/2)
@@ -11,9 +11,9 @@ portrait()
 	@media (min-aspect-ratio: 1/2)
 		{block}
 
-// > 0.8
+// > 0.9
 square()
-	@media (min-aspect-ratio: 4/5)
+	@media (min-aspect-ratio: 9/10)
 		{block}
 
 // > 1.2

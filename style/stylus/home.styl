@@ -1,0 +1,32 @@
+#home
+	col = calc((100vw - 13em) / 12)
+	
+	h1, h2
+		font-size: 1.2em
+		fontSmoothing()
+	
+	figure
+		position: relative
+		grid-column: 2 / span 10
+		margin: 2em 0
+		
+		+square()
+			margin: calc((100vw - 13em) / 12) 0
+			
+			&#japanese-short-stories
+				grid-column: 8 / span 5
+				margin-bottom: "calc(%s * -5)" % col
+			
+			&#contemporary-british-short-story
+				grid-column: 2 / span 5
+				
+			&#statistics-without-tears
+				grid-column: 9 / span 4
+				top: "calc(%s * 6)" % col
+				
+			&#shakespeares-sonnets
+				grid-column: 3 / span 4
+				
+	figcaption
+		margin-top: 0.6em
+		font-size: 0.8em

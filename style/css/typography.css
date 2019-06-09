@@ -1,25 +1,14 @@
+html,
+body {
+  font-size: 24px;
+  font-family: 'Crimson Text', serif;
+}
 a {
   text-decoration: none;
   border-bottom: 1px solid;
 }
-span.hyphen {
-  display: inline-block;
-  transform: translateY(4px);
-}
-ul {
-  padding-left: 1.1em;
-}
-ul li {
-  list-style-type: none;
-  text-indent: -0.6em;
-}
-ul li::before {
-  content: '—';
-  position: relative;
-  left: -0.5em;
-}
-ul li.done {
-  border-bottom: 1px solid;
-  display: inline-block;
-  line-height: 0;
+h1,
+h2 {
+  margin: 0;
+  font-weight: normal;
 }

@@ -1,0 +1,14 @@
+#home h1,
+#home h2 {
+  font-size: 1.2em;
+}
+#home figure {
+  position: relative;
+  grid-column: 2/span 10;
+  margin: 2em 0;
+square()
+}
+#home figcaption {
+  margin-top: 0.6em;
+  font-size: 0.8em;
+}

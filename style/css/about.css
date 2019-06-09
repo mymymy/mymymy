@@ -1,0 +1,18 @@
+#about {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 25vh 0;
+below(1200px)
+}
+#about section {
+  width: 40vw;
+below(1200px)
+}
+#about #in-depth {
+  padding-right: 2em;
+}
+#about h1 {
+  margin-top: -2.4em;
+}
