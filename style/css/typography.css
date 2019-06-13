@@ -23,11 +23,45 @@ h4 {
 h1 + p,
 h2 + p,
 h3 + p,
-h4 + p {
+h4 + p,
+h1 + ul,
+h2 + ul,
+h3 + ul,
+h4 + ul,
+h1 + ol,
+h2 + ol,
+h3 + ol,
+h4 + ol,
+h1 + dl,
+h2 + dl,
+h3 + dl,
+h4 + dl {
   margin-top: 1em;
 }
 h4 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.8em;
+}
+p + p,
+ul + p,
+ol + p,
+dl + p,
+p + ul,
+ul + ul,
+ol + ul,
+dl + ul,
+p + ol,
+ul + ol,
+ol + ol,
+dl + ol,
+p + dl,
+ul + dl,
+ol + dl,
+dl + dl {
+  margin-top: 1em;
+}
+li,
+dd {
+  margin-bottom: 0.2em;
 }

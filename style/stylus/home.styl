@@ -1,9 +1,6 @@
 @import layout
 
 #home
-
-	header
-		grid-column: 1 / span 11
 	
 	figure
 		position: relative
@@ -13,6 +10,7 @@
 		&#persistence-of-sound
 			grid-column: 1 / span 12
 			display: block
+			margin-top: 0
 			
 			+square()
 				grid-12()
@@ -20,6 +18,7 @@
 			
 			.images
 				grid-column: 1 / span 12
+				grid-row: 1 / span 2
 				display: grid
 				grid-gap: 10px
 				
@@ -46,6 +45,7 @@
 			
 			figcaption
 				grid-column: 1 / span 12
+				grid-row: 2 / span 1
 				margin-bottom: "calc(%s * 3)" % col
 
 				+square()
@@ -56,17 +56,18 @@
 			
 			&#japanese-short-stories
 				grid-column: 2 / span 5
-				margin-top: "calc(%s * -1)" % col
+				margin-top: "calc(%s * -0.5)" % col
 			
 			&#contemporary-british-short-story
 				grid-column: 8 / span 5
 				
 			&#statistics-without-tears
 				grid-column: 2 / span 4
-				margin-top: "calc(%s * -1)" % col
+				margin-top: "calc(%s * -0.5)" % col
 				
 			&#the-language-of-cities
 				grid-column: 2 / span 4
+				margin-top: "calc(%s * -0.5)" % col
 				
 			&#b-is-for-bauhaus
 				grid-column: 8 / span 4
@@ -81,3 +82,12 @@
 		
 	.feature figcaption
 		font-size: 1em
+		
+	#work-in-progress
+		grid-column: 2 / span 10
+		margin-top: 1em
+		padding-top: 2em
+		padding-bottom: 2em
+		border-top: 1px solid black
+		text-align: center
+		

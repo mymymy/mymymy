@@ -1,36 +1,44 @@
 html, body
 	width: 100vw
+	
+col = calc((100vw - 13em) / 12)
 
 grid-12()
 	display: grid
 	grid-template-columns: repeat(12, 1fr)
+	grid-template-rows: 5em auto
 	grid-gap: 10px
 	
 	+square()
+		grid-template-rows: col auto
 		grid-gap: 1em
-		
-	justify-items: stretch
-	align-items: stretch
-	
-col = calc((100vw - 13em) / 12)
-			
+						
 body
 	grid-12()
 	width: 100%
 	padding: 1em 5vw
 	
 	+landscape()
-		padding: 1em 2em
+		padding: 1em 2em 2em 2em
 	
-	background: black
-	color: white
+	background: white
+	color: black
 	fontSmoothing()
 	
 header
 	grid-column: 1 / span 12
+	grid-12()
+	align-items: baseline
 	
+	h1, h2
+		grid-column: 1 / span 9
+		
+	div
+		grid-column: 10 / span 3
+		text-align: right
+
 figure img
 	max-width: 100% // Make images width of div
 	
 	@media(min-height: 500px)
-		max-height: 90vh // Make image no taller than screen, but only on screens taller than 500px
+		max-height: calc(100vh - 5em) // Make image no taller than screen, but only on screens taller than 500px

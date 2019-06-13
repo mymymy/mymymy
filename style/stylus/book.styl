@@ -1,0 +1,45 @@
+@import 'layout'
+
+body.book
+
+	figure
+		grid-column: 5 / span 8
+		grid-row: 3 / span 1
+		flexRow()
+		align-items: flex-start
+		
+		img
+			margin-right: 1em
+			
+		&.front-and-back
+			img
+				width: calc(50% - 0.5em)
+			
+	figcaption
+		grid-column: 1 / span 3
+		grid-row: 3 / span 1
+			
+		p
+			font-size: 0.85em
+			
+		dl
+			font-size: 0.85em
+			margin-left: 1em
+			line-height: 1.4em
+						
+		dt
+			display: inline
+			margin-left: -1em
+			
+			&::after
+				content: ":"
+				width: 0.4em
+				display: inline-block
+				
+		dd
+			display: inline
+			margin: 0
+			
+	p + p
+		margin-top: 0
+		text-indent: 1em
