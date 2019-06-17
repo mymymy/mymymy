@@ -5,12 +5,14 @@
 	figure
 		position: relative
 		grid-column: 2 / span 10
-		margin: 2em 0
+		margin: 3em 0
+		
+		&:first-of-type
+			margin-top: 0
 		
 		&#persistence-of-sound
 			grid-column: 1 / span 12
 			display: block
-			margin-top: 0
 			
 			+square()
 				grid-12()
@@ -82,12 +84,4 @@
 		
 	.feature figcaption
 		font-size: 1em
-		
-	#work-in-progress
-		grid-column: 2 / span 10
-		margin-top: 1em
-		padding-top: 2em
-		padding-bottom: 2em
-		border-top: 1px solid black
-		text-align: center
 		

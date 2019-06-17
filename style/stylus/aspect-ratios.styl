@@ -13,27 +13,27 @@ portrait()
 
 // > 0.9
 square()
-	@media (min-aspect-ratio: 9/10)
+	@media (min-aspect-ratio: 9/10) and (min-height: 500px)
 		{block}
 
 // > 1.2
 landscape()
-	@media(min-aspect-ratio: 6/5)
+	@media(min-aspect-ratio: 6/5) and (min-height: 500px)
 		{block}
 		
 // > 1.78
 wide()
-	@media(min-aspect-ratio: 16/9)
+	@media(min-aspect-ratio: 16/9) and (min-height: 500px)
 		{block}
 
 // > 2.4
 wider()
-	@media(min-aspect-ratio: 12/5)
+	@media(min-aspect-ratio: 12/5) and (min-height: 500px)
 		{block}
 
 // > 4
 widest()
-	@media(min-aspect-ratio: 4/1)
+	@media(min-aspect-ratio: 4/1) and (min-height: 500px)
 		{block}
 		
 // Testing aspect ratios

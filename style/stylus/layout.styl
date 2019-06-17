@@ -6,11 +6,9 @@ col = calc((100vw - 13em) / 12)
 grid-12()
 	display: grid
 	grid-template-columns: repeat(12, 1fr)
-	grid-template-rows: 5em auto
 	grid-gap: 10px
 	
 	+square()
-		grid-template-rows: col auto
 		grid-gap: 1em
 						
 body
@@ -29,6 +27,10 @@ header
 	grid-column: 1 / span 12
 	grid-12()
 	align-items: baseline
+	height: 20vh
+	
+	// +square()
+	// 	height: "calc(%s * 1.5)" % col
 	
 	h1, h2
 		grid-column: 1 / span 9
@@ -41,4 +43,27 @@ figure img
 	max-width: 100% // Make images width of div
 	
 	@media(min-height: 500px)
-		max-height: calc(100vh - 5em) // Make image no taller than screen, but only on screens taller than 500px
+		max-height: calc(100vh - 8em) // Make image no taller than screen, but only on screens taller than 500px
+		
+nav#prev-and-next
+	margin-top: col
+	grid-column: 1 / span 12
+	flex()
+	justify-content: space-between
+	a
+		display: inline-block
+		
+#work-in-progress
+		grid-column: 2 / span 10
+		margin-top: 1em
+		padding-top: 2em
+		padding-bottom: 2em
+		border-top: 1px solid black
+		text-align: left
+		
+		+square()
+			text-align: center
+		
+		p
+			max-width: none
+		

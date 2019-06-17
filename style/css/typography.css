@@ -2,6 +2,7 @@ html,
 body {
   font-size: 24px;
   font-family: 'Crimson Text', serif;
+below(500px)
 }
 a {
   text-decoration: none;
@@ -19,6 +20,7 @@ h4 {
   font-weight: normal;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+below(500px)
 }
 h1 + p,
 h2 + p,
@@ -42,6 +44,12 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.8em;
+}
+p,
+ul,
+ol,
+dl {
+  max-width: 30em;
 }
 p + p,
 ul + p,

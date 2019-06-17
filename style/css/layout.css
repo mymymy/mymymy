@@ -5,7 +5,6 @@ body {
 body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 5em auto;
   grid-gap: 10px;
 square()
   width: 100%;
@@ -18,10 +17,10 @@ header {
   grid-column: 1/span 12;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 5em auto;
   grid-gap: 10px;
 square()
   align-items: baseline;
+  height: 20vh;
 }
 header h1,
 header h2 {
@@ -36,6 +35,26 @@ figure img {
 }
 @media (min-height: 500px) {
   figure img {
-    max-height: calc(100vh - 5em);
+    max-height: calc(100vh - 8em);
   }
+}
+nav#prev-and-next {
+  margin-top: calc((100vw - 13em) / 12);
+  grid-column: 1/span 12;
+  justify-content: space-between;
+}
+nav#prev-and-next a {
+  display: inline-block;
+}
+#work-in-progress {
+  grid-column: 2/span 10;
+  margin-top: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 1px solid #000;
+  text-align: left;
+square()
+}
+#work-in-progress p {
+  max-width: none;
 }

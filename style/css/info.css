@@ -1,0 +1,6 @@
+#info #blurb {
+  grid-column: 1/span 12;
+}
+#info p {
+  max-width: 20em;
+}
