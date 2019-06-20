@@ -59,9 +59,8 @@ square()
   max-width: none;
 }
 body.book figure {
-  grid-column: 1/span 12;
+  grid-column: 2/span 10;
   grid-row: 2/span 1;
-  align-items: flex-start;
 tall()
 square()
 landscape()
@@ -69,8 +68,17 @@ landscape()
 body.book figure img {
   margin-right: 1em;
 }
+body.book figure.front-and-back {
+  grid-column: 1/span 12;
+  align-items: flex-start;
+}
 body.book figure.front-and-back img {
   max-width: calc(50% - 0.5em);
+}
+body.book figure figcaption {
+  margin-top: 0.5em;
+  font-size: 0.8em;
+  max-width: 28em;
 }
 body.book figcaption {
   grid-column: 1/span 12;

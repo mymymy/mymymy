@@ -1,0 +1,26 @@
+#statistics-without-tears #new-cover {
+  grid-column: 2/span 10;
+}
+@media (min-aspect-ratio: 6/5) and (min-height: 500px) {
+  #statistics-without-tears #new-cover {
+    grid-column: 5/span 4;
+  }
+}
+#statistics-without-tears #old-cover {
+  grid-column: 4/span 6;
+  grid-row: 4/span 1;
+  margin: 2em 0;
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #statistics-without-tears #old-cover {
+    grid-column: 2/span 4;
+  }
+}
+@media (min-aspect-ratio: 6/5) and (min-height: 500px) {
+  #statistics-without-tears #old-cover {
+    grid-column: 9/span 2;
+    grid-row: 2/span 1;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
