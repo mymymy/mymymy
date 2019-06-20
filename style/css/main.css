@@ -666,6 +666,16 @@ body.book figure.front-and-back {
   flex-direction: row;
   align-items: flex-start;
 }
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  body.book figure.front-and-back {
+    grid-column: 2/span 10;
+  }
+}
+@media (min-aspect-ratio: 6/5) and (min-height: 500px) {
+  body.book figure.front-and-back {
+    grid-column: 5/span 8;
+  }
+}
 body.book figure.front-and-back img {
   max-width: calc(50% - 0.5em);
 }

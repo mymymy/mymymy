@@ -71,6 +71,8 @@ body.book figure img {
 body.book figure.front-and-back {
   grid-column: 1/span 12;
   align-items: flex-start;
+square()
+landscape()
 }
 body.book figure.front-and-back img {
   max-width: calc(50% - 0.5em);
