@@ -3,32 +3,30 @@
 body.book
 
 	figure
-		grid-column: 2 / span 10
+		grid-column: 1 / span 12
 		grid-row: 2 / span 1
-		
-		+tall()
-			flexColumn()
-			
-		+square()
-			grid-column: 2 / span 10
+		overflow: scroll
+		text-align: center
 		
 		+landscape()
-			grid-column: 5 / span 8
-		
-		img
-			margin-right: 1em
-			margin-bottom: 1em
+			grid-column: 6 / span 7
+			margin-top: -1em
+			text-align: left
 			
-			&:last-of-type
-				margin-bottom: 0
+		img
+			max-width: 80%
+			
+			+landscape()
+				max-width: 100%
 			
 		&.front-and-back
 			grid-column: 1 / span 12
 			flexRow()
 			align-items: flex-start
 			
-			+square()
-				grid-column: 2 / span 10
+			+tall()
+				width: 100vw
+				margin-left: -5vw // based on body padding
 				
 			+landscape()
 				grid-column: 6 / span 7
@@ -39,10 +37,25 @@ body.book
 				flexRow()
 			
 			img
+				margin-right: 1em
 				max-width: calc(50% - 0.5em)
+				
+				+tall()
+					max-width: 75%
+					
+					&:first-of-type
+						margin-left: 12%
+						
+					&:last-of-type
+						max-width: 87% // width + padding
+						padding-right: 12%
 				
 				+landscape()
 					max-width: 100% // single, stacking images
+					margin-bottom: 1em
+					
+					&:last-of-type
+						margin-bottom: 0
 					
 				+wide()
 					max-width: calc(50% - 0.5em) // same as original max-width, above
@@ -55,19 +68,18 @@ body.book
 		font-size: 0.85em
 		flexColumn()
 		justify-content: space-between
-		
-		+square()
-			grid-column: 2 / span 10
+		max-width: 30em
 		
 		+landscape()
 			grid-column: 1 / span 5
 			grid-row: 2 / span 1
 			margin-top: 0
 			margin-right: 2em
+			position: sticky
 			
 		+wide()
 			grid-column: 1 / span 4
-					
+			
 		dl
 			margin-left: 1em
 			line-height: 1.4em
@@ -84,6 +96,9 @@ body.book
 		dd
 			display: inline
 			margin: 0
+			
+		figcaption // figcaption within figcaption (prevent font size getting smaller)
+			font-size: 1em
 			
 		.see-also
 			margin-top: 2em

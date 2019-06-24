@@ -52,10 +52,7 @@ header
 	grid-12()
 	align-items: baseline
 	height: 20vh
-	
-	// +square()
-	// 	height: "calc(%s * 1.5)" % col
-	
+		
 	h1, h2
 		grid-column: 1 / span 9
 		
@@ -70,10 +67,14 @@ figure img
 		max-height: calc(100vh - 8em) // Make image no taller than screen, but only on screens taller than 500px
 		
 nav#prev-and-next
-	margin-top: col
+	margin-top: 3em
 	grid-column: 1 / span 12
 	flex()
 	justify-content: space-between
+	
+	// +landscape()
+	// 	margin-top: col
+	
 	a
 		display: inline-block
 		

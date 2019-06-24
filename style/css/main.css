@@ -279,7 +279,7 @@ body {
     grid-gap: 1em;
   }
 }
-@media (min-aspect-ratio: 6/5) and (min-height: 500px) {
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body {
     padding: 1em 2em 2em 2em;
   }
@@ -314,7 +314,7 @@ figure img {
   }
 }
 nav#prev-and-next {
-  margin-top: calc((100vw - 13em) / 12);
+  margin-top: 3em;
   grid-column: 1/span 12;
   display: flex;
   flex-wrap: nowrap;
@@ -359,7 +359,7 @@ body {
     grid-gap: 1em;
   }
 }
-@media (min-aspect-ratio: 6/5) and (min-height: 500px) {
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body {
     padding: 1em 2em 2em 2em;
   }
@@ -394,7 +394,7 @@ figure img {
   }
 }
 nav#prev-and-next {
-  margin-top: calc((100vw - 13em) / 12);
+  margin-top: 3em;
   grid-column: 1/span 12;
   display: flex;
   flex-wrap: nowrap;
@@ -577,7 +577,7 @@ body {
     grid-gap: 1em;
   }
 }
-@media (min-aspect-ratio: 6/5) and (min-height: 500px) {
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body {
     padding: 1em 2em 2em 2em;
   }
@@ -612,7 +612,7 @@ figure img {
   }
 }
 nav#prev-and-next {
-  margin-top: calc((100vw - 13em) / 12);
+  margin-top: 3em;
   grid-column: 1/span 12;
   display: flex;
   flex-wrap: nowrap;
@@ -638,32 +638,25 @@ nav#prev-and-next a {
   max-width: none;
 }
 body.book figure {
-  grid-column: 2/span 10;
+  grid-column: 1/span 12;
   grid-row: 2/span 1;
+  overflow: scroll;
+  text-align: center;
 }
-@media (max-aspect-ratio: 1/2) {
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body.book figure {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-}
-@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
-  body.book figure {
-    grid-column: 2/span 10;
-  }
-}
-@media (min-aspect-ratio: 6/5) and (min-height: 500px) {
-  body.book figure {
-    grid-column: 5/span 8;
+    grid-column: 6/span 7;
+    margin-top: -1em;
+    text-align: left;
   }
 }
 body.book figure img {
-  margin-right: 1em;
-  margin-bottom: 1em;
+  max-width: 80%;
 }
-body.book figure img:last-of-type {
-  margin-bottom: 0;
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
+  body.book figure img {
+    max-width: 100%;
+  }
 }
 body.book figure.front-and-back {
   grid-column: 1/span 12;
@@ -672,12 +665,13 @@ body.book figure.front-and-back {
   flex-direction: row;
   align-items: flex-start;
 }
-@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+@media (max-aspect-ratio: 6/10) {
   body.book figure.front-and-back {
-    grid-column: 2/span 10;
+    width: 100vw;
+    margin-left: -5vw;
   }
 }
-@media (min-aspect-ratio: 6/5) and (min-height: 500px) {
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body.book figure.front-and-back {
     grid-column: 6/span 7;
     display: flex;
@@ -694,11 +688,28 @@ body.book figure.front-and-back {
   }
 }
 body.book figure.front-and-back img {
+  margin-right: 1em;
   max-width: calc(50% - 0.5em);
 }
-@media (min-aspect-ratio: 6/5) and (min-height: 500px) {
+@media (max-aspect-ratio: 6/10) {
+  body.book figure.front-and-back img {
+    max-width: 75%;
+  }
+  body.book figure.front-and-back img:first-of-type {
+    margin-left: 12%;
+  }
+  body.book figure.front-and-back img:last-of-type {
+    max-width: 87%;
+    padding-right: 12%;
+  }
+}
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body.book figure.front-and-back img {
     max-width: 100%;
+    margin-bottom: 1em;
+  }
+  body.book figure.front-and-back img:last-of-type {
+    margin-bottom: 0;
   }
 }
 @media (min-aspect-ratio: 13/9) and (min-height: 500px) {
@@ -716,18 +727,15 @@ body.book figcaption {
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 30em;
 }
-@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
-  body.book figcaption {
-    grid-column: 2/span 10;
-  }
-}
-@media (min-aspect-ratio: 6/5) and (min-height: 500px) {
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body.book figcaption {
     grid-column: 1/span 5;
     grid-row: 2/span 1;
     margin-top: 0;
     margin-right: 2em;
+    position: sticky;
   }
 }
 @media (min-aspect-ratio: 13/9) and (min-height: 500px) {
@@ -751,6 +759,9 @@ body.book figcaption dt::after {
 body.book figcaption dd {
   display: inline;
   margin: 0;
+}
+body.book figcaption figcaption {
+  font-size: 1em;
 }
 body.book figcaption .see-also {
   margin-top: 2em;

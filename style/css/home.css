@@ -39,7 +39,7 @@ figure img {
   }
 }
 nav#prev-and-next {
-  margin-top: calc((100vw - 13em) / 12);
+  margin-top: 3em;
   grid-column: 1/span 12;
   justify-content: space-between;
 }
