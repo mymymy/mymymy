@@ -10,6 +10,30 @@ grid-12()
 	
 	+square()
 		grid-gap: 1em
+		
+grid-8()
+	display: grid
+	grid-template-columns: repeat(8, 1fr)
+	grid-gap: 10px
+	
+	+square()
+		grid-gap: 1em
+		
+grid-4()
+	display: grid
+	grid-template-columns: repeat(4, 1fr)
+	grid-gap: 10px
+	
+	+square()
+		grid-gap: 1em
+		
+grid-2()
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	grid-gap: 10px
+	
+	+square()
+		grid-gap: 1em
 						
 body
 	grid-12()
@@ -66,4 +90,7 @@ nav#prev-and-next
 	
 	p
 		max-width: none
+
+
+
 	

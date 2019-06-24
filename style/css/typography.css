@@ -1,7 +1,8 @@
 html,
 body {
-  font-size: 24px;
   font-family: 'Crimson Text', serif;
+  font-size: 24px;
+  line-height: 1.3;
 below(500px)
 }
 a {
@@ -16,8 +17,9 @@ h2,
 h3,
 h4 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: normal;
+  line-height: 1.2;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 below(500px)

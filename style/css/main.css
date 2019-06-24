@@ -172,8 +172,9 @@ ul {
 }
 html,
 body {
-  font-size: 24px;
   font-family: 'Crimson Text', serif;
+  font-size: 24px;
+  line-height: 1.3;
 }
 @media only screen and (max-width: 500px) {
   html,
@@ -193,8 +194,9 @@ h2,
 h3,
 h4 {
   margin: 0;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: normal;
+  line-height: 1.2;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -203,7 +205,7 @@ h4 {
   h2,
   h3,
   h4 {
-    font-size: 1.1em;
+    font-size: 1.1rem;
   }
 }
 h1 + p,
@@ -658,6 +660,10 @@ body.book figure {
 }
 body.book figure img {
   margin-right: 1em;
+  margin-bottom: 1em;
+}
+body.book figure img:last-of-type {
+  margin-bottom: 0;
 }
 body.book figure.front-and-back {
   grid-column: 1/span 12;
@@ -673,21 +679,43 @@ body.book figure.front-and-back {
 }
 @media (min-aspect-ratio: 6/5) and (min-height: 500px) {
   body.book figure.front-and-back {
+    grid-column: 6/span 7;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}
+@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+  body.book figure.front-and-back {
     grid-column: 5/span 8;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
 body.book figure.front-and-back img {
   max-width: calc(50% - 0.5em);
 }
-body.book figure figcaption {
-  margin-top: 0.5em;
-  font-size: 0.8em;
-  max-width: 28em;
+@media (min-aspect-ratio: 6/5) and (min-height: 500px) {
+  body.book figure.front-and-back img {
+    max-width: 100%;
+  }
+}
+@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+  body.book figure.front-and-back img {
+    max-width: calc(50% - 0.5em);
+    margin-bottom: 0;
+  }
 }
 body.book figcaption {
   grid-column: 1/span 12;
   grid-row: 3/span 1;
   margin-top: 2em;
+  font-size: 0.85em;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   body.book figcaption {
@@ -696,17 +724,18 @@ body.book figcaption {
 }
 @media (min-aspect-ratio: 6/5) and (min-height: 500px) {
   body.book figcaption {
-    grid-column: 1/span 4;
+    grid-column: 1/span 5;
     grid-row: 2/span 1;
     margin-top: 0;
     margin-right: 2em;
   }
 }
-body.book figcaption p {
-  font-size: 0.85em;
+@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+  body.book figcaption {
+    grid-column: 1/span 4;
+  }
 }
 body.book figcaption dl {
-  font-size: 0.85em;
   margin-left: 1em;
   line-height: 1.4em;
 }
@@ -722,6 +751,33 @@ body.book figcaption dt::after {
 body.book figcaption dd {
   display: inline;
   margin: 0;
+}
+body.book figcaption .see-also {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-end;
+}
+body.book figcaption .see-also .images {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  height: 5rem;
+  margin-right: 1em;
+}
+body.book figcaption .see-also .images img {
+  max-height: 100%;
+  margin-right: 0.5em;
+}
+body.book figcaption .see-also .images img:last-of-type {
+  margin-right: 0;
+}
+body.book figcaption .see-also h4 {
+  text-transform: none;
+  font-size: 1em;
+  letter-spacing: 0;
+  font-style: italic;
 }
 body.book p + p {
   margin-top: 0;

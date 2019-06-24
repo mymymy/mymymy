@@ -17,6 +17,10 @@ body.book
 		
 		img
 			margin-right: 1em
+			margin-bottom: 1em
+			
+			&:last-of-type
+				margin-bottom: 0
 			
 		&.front-and-back
 			grid-column: 1 / span 12
@@ -27,35 +31,44 @@ body.book
 				grid-column: 2 / span 10
 				
 			+landscape()
+				grid-column: 6 / span 7
+				flexColumn()
+
+			+wide()
 				grid-column: 5 / span 8
+				flexRow()
 			
 			img
 				max-width: calc(50% - 0.5em)
 				
-		figcaption
-			margin-top: 0.5em
-			font-size: 0.8em
-			max-width: 28em
+				+landscape()
+					max-width: 100% // single, stacking images
+					
+				+wide()
+					max-width: calc(50% - 0.5em) // same as original max-width, above
+					margin-bottom: 0
 			
 	figcaption
 		grid-column: 1 / span 12
 		grid-row: 3 / span 1
 		margin-top: 2em
+		font-size: 0.85em
+		flexColumn()
+		justify-content: space-between
 		
 		+square()
 			grid-column: 2 / span 10
 		
 		+landscape()
-			grid-column: 1 / span 4
+			grid-column: 1 / span 5
 			grid-row: 2 / span 1
 			margin-top: 0
 			margin-right: 2em
 			
-		p
-			font-size: 0.85em
-			
+		+wide()
+			grid-column: 1 / span 4
+					
 		dl
-			font-size: 0.85em
 			margin-left: 1em
 			line-height: 1.4em
 						
@@ -71,6 +84,29 @@ body.book
 		dd
 			display: inline
 			margin: 0
+			
+		.see-also
+			margin-top: 2em
+			flexRow()
+			align-items: flex-end
+					
+			.images
+				flexRow()
+				height: 5rem
+				margin-right: 1em
+				
+				img
+					max-height: 100%
+					margin-right: 0.5em
+					
+					&:last-of-type
+						margin-right: 0
+				
+			h4
+				text-transform: none
+				font-size: 1em
+				letter-spacing: 0
+				font-style: italic
 			
 	p + p
 		margin-top: 0

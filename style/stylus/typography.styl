@@ -1,8 +1,9 @@
 CrimsonText = 'Crimson Text', serif
 
 html, body
-	font-size: 24px
 	font-family: CrimsonText
+	font-size: 24px
+	line-height: 1.3
 	
 	+below(500px)
 		font-size: 22px
@@ -28,12 +29,13 @@ a
 	
 h1, h2, h3, h4
 	margin: 0
-	font-size: 1.2em
+	font-size: 1.2rem
 	font-weight: normal
+	line-height: 1.2
 	fontSmoothing()
 	
 	+below(500px)
-		font-size: 1.1em
+		font-size: 1.1rem
 
 	+ p, + ul, + ol, + dl
 		margin-top: 1em

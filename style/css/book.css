@@ -67,33 +67,34 @@ landscape()
 }
 body.book figure img {
   margin-right: 1em;
+  margin-bottom: 1em;
+}
+body.book figure img:last-of-type {
+  margin-bottom: 0;
 }
 body.book figure.front-and-back {
   grid-column: 1/span 12;
   align-items: flex-start;
 square()
 landscape()
+wide()
 }
 body.book figure.front-and-back img {
   max-width: calc(50% - 0.5em);
-}
-body.book figure figcaption {
-  margin-top: 0.5em;
-  font-size: 0.8em;
-  max-width: 28em;
+landscape()
+wide()
 }
 body.book figcaption {
   grid-column: 1/span 12;
   grid-row: 3/span 1;
   margin-top: 2em;
+  font-size: 0.85em;
+  justify-content: space-between;
 square()
 landscape()
-}
-body.book figcaption p {
-  font-size: 0.85em;
+wide()
 }
 body.book figcaption dl {
-  font-size: 0.85em;
   margin-left: 1em;
   line-height: 1.4em;
 }
@@ -109,6 +110,27 @@ body.book figcaption dt::after {
 body.book figcaption dd {
   display: inline;
   margin: 0;
+}
+body.book figcaption .see-also {
+  margin-top: 2em;
+  align-items: flex-end;
+}
+body.book figcaption .see-also .images {
+  height: 5rem;
+  margin-right: 1em;
+}
+body.book figcaption .see-also .images img {
+  max-height: 100%;
+  margin-right: 0.5em;
+}
+body.book figcaption .see-also .images img:last-of-type {
+  margin-right: 0;
+}
+body.book figcaption .see-also h4 {
+  text-transform: none;
+  font-size: 1em;
+  letter-spacing: 0;
+  font-style: italic;
 }
 body.book p + p {
   margin-top: 0;
