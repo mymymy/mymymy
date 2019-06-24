@@ -646,33 +646,57 @@ nav#prev-and-next a {
 #work-in-progress p {
   max-width: none;
 }
+body.book {
+  align-items: end;
+}
+body.book header {
+  height: 4em;
+}
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
+  body.book {
+    align-items: start;
+  }
+}
+@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+  body.book {
+    align-items: end;
+  }
+}
 body.book figure {
   grid-column: 1/span 12;
   grid-row: 2/span 1;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: visible;
   text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body.book figure {
     grid-column: 6/span 7;
-    margin-top: -1em;
     text-align: left;
+    align-items: flex-start;
+    min-height: calc(100vh - 7.8em);
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+  body.book figure {
+    align-items: flex-end;
   }
 }
 body.book figure img {
-  max-width: 80%;
+  max-width: 70vw;
 }
 @media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body.book figure img {
     max-width: 100%;
   }
-}
-body.book figure.front-and-back {
-  grid-column: 1/span 12;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: flex-start;
 }
 @media (max-aspect-ratio: 6/10) {
   body.book figure.front-and-back {
@@ -732,19 +756,15 @@ body.book figcaption {
   grid-row: 3/span 1;
   margin-top: 2em;
   font-size: 0.85em;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: space-between;
   max-width: 30em;
 }
 @media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body.book figcaption {
     grid-column: 1/span 5;
     grid-row: 2/span 1;
-    margin-top: 0;
     margin-right: 2em;
     position: sticky;
+    margin-top: 5em;
   }
 }
 @media (min-aspect-ratio: 13/9) and (min-height: 500px) {

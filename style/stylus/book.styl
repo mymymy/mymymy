@@ -1,28 +1,47 @@
 @import 'layout'
 
 body.book
+	
+	header
+		height: 4em
+	
+	align-items: end
+	
+	+landscape()
+		align-items: start
+		
+	+wide()
+		align-items: end
 
 	figure
 		grid-column: 1 / span 12
 		grid-row: 2 / span 1
-		overflow: scroll
+		overflow-x: scroll
+		overflow-y: visible
 		text-align: center
+		flexRow()
+		align-items: flex-end
+		margin-left: auto
+		margin-right: auto
 		
 		+landscape()
 			grid-column: 6 / span 7
-			margin-top: -1em
 			text-align: left
+			align-items: flex-start
+			min-height: calc(100vh - 7.8em)
+			margin-left: 0
+			margin-right: 0
+			
+		+wide()
+			align-items: flex-end
 			
 		img
-			max-width: 80%
+			max-width: 70vw
 			
 			+landscape()
 				max-width: 100%
 			
 		&.front-and-back
-			grid-column: 1 / span 12
-			flexRow()
-			align-items: flex-start
 			
 			+tall()
 				width: 100vw
@@ -66,16 +85,14 @@ body.book
 		grid-row: 3 / span 1
 		margin-top: 2em
 		font-size: 0.85em
-		flexColumn()
-		justify-content: space-between
 		max-width: 30em
 		
 		+landscape()
 			grid-column: 1 / span 5
 			grid-row: 2 / span 1
-			margin-top: 0
 			margin-right: 2em
 			position: sticky
+			margin-top: 5em
 			
 		+wide()
 			grid-column: 1 / span 4

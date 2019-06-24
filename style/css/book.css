@@ -61,23 +61,29 @@ square()
 #work-in-progress p {
   max-width: none;
 }
+body.book {
+  align-items: end;
+landscape()
+wide()
+}
+body.book header {
+  height: 4em;
+}
 body.book figure {
   grid-column: 1/span 12;
   grid-row: 2/span 1;
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: visible;
   text-align: center;
-landscape()
-}
-body.book figure img {
-  max-width: 80%;
-landscape()
-}
-body.book figure.front-and-back {
-  grid-column: 1/span 12;
-  align-items: flex-start;
-tall()
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
 landscape()
 wide()
+}
+body.book figure img {
+  max-width: 70vw;
+landscape()
 }
 body.book figure.front-and-back img {
   margin-right: 1em;
@@ -91,7 +97,6 @@ body.book figcaption {
   grid-row: 3/span 1;
   margin-top: 2em;
   font-size: 0.85em;
-  justify-content: space-between;
   max-width: 30em;
 landscape()
 wide()
