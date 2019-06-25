@@ -42,7 +42,7 @@ figure img {
   border: 1px solid rgba(0,0,0,0.1);
 }
 nav#prev-and-next {
-  margin-top: 3em;
+  margin-top: 2em;
   grid-column: 1/span 12;
   justify-content: space-between;
 }

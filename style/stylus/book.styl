@@ -2,6 +2,9 @@
 
 body.book
 	
+	+high()
+		padding-bottom: 1em
+	
 	header
 		height: 4em
 	
@@ -35,11 +38,18 @@ body.book
 		+wide()
 			align-items: flex-end
 			
+		+high()
+			min-height: 0px
+			max-height: calc(100vh - 6.8em - 5em)
+			
 		img
 			max-width: 70vw
 			
 			+landscape()
 				max-width: 100%
+				
+			+high()
+				max-height: calc(100vh - 6.8em - 5em)
 			
 		&.front-and-back
 			
@@ -85,7 +95,7 @@ body.book
 		grid-row: 3 / span 1
 		margin-top: 2em
 		font-size: 0.85em
-		max-width: 30em
+		max-width: 24em
 		
 		+landscape()
 			grid-column: 1 / span 5
@@ -117,28 +127,29 @@ body.book
 		figcaption // figcaption within figcaption (prevent font size getting smaller)
 			font-size: 1em
 			
-		.see-also
-			margin-top: 2em
+	.see-also
+		font-size: 0.85rem
+		margin-top: 2em
+		flexRow()
+		align-items: flex-end
+				
+		.image, .images
 			flexRow()
-			align-items: flex-end
-					
-			.image, .images
-				flexRow()
-				height: 5rem
-				margin-right: 1em
+			height: 5rem
+			margin-right: 1em
+			
+			img
+				max-height: 100%
+				margin-right: 0.5em
 				
-				img
-					max-height: 100%
-					margin-right: 0.5em
-					
-					&:last-of-type
-						margin-right: 0
-				
-			h4
-				text-transform: none
-				font-size: 1em
-				letter-spacing: 0
-				font-style: italic
+				&:last-of-type
+					margin-right: 0
+			
+		h4
+			text-transform: none
+			font-size: 1em
+			letter-spacing: 0
+			font-style: italic
 			
 	p + p
 		margin-top: 0

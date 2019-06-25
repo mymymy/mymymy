@@ -42,7 +42,7 @@ figure img {
   border: 1px solid rgba(0,0,0,0.1);
 }
 nav#prev-and-next {
-  margin-top: 3em;
+  margin-top: 2em;
   grid-column: 1/span 12;
   justify-content: space-between;
 }
@@ -62,6 +62,7 @@ square()
   max-width: none;
 }
 body.book {
+high()
   align-items: end;
 landscape()
 wide()
@@ -80,10 +81,12 @@ body.book figure {
   margin-right: auto;
 landscape()
 wide()
+high()
 }
 body.book figure img {
   max-width: 70vw;
 landscape()
+high()
 }
 body.book figure.front-and-back img {
   margin-right: 1em;
@@ -97,7 +100,7 @@ body.book figcaption {
   grid-row: 3/span 1;
   margin-top: 2em;
   font-size: 0.85em;
-  max-width: 30em;
+  max-width: 24em;
 landscape()
 wide()
 }
@@ -121,25 +124,26 @@ body.book figcaption dd {
 body.book figcaption figcaption {
   font-size: 1em;
 }
-body.book figcaption .see-also {
+body.book .see-also {
+  font-size: 0.85rem;
   margin-top: 2em;
   align-items: flex-end;
 }
-body.book figcaption .see-also .image,
-body.book figcaption .see-also .images {
+body.book .see-also .image,
+body.book .see-also .images {
   height: 5rem;
   margin-right: 1em;
 }
-body.book figcaption .see-also .image img,
-body.book figcaption .see-also .images img {
+body.book .see-also .image img,
+body.book .see-also .images img {
   max-height: 100%;
   margin-right: 0.5em;
 }
-body.book figcaption .see-also .image img:last-of-type,
-body.book figcaption .see-also .images img:last-of-type {
+body.book .see-also .image img:last-of-type,
+body.book .see-also .images img:last-of-type {
   margin-right: 0;
 }
-body.book figcaption .see-also h4 {
+body.book .see-also h4 {
   text-transform: none;
   font-size: 1em;
   letter-spacing: 0;
