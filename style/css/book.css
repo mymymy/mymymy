@@ -62,10 +62,8 @@ square()
   max-width: none;
 }
 body.book {
+  align-items: start;
 high()
-  align-items: end;
-landscape()
-wide()
 }
 body.book header {
   height: 4em;
@@ -104,7 +102,6 @@ body.book figcaption {
 square()
   margin-top: 2em;
   font-size: 0.85em;
-  align-items: end;
 landscape()
 wide()
 }
@@ -135,38 +132,56 @@ body.book figcaption dd {
 body.book figcaption figcaption {
   font-size: 1em;
 }
-body.book .see-also {
+body.book aside {
   font-size: 0.85rem;
   margin-top: 1em;
   align-items: flex-end;
   grid-column: 1/span 12;
+  max-width: 24em;
 portrait()
 landscape()
 wide()
 }
-body.book .see-also .image,
-body.book .see-also .images {
+body.book aside .image,
+body.book aside .images {
   height: 5rem;
   margin-right: 1em;
 wide()
 }
-body.book .see-also .image img,
-body.book .see-also .images img {
+body.book aside .image img,
+body.book aside .images img {
   max-height: 100%;
   margin-right: 0.5em;
 }
-body.book .see-also .image img:last-of-type,
-body.book .see-also .images img:last-of-type {
+body.book aside .image img:last-of-type,
+body.book aside .images img:last-of-type {
   margin-right: 0;
 }
-body.book .see-also .text {
+body.book aside .text {
   margin-top: 0.5em;
 }
-body.book .see-also h4 {
+body.book aside h4 {
   text-transform: none;
   font-size: 1em;
   letter-spacing: 0;
   font-style: italic;
+}
+body.book figure.front-and-back + figcaption .caption {
+  grid-column: 1/span 12;
+  margin-right: 1em;
+portrait()
+landscape()
+wide()
+}
+body.book figure.front-and-back + figcaption aside {
+  margin-right: 1em;
+portrait()
+landscape()
+wide()
+}
+body.book figure.front-and-back + figcaption aside .image,
+body.book figure.front-and-back + figcaption aside .images {
+  margin-right: 1em;
 }
 body.book p + p {
   margin-top: 0;
