@@ -98,9 +98,20 @@ wide()
 body.book figcaption {
   grid-column: 1/span 12;
   grid-row: 3/span 1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+square()
   margin-top: 2em;
   font-size: 0.85em;
+  align-items: end;
+landscape()
+wide()
+}
+body.book figcaption .caption {
+  grid-column: 1/span 12;
   max-width: 24em;
+portrait()
 landscape()
 wide()
 }
@@ -126,13 +137,18 @@ body.book figcaption figcaption {
 }
 body.book .see-also {
   font-size: 0.85rem;
-  margin-top: 2em;
+  margin-top: 1em;
   align-items: flex-end;
+  grid-column: 1/span 12;
+portrait()
+landscape()
+wide()
 }
 body.book .see-also .image,
 body.book .see-also .images {
   height: 5rem;
   margin-right: 1em;
+wide()
 }
 body.book .see-also .image img,
 body.book .see-also .images img {
@@ -142,6 +158,9 @@ body.book .see-also .images img {
 body.book .see-also .image img:last-of-type,
 body.book .see-also .images img:last-of-type {
   margin-right: 0;
+}
+body.book .see-also .text {
+  margin-top: 0.5em;
 }
 body.book .see-also h4 {
   text-transform: none;

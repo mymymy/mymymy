@@ -276,7 +276,7 @@ body {
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   body {
-    grid-gap: 1em;
+    grid-gap: 1rem;
   }
 }
 @media (min-aspect-ratio: 105/100) and (min-height: 500px) {
@@ -294,7 +294,7 @@ header {
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   header {
-    grid-gap: 1em;
+    grid-gap: 1rem;
   }
 }
 header h1,
@@ -359,7 +359,7 @@ body {
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   body {
-    grid-gap: 1em;
+    grid-gap: 1rem;
   }
 }
 @media (min-aspect-ratio: 105/100) and (min-height: 500px) {
@@ -377,7 +377,7 @@ header {
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   header {
-    grid-gap: 1em;
+    grid-gap: 1rem;
   }
 }
 header h1,
@@ -488,7 +488,7 @@ nav#prev-and-next a {
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) and (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #home figure#persistence-of-sound {
-    grid-gap: 1em;
+    grid-gap: 1rem;
   }
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
@@ -580,7 +580,7 @@ body {
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   body {
-    grid-gap: 1em;
+    grid-gap: 1rem;
   }
 }
 @media (min-aspect-ratio: 105/100) and (min-height: 500px) {
@@ -598,7 +598,7 @@ header {
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   header {
-    grid-gap: 1em;
+    grid-gap: 1rem;
   }
 }
 header h1,
@@ -685,13 +685,13 @@ body.book figure {
     grid-column: 6/span 7;
     text-align: left;
     align-items: flex-start;
-    min-height: calc(100vh - 7.8em);
     margin-left: 0;
     margin-right: 0;
   }
 }
 @media (min-aspect-ratio: 13/9) and (min-height: 500px) {
   body.book figure {
+    min-height: calc(100vh - 7.8em);
     align-items: flex-end;
   }
 }
@@ -770,9 +770,17 @@ body.book figure.front-and-back img {
 body.book figcaption {
   grid-column: 1/span 12;
   grid-row: 3/span 1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
   margin-top: 2em;
   font-size: 0.85em;
-  max-width: 24em;
+  align-items: end;
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  body.book figcaption {
+    grid-gap: 1rem;
+  }
 }
 @media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body.book figcaption {
@@ -785,6 +793,27 @@ body.book figcaption {
 }
 @media (min-aspect-ratio: 13/9) and (min-height: 500px) {
   body.book figcaption {
+    grid-column: 1/span 12;
+    align-items: end;
+    margin-right: 0;
+  }
+}
+body.book figcaption .caption {
+  grid-column: 1/span 12;
+  max-width: 24em;
+}
+@media (min-aspect-ratio: 6/10) {
+  body.book figcaption .caption {
+    grid-column: 1/span 9;
+  }
+}
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
+  body.book figcaption .caption {
+    grid-column: 1/span 12;
+  }
+}
+@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+  body.book figcaption .caption {
     grid-column: 1/span 4;
   }
 }
@@ -810,11 +839,39 @@ body.book figcaption figcaption {
 }
 body.book .see-also {
   font-size: 0.85rem;
-  margin-top: 2em;
+  margin-top: 1em;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   align-items: flex-end;
+  grid-column: 1/span 12;
+}
+@media (min-aspect-ratio: 6/10) {
+  body.book .see-also {
+    grid-column: 11/span 2;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
+  body.book .see-also {
+    grid-column: 1/span 12;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+  body.book .see-also {
+    grid-column: 12/span 1;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 body.book .see-also .image,
 body.book .see-also .images {
@@ -824,6 +881,12 @@ body.book .see-also .images {
   height: 5rem;
   margin-right: 1em;
 }
+@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+  body.book .see-also .image,
+  body.book .see-also .images {
+    margin-right: 0;
+  }
+}
 body.book .see-also .image img,
 body.book .see-also .images img {
   max-height: 100%;
@@ -832,6 +895,9 @@ body.book .see-also .images img {
 body.book .see-also .image img:last-of-type,
 body.book .see-also .images img:last-of-type {
   margin-right: 0;
+}
+body.book .see-also .text {
+  margin-top: 0.5em;
 }
 body.book .see-also h4 {
   text-transform: none;

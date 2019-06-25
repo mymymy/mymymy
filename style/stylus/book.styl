@@ -31,11 +31,11 @@ body.book
 			grid-column: 6 / span 7
 			text-align: left
 			align-items: flex-start
-			min-height: calc(100vh - 7.8em)
 			margin-left: 0
 			margin-right: 0
 			
 		+wide()
+			min-height: calc(100vh - 7.8em)
 			align-items: flex-end
 			
 		+high()
@@ -93,9 +93,10 @@ body.book
 	figcaption
 		grid-column: 1 / span 12
 		grid-row: 3 / span 1
+		grid-12()
 		margin-top: 2em
 		font-size: 0.85em
-		max-width: 24em
+		align-items: end
 		
 		+landscape()
 			grid-column: 1 / span 5
@@ -105,7 +106,22 @@ body.book
 			margin-top: 5em
 			
 		+wide()
-			grid-column: 1 / span 4
+			grid-column: 1 / span 12
+			align-items: end
+			margin-right: 0
+			
+		.caption
+			grid-column: 1 / span 12
+			max-width: 24em
+			
+			+portrait()
+				grid-column: 1 / span 9
+				
+			+landscape()
+				grid-column: 1 / span 12
+			
+			+wide()
+				grid-column: 1 / span 4
 			
 		dl
 			margin-left: 1em
@@ -129,14 +145,33 @@ body.book
 			
 	.see-also
 		font-size: 0.85rem
-		margin-top: 2em
+		margin-top: 1em
 		flexRow()
 		align-items: flex-end
+		grid-column: 1 / span 12
+		
+		+portrait()
+			grid-column: 11 / span 2
+			flexColumn()
+			align-items: flex-start
+			
+		+landscape()
+			grid-column: 1 / span 12
+			flexRow()
+			align-items: flex-end
+		
+		+wide()
+			grid-column: 12 / span 1
+			flexColumn()
+			align-items: flex-start
 				
 		.image, .images
 			flexRow()
 			height: 5rem
 			margin-right: 1em
+			
+			+wide()
+				margin-right: 0
 			
 			img
 				max-height: 100%
@@ -144,6 +179,9 @@ body.book
 				
 				&:last-of-type
 					margin-right: 0
+					
+		.text
+			margin-top: 0.5em
 			
 		h4
 			text-transform: none

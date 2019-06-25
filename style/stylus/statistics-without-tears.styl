@@ -5,25 +5,40 @@
 	
 	#new-cover
 		+landscape()
-			grid-column: 6 / span 4
-			margin-right: 1em
+			grid-row: 2 / span 2
 			
-	#old-cover
-		grid-row: 4 / span 1
-		grid-column: 1 / span 12
-		width: 100%
-		align-self: flex-end
-		
-		+landscape()
+		+wide()
 			grid-row: 2 / span 1
-			grid-column: 10 / span 3
-		
-		figure
-			flexRow()
-			align-items: flex-end !important
-			margin-top: 1em
-			min-height: auto
-		
+			grid-column: 6 / span 6
+			
+	#aside
+		grid-column: 1 / span 12
+		margin-top: 1em
+		align-self: end
+			
+		+landscape()
+			grid-row: 3 / span 1
+			grid-column: 1 / span 5
+			
+		+wide()
+			grid-row: 2 / span 1
+			grid-column: 12 / span 1
+			
+		figure, .image
+			align-items: flex-end
+			min-height: unset
+			
+			+wide()
+				flexColumn()
+				align-items: flex-start
+			
 		img
-			max-height: 200px !important
+			max-height: 200px
 			margin-right: 0.5em
+			
+		figcaption, .text
+			text-align: left
+			max-width: 8em
+			
+			+wide()
+				margin-top: 0.5em
