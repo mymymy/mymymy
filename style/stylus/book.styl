@@ -96,7 +96,7 @@ body.book
 			grid-row: 2 / span 1
 			margin-right: 2em
 			margin-top: 5em
-			align-self: end
+			align-self: flex-end
 			
 		+wide()
 			grid-column: 1 / span 12
@@ -150,6 +150,9 @@ body.book
 			flexColumn()
 			align-items: flex-start
 			
+		+square()
+			grid-column: 11 / span 2
+			
 		+landscape()
 			grid-column: 1 / span 12
 			flexRow()
@@ -160,10 +163,12 @@ body.book
 			flexColumn()
 			align-items: flex-start
 				
-		.image, .images
+		.image, .images, figure
 			flexRow()
 			height: 5rem
 			margin-right: 1em
+			margin-left: 0
+			min-height: unset
 			
 			+wide()
 				margin-right: 0
@@ -175,8 +180,9 @@ body.book
 				&:last-of-type
 					margin-right: 0
 					
-		.text
+		.text, figcaption
 			margin-top: 0.5em
+			display: block
 			
 		h4
 			text-transform: none
@@ -210,7 +216,7 @@ body.book
 			margin-right: 1em
 			
 			+portrait()
-				grid-column: 10 / span 3
+				grid-column: 11 / span 2
 				
 			+landscape()
 				grid-column: 1 / span 4
@@ -223,7 +229,7 @@ body.book
 				align-items: flex-end
 				margin-right: 3em
 				
-			.image, .images
+			.image, .images, figure
 				margin-right: 1em
 				
 		aside.two
@@ -233,7 +239,7 @@ body.book
 				align-items: flex-end
 				
 			+square()
-				grid-column: 10 / span 3
+				grid-column: 11 / span 2
 				flexColumn()
 				align-items: flex-start
 				

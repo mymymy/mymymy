@@ -139,26 +139,34 @@ body.book aside {
   grid-column: 1/span 12;
   max-width: 24em;
 portrait()
+square()
 landscape()
 wide()
 }
 body.book aside .image,
-body.book aside .images {
+body.book aside .images,
+body.book aside figure {
   height: 5rem;
   margin-right: 1em;
+  margin-left: 0;
+  min-height: unset;
 wide()
 }
 body.book aside .image img,
-body.book aside .images img {
+body.book aside .images img,
+body.book aside figure img {
   max-height: 100%;
   margin-right: 0.5em;
 }
 body.book aside .image img:last-of-type,
-body.book aside .images img:last-of-type {
+body.book aside .images img:last-of-type,
+body.book aside figure img:last-of-type {
   margin-right: 0;
 }
-body.book aside .text {
+body.book aside .text,
+body.book aside figcaption {
   margin-top: 0.5em;
+  display: block;
 }
 body.book aside h4 {
   text-transform: none;
@@ -180,7 +188,8 @@ landscape()
 wide()
 }
 body.book figure.front-and-back + figcaption aside .image,
-body.book figure.front-and-back + figcaption aside .images {
+body.book figure.front-and-back + figcaption aside .images,
+body.book figure.front-and-back + figcaption aside figure {
   margin-right: 1em;
 }
 body.book p + p {

@@ -1,44 +1,8 @@
 @import 'aspect-ratios'
 @import 'flexbox'
 
-#statistics-without-tears
+#old-cover
 	
-	#new-cover
-		+landscape()
-			grid-row: 2 / span 2
-			
-		+wide()
-			grid-row: 2 / span 1
-			grid-column: 6 / span 6
-			
-	#aside
-		grid-column: 1 / span 12
-		margin-top: 1em
-		align-self: end
-			
-		+landscape()
-			grid-row: 3 / span 1
-			grid-column: 1 / span 5
-			
-		+wide()
-			grid-row: 2 / span 1
-			grid-column: 12 / span 1
-			
-		figure, .image
-			align-items: flex-end
-			min-height: unset
-			
-			+wide()
-				flexColumn()
-				align-items: flex-start
-			
-		img
-			max-height: 200px
-			margin-right: 0.5em
-			
-		figcaption, .text
-			text-align: left
-			max-width: 8em
-			
-			+wide()
-				margin-top: 0.5em
+	figure, img
+		height: unset
+		max-height: 200px
