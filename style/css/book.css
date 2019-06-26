@@ -9,6 +9,7 @@ body {
 square()
   width: 100%;
   padding: 1em 5vw;
+square()
 landscape()
   background: #fff;
   color: #000;
@@ -42,12 +43,21 @@ figure img {
   border: 1px solid rgba(0,0,0,0.1);
 }
 nav#prev-and-next {
-  margin-top: 2em;
+  margin-top: 4em;
   grid-column: 1/span 12;
   justify-content: space-between;
+square()
+}
+nav#prev-and-next #prev,
+nav#prev-and-next #next {
+  max-width: 100%;
+  text-align: center;
+  padding: 1em 0 1.3em 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+square()
 }
 nav#prev-and-next a {
-  display: inline-block;
+  display: inline;
 }
 #work-in-progress {
   grid-column: 2/span 10;

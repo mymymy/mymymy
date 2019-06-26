@@ -279,6 +279,11 @@ body {
     grid-gap: 1rem;
   }
 }
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  body {
+    padding-bottom: 2em;
+  }
+}
 @media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body {
     padding: 1em 2em 2em 2em;
@@ -317,14 +322,51 @@ figure img {
   border: 1px solid rgba(22,24,26,0.1);
 }
 nav#prev-and-next {
-  margin-top: 2em;
+  margin-top: 4em;
   grid-column: 1/span 12;
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: space-between;
 }
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-top: 1.2em;
+    border-top: 1px solid rgba(22,24,26,0.1);
+  }
+}
+nav#prev-and-next #prev,
+nav#prev-and-next #next {
+  max-width: 100%;
+  text-align: center;
+  padding: 1em 0 1.3em 0;
+  border-top: 1px solid rgba(22,24,26,0.1);
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next #prev,
+  nav#prev-and-next #next {
+    border-top: none;
+    padding: 0;
+  }
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next #prev {
+    text-align: left;
+    margin-right: 1em;
+  }
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next #next {
+    text-align: right;
+    margin-left: 1em;
+  }
+}
 nav#prev-and-next a {
-  display: inline-block;
+  display: inline;
 }
 #work-in-progress {
   grid-column: 2/span 10;
@@ -362,6 +404,11 @@ body {
     grid-gap: 1rem;
   }
 }
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  body {
+    padding-bottom: 2em;
+  }
+}
 @media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body {
     padding: 1em 2em 2em 2em;
@@ -400,14 +447,51 @@ figure img {
   border: 1px solid rgba(22,24,26,0.1);
 }
 nav#prev-and-next {
-  margin-top: 2em;
+  margin-top: 4em;
   grid-column: 1/span 12;
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: space-between;
 }
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-top: 1.2em;
+    border-top: 1px solid rgba(22,24,26,0.1);
+  }
+}
+nav#prev-and-next #prev,
+nav#prev-and-next #next {
+  max-width: 100%;
+  text-align: center;
+  padding: 1em 0 1.3em 0;
+  border-top: 1px solid rgba(22,24,26,0.1);
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next #prev,
+  nav#prev-and-next #next {
+    border-top: none;
+    padding: 0;
+  }
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next #prev {
+    text-align: left;
+    margin-right: 1em;
+  }
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next #next {
+    text-align: right;
+    margin-left: 1em;
+  }
+}
 nav#prev-and-next a {
-  display: inline-block;
+  display: inline;
 }
 #work-in-progress {
   grid-column: 2/span 10;
@@ -583,6 +667,11 @@ body {
     grid-gap: 1rem;
   }
 }
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  body {
+    padding-bottom: 2em;
+  }
+}
 @media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body {
     padding: 1em 2em 2em 2em;
@@ -621,14 +710,51 @@ figure img {
   border: 1px solid rgba(22,24,26,0.1);
 }
 nav#prev-and-next {
-  margin-top: 2em;
+  margin-top: 4em;
   grid-column: 1/span 12;
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: column;
   justify-content: space-between;
 }
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding-top: 1.2em;
+    border-top: 1px solid rgba(22,24,26,0.1);
+  }
+}
+nav#prev-and-next #prev,
+nav#prev-and-next #next {
+  max-width: 100%;
+  text-align: center;
+  padding: 1em 0 1.3em 0;
+  border-top: 1px solid rgba(22,24,26,0.1);
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next #prev,
+  nav#prev-and-next #next {
+    border-top: none;
+    padding: 0;
+  }
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next #prev {
+    text-align: left;
+    margin-right: 1em;
+  }
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next #next {
+    text-align: right;
+    margin-left: 1em;
+  }
+}
 nav#prev-and-next a {
-  display: inline-block;
+  display: inline;
 }
 #work-in-progress {
   grid-column: 2/span 10;
