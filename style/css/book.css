@@ -28,6 +28,9 @@ header h1,
 header h2 {
   grid-column: 1/span 9;
 }
+header h2 a {
+  border-bottom: none;
+}
 header div {
   grid-column: 10/span 3;
   text-align: right;
