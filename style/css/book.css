@@ -122,6 +122,14 @@ portrait()
 landscape()
 wide()
 }
+body.book figcaption #show-colophon {
+  display: inline-block;
+  margin-top: 1em;
+}
+body.book figcaption #colophon {
+  display: none;
+  margin-top: 1em;
+}
 body.book figcaption dl {
   margin-left: 1em;
   line-height: 1.4em;

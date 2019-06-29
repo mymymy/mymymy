@@ -14,7 +14,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Matthew Young — Designer</title>
-	<meta name="description" content="Primarily a book designer (at Penguin Books), I also oversee websites, brand identities, record covers, exhibition designs, user experience, videos and animations, amongst other things.">
+	<meta name="description" content="Matthew Young runs a small design studio specialising in clear, distinctive, and thoughtful visual communication. Designing books, websites, brand identities, record covers, exhibition designs, user experiences and videos, with an emphasis on typography and craftsmanship.">
 	<base href="./">
 	<link rel="canonical" href="https://matthewyoung.design" />
 
@@ -26,6 +26,9 @@
 
 	<!-- Libraries -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- My scripts -->
+	<script src="../js/book.js"></script>
 </head>
 
 <body id="shakespeares-sonnets" class="book">
@@ -44,8 +47,10 @@
 	<figcaption>
 		<div class="caption">
 			<h1>Shakespeare’s Sonnets</h1>
+			<h4>March 2015</h4>
 			<p>An inexpensive, A-format paperback edition of Shakespeare’s <em>Sonnets</em> with a type-only cover. Printed two-colour on Colorplan Bright White paper.</p>
-			<dl>
+			<a id="show-colophon" href="#">Colophon</a>
+			<dl id="colophon">
 				<dt>Designer</dt>
 				<dd>Matthew Young</dd><br>
 				<dt>Type</dt>
@@ -55,7 +60,7 @@
 				<dt>ISBN</dt>
 				<dd>9780141396224</dd><br>
 				<dt>Date</dt>
-				<dd>March 2015</dd><br>
+				<dd>March 2015</dd>
 			</dl>
 		</div>
 	</figcaption>

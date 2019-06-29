@@ -227,9 +227,8 @@ h4 + dl {
   margin-top: 1em;
 }
 h4 {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.8em;
+  font-size: 1em;
+  opacity: 0.5;
 }
 p,
 ul,
@@ -932,6 +931,14 @@ body.book figcaption .caption {
   body.book figcaption .caption {
     grid-column: 1/span 4;
   }
+}
+body.book figcaption #show-colophon {
+  display: inline-block;
+  margin-top: 1em;
+}
+body.book figcaption #colophon {
+  display: none;
+  margin-top: 1em;
 }
 body.book figcaption dl {
   margin-left: 1em;

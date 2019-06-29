@@ -1,3 +1,6 @@
+#old-cover {
+  display: none;
+}
 #old-cover figure,
 #old-cover img {
   height: unset;
