@@ -112,6 +112,7 @@ body.book figcaption {
 square()
   margin-top: 2em;
   font-size: 0.85em;
+  z-index: 2;
 landscape()
 wide()
 }
