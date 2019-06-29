@@ -1033,6 +1033,11 @@ body.book aside .images img:last-of-type,
 body.book aside figure img:last-of-type {
   margin-right: 0;
 }
+body.book aside .image a,
+body.book aside .images a,
+body.book aside figure a {
+  border-bottom: none;
+}
 body.book aside .text,
 body.book aside figcaption {
   margin-top: 0.5em;
