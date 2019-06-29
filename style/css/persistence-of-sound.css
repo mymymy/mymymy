@@ -1,0 +1,16 @@
+#persistence-of-sound img {
+  max-width: 100%;
+}
+#persistence-of-sound section {
+  grid-column: 1/span 12;
+  margin: 1em 0;
+}
+#persistence-of-sound #intro img {
+  margin-top: 2em;
+}
+#persistence-of-sound #intro img#trio-square {
+  display: block;
+}
+#persistence-of-sound #intro img#trio-landscape {
+  display: none;
+}
