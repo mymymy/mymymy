@@ -1024,6 +1024,7 @@ body.book aside figure {
 body.book aside .image img,
 body.book aside .images img,
 body.book aside figure img {
+  max-width: 100%;
   max-height: 100%;
   margin-right: 0.5em;
 }
