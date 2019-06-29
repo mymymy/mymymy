@@ -7,8 +7,27 @@
 		grid-column: 2 / span 10
 		margin: 3em 0
 		
+		> a
+			border-bottom: none
+		
 		&:first-of-type
 			margin-top: 0
+			
+		&.demy
+			img
+				max-height: calc(100vh - 6em)
+				
+		&.b-format
+			img
+				max-height: calc(100vh - 9em)
+				
+		&.book
+			img
+				filter: drop-shadow(0.8em 0.8em 0.6em rgba(black, 0.5))
+				
+		&.vinyl
+			img
+				filter: drop-shadow(0.2em 0.2em 0.2em rgba(black, 0.5))
 		
 		&#persistence-of-sound
 			grid-column: 1 / span 12
@@ -63,19 +82,21 @@
 			&#contemporary-british-short-story
 				grid-column: 8 / span 5
 				
-			&#statistics-without-tears
-				grid-column: 2 / span 4
+			&#prose-poem
+				grid-column: 3 / span 5
 				margin-top: "calc(%s * -0.5)" % col
+				
+			&#statistics-without-tears
+				grid-column: 9 / span 4
 				
 			&#the-language-of-cities
 				grid-column: 2 / span 4
-				margin-top: "calc(%s * -0.5)" % col
 				
 			&#b-is-for-bauhaus
 				grid-column: 8 / span 4
 				
 			&#shakespeares-sonnets
-				grid-column: 8 / span 4
+				grid-column: 5 / span 4
 				
 	figcaption
 		margin-top: 0.5em

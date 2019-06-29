@@ -513,8 +513,23 @@ nav#prev-and-next a {
   grid-column: 2/span 10;
   margin: 3em 0;
 }
+#home figure > a {
+  border-bottom: none;
+}
 #home figure:first-of-type {
   margin-top: 0;
+}
+#home figure.demy img {
+  max-height: calc(100vh - 6em);
+}
+#home figure.b-format img {
+  max-height: calc(100vh - 9em);
+}
+#home figure.book img {
+  filter: drop-shadow(0.8em 0.8em 0.6em rgba(22,24,26,0.5));
+}
+#home figure.vinyl img {
+  filter: drop-shadow(0.2em 0.2em 0.2em rgba(22,24,26,0.5));
 }
 #home figure#persistence-of-sound {
   grid-column: 1/span 12;
@@ -585,19 +600,21 @@ nav#prev-and-next a {
   #home figure#contemporary-british-short-story {
     grid-column: 8/span 5;
   }
-  #home figure#statistics-without-tears {
-    grid-column: 2/span 4;
+  #home figure#prose-poem {
+    grid-column: 3/span 5;
     margin-top: calc(calc((100vw - 13em) / 12) * -0.5);
+  }
+  #home figure#statistics-without-tears {
+    grid-column: 9/span 4;
   }
   #home figure#the-language-of-cities {
     grid-column: 2/span 4;
-    margin-top: calc(calc((100vw - 13em) / 12) * -0.5);
   }
   #home figure#b-is-for-bauhaus {
     grid-column: 8/span 4;
   }
   #home figure#shakespeares-sonnets {
-    grid-column: 8/span 4;
+    grid-column: 5/span 4;
   }
 }
 #home figcaption {
@@ -881,6 +898,9 @@ body.book figure.front-and-back img {
     max-width: calc(50% - 0.5em);
     margin-bottom: 0;
   }
+}
+body.book figure.book img {
+  filter: drop-shadow(0.8em 0.8em 0.6em rgba(22,24,26,0.5));
 }
 body.book figcaption {
   grid-column: 1/span 12;

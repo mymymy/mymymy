@@ -77,8 +77,23 @@ square()
   margin: 3em 0;
 square()
 }
+#home figure > a {
+  border-bottom: none;
+}
 #home figure:first-of-type {
   margin-top: 0;
+}
+#home figure.demy img {
+  max-height: calc(100vh - 6em);
+}
+#home figure.b-format img {
+  max-height: calc(100vh - 9em);
+}
+#home figure.book img {
+  filter: drop-shadow(0.8em 0.8em 0.6em rgba(0,0,0,0.5));
+}
+#home figure.vinyl img {
+  filter: drop-shadow(0.2em 0.2em 0.2em rgba(0,0,0,0.5));
 }
 #home figure#persistence-of-sound {
   grid-column: 1/span 12;
