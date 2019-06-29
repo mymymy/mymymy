@@ -1,6 +1,7 @@
 html,
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 body {
   display: grid;
@@ -81,12 +82,12 @@ body.book header {
 body.book figure {
   grid-column: 1/span 12;
   grid-row: 2/span 1;
-  overflow-x: scroll;
-  overflow-y: visible;
+  overflow-x: visible;
   text-align: center;
   align-items: flex-end;
   margin-left: auto;
   margin-right: auto;
+  transition: all 0.3s ease;
 landscape()
 wide()
 high()
@@ -105,6 +106,34 @@ wide()
 }
 body.book figure.book img {
   filter: drop-shadow(0.8em 0.8em 0.6em rgba(0,0,0,0.5));
+}
+body.book #dots {
+  width: 100%;
+  margin: 1em auto;
+  justify-content: center;
+  position: absolute;
+  bottom: calc(-2em - 12px - 0.6em);
+  left: 0;
+  transition: all 0.3s ease;
+portrait()
+}
+body.book #dots .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  background: rgba(0,0,0,0);
+  border: 2px solid rgba(0,0,0,0.2);
+  margin: 0.3em;
+}
+body.book #dots .dot:hover {
+  cursor: pointer;
+}
+body.book #dots .dot.current {
+  background: rgba(0,0,0,0.2);
+  border: 2px solid rgba(0,0,0,0.05);
+}
+body.book #dots .dot.current:hover {
+  cursor: default;
 }
 body.book figcaption {
   grid-column: 1/span 12;

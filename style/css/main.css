@@ -261,6 +261,7 @@ dd {
 html,
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 body {
   display: grid;
@@ -386,6 +387,7 @@ nav#prev-and-next a {
 html,
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 body {
   display: grid;
@@ -666,6 +668,7 @@ nav#prev-and-next a {
 html,
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 body {
   display: grid;
@@ -802,8 +805,7 @@ body.book header {
 body.book figure {
   grid-column: 1/span 12;
   grid-row: 2/span 1;
-  overflow-x: scroll;
-  overflow-y: visible;
+  overflow-x: visible;
   text-align: center;
   display: flex;
   flex-wrap: nowrap;
@@ -811,6 +813,7 @@ body.book figure {
   align-items: flex-end;
   margin-left: auto;
   margin-right: auto;
+  transition: all 0.3s ease;
 }
 @media (min-aspect-ratio: 105/100) and (min-height: 500px) {
   body.book figure {
@@ -850,6 +853,18 @@ body.book figure img {
   body.book figure.front-and-back {
     width: 100vw;
     margin-left: -5vw;
+    position: relative;
+    left: 0;
+    margin-bottom: 2em;
+  }
+  body.book figure.front-and-back.show-front {
+    left: 0;
+  }
+  body.book figure.front-and-back.show-back {
+    left: -87%;
+  }
+  body.book figure.front-and-back.show-back #dots {
+    left: 78.3%;
   }
 }
 @media (min-aspect-ratio: 105/100) and (min-height: 500px) {
@@ -901,6 +916,41 @@ body.book figure.front-and-back img {
 }
 body.book figure.book img {
   filter: drop-shadow(0.8em 0.8em 0.6em rgba(22,24,26,0.5));
+}
+body.book #dots {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  margin: 1em auto;
+  justify-content: center;
+  position: absolute;
+  bottom: calc(-2em - 12px - 0.6em);
+  left: 0;
+  transition: all 0.3s ease;
+}
+@media (min-aspect-ratio: 6/10) {
+  body.book #dots {
+    display: none;
+  }
+}
+body.book #dots .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  background: rgba(22,24,26,0);
+  border: 2px solid rgba(22,24,26,0.2);
+  margin: 0.3em;
+}
+body.book #dots .dot:hover {
+  cursor: pointer;
+}
+body.book #dots .dot.current {
+  background: rgba(22,24,26,0.2);
+  border: 2px solid rgba(22,24,26,0.05);
+}
+body.book #dots .dot.current:hover {
+  cursor: default;
 }
 body.book figcaption {
   grid-column: 1/span 12;

@@ -13,13 +13,13 @@ body.book
 	figure
 		grid-column: 1 / span 12
 		grid-row: 2 / span 1
-		overflow-x: scroll
-		overflow-y: visible
+		overflow-x: visible
 		text-align: center
 		flexRow()
 		align-items: flex-end
 		margin-left: auto
 		margin-right: auto
+		transition: all 0.3s ease
 		
 		+landscape()
 			grid-column: 6 / span 7
@@ -50,6 +50,18 @@ body.book
 			+tall()
 				width: 100vw
 				margin-left: -5vw // based on body padding
+				position: relative
+				left: 0
+				margin-bottom: 2em
+				
+				&.show-front
+					left: 0
+				
+				&.show-back
+					left: -87%
+					
+					#dots
+						left: 78.3%
 				
 			+landscape()
 				grid-column: 6 / span 7
@@ -87,6 +99,37 @@ body.book
 		&.book
 			img
 				filter: drop-shadow(0.8em 0.8em 0.6em rgba(black, 0.5))
+				
+	#dots
+		flexRow()
+		width: 100%
+		margin: 1em auto
+		justify-content: center
+		position: absolute
+		bottom: calc(-2em - 12px - 0.6em)
+		left: 0
+		transition: all 0.3s ease
+		
+		+portrait()
+			display: none
+		
+		.dot
+			width: 9px
+			height: 9px
+			border-radius: 100%
+			background: rgba(black, 0)
+			border: 2px solid rgba(black, 0.2)
+			margin: 0.3em
+			
+			&:hover
+				cursor: pointer
+			
+			&.current
+				background: rgba(black, 0.2)
+				border: 2px solid rgba(black, 0.05)
+				
+				&:hover
+					cursor: default
 			
 	figcaption
 		grid-column: 1 / span 12
