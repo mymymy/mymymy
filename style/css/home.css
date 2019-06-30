@@ -99,10 +99,24 @@ square()
 #home figure.vinyl img {
   filter: drop-shadow(0.2em 0.2em 0.2em rgba(0,0,0,0.5));
 }
+#home figure.website {
+  grid-column: 1/span 12;
+portrait()
+}
 #home figure.website video {
   width: 100%;
   height: auto;
   max-width: 100%;
+  min-height: 360px;
+  max-height: calc(100vh - 8em);
+  border-radius: 5px;
+  object-fit: cover;
+}
+#home figure.website iframe {
+  width: 100%;
+  height: 70vh;
+  max-width: 100%;
+  min-height: 360px;
   max-height: calc(100vh - 8em);
   border-radius: 5px;
   object-fit: cover;
@@ -142,7 +156,7 @@ square()
 square()
 }
 #home figcaption {
-  margin-top: 0.5em;
+  margin-top: 1em;
   font-size: 0.8em;
   max-width: 28em;
 }

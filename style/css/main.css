@@ -542,10 +542,28 @@ nav#prev-and-next a {
 #home figure.vinyl img {
   filter: drop-shadow(0.2em 0.2em 0.2em rgba(22,24,26,0.5));
 }
+#home figure.website {
+  grid-column: 1/span 12;
+}
+@media (min-aspect-ratio: 6/10) {
+  #home figure.website {
+    grid-column: 2/span 10;
+  }
+}
 #home figure.website video {
   width: 100%;
   height: auto;
   max-width: 100%;
+  min-height: 360px;
+  max-height: calc(100vh - 8em);
+  border-radius: 5px;
+  object-fit: cover;
+}
+#home figure.website iframe {
+  width: 100%;
+  height: 70vh;
+  max-width: 100%;
+  min-height: 360px;
   max-height: calc(100vh - 8em);
   border-radius: 5px;
   object-fit: cover;
@@ -620,11 +638,11 @@ nav#prev-and-next a {
     grid-column: 8/span 5;
   }
   #home figure#prose-poem {
-    grid-column: 3/span 5;
+    grid-column: 2/span 5;
     margin-top: calc(calc((100vw - 13em) / 12) * -0.5);
   }
   #home figure#statistics-without-tears {
-    grid-column: 9/span 4;
+    grid-column: 8/span 4;
   }
   #home figure#the-language-of-cities {
     grid-column: 2/span 4;
@@ -637,7 +655,7 @@ nav#prev-and-next a {
   }
 }
 #home figcaption {
-  margin-top: 0.5em;
+  margin-top: 1em;
   font-size: 0.8em;
   max-width: 28em;
 }
