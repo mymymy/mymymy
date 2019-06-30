@@ -257,6 +257,13 @@ ol + dl,
 dl + dl {
   margin-top: 1em;
 }
+p + h1,
+p + h2,
+p + h3,
+p + h4,
+p + h5 {
+  margin-top: 1em;
+}
 li,
 dd {
   margin-bottom: 0.2em;
@@ -862,7 +869,7 @@ body.book figure {
     margin-right: 0;
   }
 }
-@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
   body.book figure {
     min-height: calc(100vh - 7.8em);
     align-items: flex-end;
@@ -913,7 +920,7 @@ body.book figure img {
     flex-direction: column;
   }
 }
-@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
   body.book figure.front-and-back {
     grid-column: 5/span 8;
     display: flex;
@@ -946,7 +953,7 @@ body.book figure.front-and-back img {
     margin-bottom: 0;
   }
 }
-@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
   body.book figure.front-and-back img {
     max-width: calc(50% - 0.5em);
     margin-bottom: 0;
@@ -1014,7 +1021,7 @@ body.book figcaption {
     align-self: flex-end;
   }
 }
-@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
   body.book figcaption {
     grid-column: 1/span 12;
     align-items: end;
@@ -1036,7 +1043,7 @@ body.book figcaption .caption {
     grid-column: 1/span 12;
   }
 }
-@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
   body.book figcaption .caption {
     grid-column: 1/span 4;
   }
@@ -1102,7 +1109,7 @@ body.book aside {
     align-items: flex-end;
   }
 }
-@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
   body.book aside {
     grid-column: 12/span 1;
     display: flex;
@@ -1122,7 +1129,7 @@ body.book aside figure {
   margin-left: 0;
   min-height: unset;
 }
-@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
   body.book aside .image,
   body.book aside .images,
   body.book aside figure {
@@ -1162,7 +1169,7 @@ body.book aside h4 {
     align-self: start;
   }
 }
-@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
   body.book figure.front-and-back + figcaption {
     align-self: end;
   }
@@ -1181,7 +1188,7 @@ body.book figure.front-and-back + figcaption .caption {
     grid-column: 1/span 12;
   }
 }
-@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
   body.book figure.front-and-back + figcaption .caption {
     grid-column: 1/span 4;
     margin-right: 3em;
@@ -1204,7 +1211,7 @@ body.book figure.front-and-back + figcaption aside {
     align-items: flex-start;
   }
 }
-@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
   body.book figure.front-and-back + figcaption aside {
     grid-column: 1/span 4;
     display: flex;
@@ -1246,7 +1253,7 @@ body.book figure.front-and-back + figcaption aside figure {
     align-items: flex-end;
   }
 }
-@media (min-aspect-ratio: 13/9) and (min-height: 500px) {
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
   body.book figure.front-and-back + figcaption aside.two {
     grid-column: 1/span 4;
     display: flex;
