@@ -87,17 +87,25 @@ square()
 #home figure:first-of-type {
   margin-top: 0;
 }
-#home figure.demy img {
-  max-height: calc(100vh - 6em);
-}
-#home figure.b-format img {
-  max-height: calc(100vh - 9em);
-}
 #home figure.book img {
   filter: drop-shadow(0.8em 0.8em 0.6em rgba(0,0,0,0.5));
 }
+#home figure.book.demy img {
+  max-height: calc(100vh - 6em);
+}
+#home figure.book.b-format img {
+  max-height: calc(100vh - 9em);
+}
 #home figure.vinyl img {
   filter: drop-shadow(0.2em 0.2em 0.2em rgba(0,0,0,0.5));
+}
+#home figure.website video {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100vh - 8em);
+  border-radius: 5px;
+  object-fit: cover;
 }
 #home figure#persistence-of-sound {
   grid-column: 1/span 12;

@@ -12,22 +12,31 @@
 		
 		&:first-of-type
 			margin-top: 0
-			
-		&.demy
-			img
-				max-height: calc(100vh - 6em)
-				
-		&.b-format
-			img
-				max-height: calc(100vh - 9em)
 				
 		&.book
 			img
 				filter: drop-shadow(0.8em 0.8em 0.6em rgba(black, 0.5))
 				
+			&.demy
+				img
+					max-height: calc(100vh - 6em)
+					
+			&.b-format
+				img
+					max-height: calc(100vh - 9em)
+				
 		&.vinyl
 			img
 				filter: drop-shadow(0.2em 0.2em 0.2em rgba(black, 0.5))
+				
+		&.website
+			video
+				width: 100%
+				height: auto
+				max-width: 100%
+				max-height: calc(100vh - 8em)
+				border-radius: 5px
+				object-fit: cover
 		
 		&#persistence-of-sound
 			grid-column: 1 / span 12
@@ -105,4 +114,7 @@
 		
 	.feature figcaption
 		font-size: 1em
+
+
+
 		
