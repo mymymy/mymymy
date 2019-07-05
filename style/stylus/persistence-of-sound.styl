@@ -254,12 +254,18 @@
 		align-self: end
 		margin-top: 2em
 		margin-bottom: 2em
+		font-size: 1em
 		
 		+landscape()
 			grid-column: 1 / span 4
 			grid-row: 6 / span 1
 			margin-top: 0
 			max-width: 13em
+			
+	#logo
+		grid-column: 1 / span 12
+		grid-12()
+		margin-top: 5em
 	
 	#logo-one-line
 		display: none
@@ -278,15 +284,17 @@
 			display: none
 
 	#logo-text
-		grid-column: 1 / span 12
+		grid-column: 3 / span 8
+		font-size: 1em
 		
 		+landscape()
 			grid-column: 1 / span 4
-			max-width: 13em
+			max-width: 18em
 
 	#videos
+		grid-column: 1 / span 12
 		grid-12()
-		margin-top: 5em
+		margin-top: 15em
 		grid-template-rows: 3em 3em auto
 		
 		#video-the-eccentric-press
@@ -320,6 +328,83 @@
 			
 	#videos-text
 		grid-column: 1 / span 12
+		
+	#website
+		grid-column: 1 / span 12
+		grid-12()
+		margin-top: 5em
+		
+	.website
+		border-radius: 10px
+		filter: drop-shadow(0 0 0.2em rgba(black, 0.3))
+		
+		&:before
+			content: 'hi'
+		
+	.slide
+		grid-column: 1 / span 12
+		grid-12()
+		margin-top: 5em
+			
+	#website-one
+		grid-column: 2 / span 11
+		grid-row: 2 / span 8
+				
+	#website-two
+		grid-column: 1 / span 3
+		grid-row: 1 / span 8
+		
+	#website-three
+		grid-column: 1 / span 11
+		grid-row: 1 / span 8
+	
+	#website-four
+		grid-column: 10 / span 3
+		grid-row: 2 / span 8
+		align-self: end
+		
+	#website-text
+		grid-column: 1 / span 2
+		grid-row: 1 / span 8
+		align-self: end
+		font-size: 1em
+		
+	#website-five
+		grid-column: 4 / span 3
+		grid-row: 1 / span 8
+		
+	#website-six
+		grid-column: 7 / span 3
+		grid-row: 2 / span 8
+		
+	#website-seven
+		grid-column: 10 / span 3
+		grid-row: 3 / span 8
+		
+	#website-eight
+		grid-column: 1 / span 11
+		grid-row: 1 / span 8
+		
+	#website-nine
+		grid-column: 10 / span 3
+		grid-row: 7 / span 3
+
+	#download-cards
+		grid-column: 1 / span 12
+		grid-12()
+		margin: 14em 0
+		
+		img
+			grid-column: 5 / span 8
+			grid-row: 1 / span 1
+			max-width: 20em
+			transform: rotate(5deg)
+		
+	#download-card-text
+		grid-column: 1 / span 3
+		grid-row: 1 / span 1
+		max-width: none
+		
 
 
 
