@@ -63,22 +63,22 @@
 		<p id="intro-two">Originally commissioned to create a logo and three record sleeves, we soon built a strong and trusting client–designer partnership which led to art directing every aspect of the new label. From the big – designing and building the website and online shop – to the small – download codes, press releases, GIFs – every detail was designed to create a bold, distinctive and instantly recognisable visual identity.</p>
 	</div>
 
-	<figure id="record-cover-the-eccentric-press" class="not-carousel">
+	<figure id="record-cover-the-eccentric-press" class="record-cover">
 		<img class="record-cover front" src="./images/covers/the-eccentric-press-front-cover.jpg">
-		<img class="record-cover back" src="./images/covers/the-eccentric-press-front-cover.jpg">
+		<img class="record-cover back" src="./images/covers/the-eccentric-press-back-cover.jpg">
 		<figcaption><em>The Eccentric Press</em> by&nbsp;Iain&nbsp;Chambers</figcaption>
 	</figure>
-	<figure id="record-cover-factitious-airs" class="not-carousel">
+	<figure id="record-cover-factitious-airs" class="record-cover">
 		<img class="record-cover front" src="./images/covers/factitious-airs-front-cover.jpg">
-		<img class="record-cover back" src="./images/covers/factitious-airs-front-cover.jpg">
+		<img class="record-cover back" src="./images/covers/factitious-airs-back-cover.jpg">
 		<figcaption><em>Factitious Airs (Electronic Music)</em> by&nbsp;Robert&nbsp;Worby</figcaption>
 	</figure>
 	<figure id="vinyl-factitious-airs">
-		<img id="vinyl-factitious-airs" src="./images/vinyl/factitious-airs-vinyl.gif">
+		<img class="vinyl" id="vinyl-factitious-airs" src="./images/vinyl/factitious-airs-vinyl.gif">
 	</figure>
-	<figure id="record-cover-thames" class="not-carousel">
+	<figure id="record-cover-thames" class="record-cover">
 		<img class="record-cover front" src="./images/covers/thames-front-cover.jpg">
-		<img class="record-cover back" src="./images/covers/thames-front-cover.jpg">
+		<img class="record-cover back" src="./images/covers/thames-back-cover.jpg">
 		<figcaption><em>Thames</em> by&nbsp;The&nbsp;London Sound&nbsp;Survey</figcaption>
 	</figure>
 
@@ -125,24 +125,40 @@
 
 	<div id="website">
 		<!-- <div id="slide-1" class="slide">
-			<img class="website" id="website-one" src="./images/website/website-homepage-desktop-records.png">
-			<img class="website" id="website-two" src="./images/website/website-homepage-mobile-intro-02.png">
+			<img class="website desktop" id="website-one" src="./images/website/website-homepage-desktop-records.png">
+			<img class="website mobile" id="website-two" src="./images/website/website-homepage-mobile-intro-02.png">
 		</div> -->
 		<div id="slide-2" class="slide">
-			<img class="website" id="website-three" src="./images/website/website-the-eccentric-press-desktop-intro.png">
-			<img class="website" id="website-four" src="./images/website/website-factitious-airs-mobile-intro.png">
+			<img class="website desktop" id="website-three" src="./images/website/website-the-eccentric-press-desktop-intro.png">
+			<img class="website mobile" id="website-four" src="./images/website/website-factitious-airs-mobile-intro.png">
+		</div>
+		<div id="website-carousel">
+			<div id="the-carousel" class="position-1">
+				<img class="website first mobile" id="website-carousel-one" src="./images/website/website-thames-mobile-intro.png">
+				<img class="website mobile" id="website-carousel-two" src="./images/website/website-thames-mobile-tracklist.png">
+				<img class="website mobile" id="website-carousel-three" src="./images/website/website-thames-mobile-buying-options.png">
+			</div>
+			<div id="dots">
+				<div class="dot current" id="dot-1"></div>
+				<div class="dot" id="dot-2"></div>
+				<div class="dot" id="dot-3"></div>
+			</div>
+			<div id="website-text">
+				<h2>Website</h2>
+				<p>Clear and simple, the website has nothing more than is needed. Music samples and liner notes for each album, and a seamless buying experience.</p>
+			</div>
 		</div>
 		<div id="slide-3" class="slide">
 			<div id="website-text">
 				<h2>Website</h2>
 				<p>Clear and simple, the website has nothing more than is needed. Music samples and liner notes for each album, and a seamless buying experience.</p>
 			</div>
-			<img class="website" id="website-five" src="./images/website/website-factitious-airs-mobile-intro.png">
-			<img class="website" id="website-six" src="./images/website/website-factitious-airs-mobile-tracklist.png">
-			<img class="website" id="website-seven" src="./images/website/website-thames-mobile-buying-options.png">
+			<img class="website mobile" id="website-five" src="./images/website/website-thames-mobile-intro.png">
+			<img class="website mobile" id="website-six" src="./images/website/website-thames-mobile-tracklist.png">
+			<img class="website mobile" id="website-seven" src="./images/website/website-thames-mobile-buying-options.png">
 		</div>
 		<div id="slide-4" class="slide">
-			<img class="website" id="website-eight" src="./images/website/website-bundle-desktop-intro.png">
+			<img class="website desktop" id="website-eight" src="./images/website/website-bundle-desktop-intro.png">
 			<img class="website" id="website-nine" src="./images/website/website-bundle-offer.png">
 		</div>
 	</div>
@@ -151,7 +167,7 @@
 		<img src="./images/download-cards/download-card-factitious-airs.jpg">
 		<figcaption id="download-card-text">
 			<h2>Download Cards</h2>
-			<p>Tucked inside each record sleeve, these download cards perform two functions: the unique code allows the reader to download the digital files for their record, and secondly, it can also be used as a discount code to get £5 off their next purchase.</p>
+			<p>Tucked inside each record sleeve, each unique card works as both a <em>download</em> code and a <em>discount</em> code. Simple for the end customer, yet surprisingly complicated behind the scenes, each code has to integrate with two different APIs.</p>
 		</figcaption>
 	</figure>
 
@@ -159,10 +175,10 @@
 
 	<nav id="prev-and-next">
 		<div id="prev">
-			<a href="../the-language-of-cities"><span class="arrow">←</span> The Language of Cities</a>
+			<a href="../../books/shakespeares-sonnets"><span class="arrow">←</span> Shakespeare’s Sonnets</a>
 		</div>
 		<div id="next">
-			<a href="../shakespeares-sonnets">Shakespeare’s Sonnets <span class="arrow">→</span></a>
+			<a href="../../books/japanese-short-stories">Japanese Short Stories <span class="arrow">→</span></a>
 		</div>
 	</nav>
 

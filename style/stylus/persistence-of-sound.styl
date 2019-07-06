@@ -55,9 +55,6 @@
 		
 		+landscape()
 			grid-column: 1 / span 5
-		
-		&.expanded
-			margin-top: 1em
 				
 	a.show-explainer
 		color: rgba(black, 0.4)
@@ -248,6 +245,9 @@
 			+landscape()
 				grid-column: 8 / span 5
 				text-align: right
+				
+	.record-cover, .vinyl
+		filter: drop-shadow(0.1em 0.1em 0.2em rgba(black, 0.3))
 
 	#record-covers-text
 		grid-column: 1 / span 12
@@ -266,6 +266,9 @@
 		grid-column: 1 / span 12
 		grid-12()
 		margin-top: 5em
+		
+		img
+			background: rgba(black, 0.04)
 	
 	#logo-one-line
 		display: none
@@ -284,7 +287,7 @@
 			display: none
 
 	#logo-text
-		grid-column: 3 / span 8
+		grid-column: 1 / span 12
 		font-size: 1em
 		
 		+landscape()
@@ -294,7 +297,7 @@
 	#videos
 		grid-column: 1 / span 12
 		grid-12()
-		margin-top: 15em
+		margin-top: 30vh
 		grid-template-rows: 3em 3em auto
 		
 		#video-the-eccentric-press
@@ -332,19 +335,21 @@
 	#website
 		grid-column: 1 / span 12
 		grid-12()
-		margin-top: 5em
+		margin-top: 30vh
 		
 	.website
-		border-radius: 10px
+		border-radius: 5px
 		filter: drop-shadow(0 0 0.2em rgba(black, 0.3))
 		
-		&:before
-			content: 'hi'
+		+landscape()
+			border-radius: 10px
 		
 	.slide
 		grid-column: 1 / span 12
 		grid-12()
-		margin-top: 5em
+		
+		+landscape()
+			margin-top: 5em
 			
 	#website-one
 		grid-column: 2 / span 11
@@ -364,46 +369,169 @@
 		align-self: end
 		
 	#website-text
-		grid-column: 1 / span 2
-		grid-row: 1 / span 8
-		align-self: end
-		font-size: 1em
+		grid-column: 1 / span 12
+		margin-top: 2em
+		
+		+square()
+			margin-top: 0
+
+		+wide()
+			grid-column: 1 / span 3
+			grid-row: 1 / span 8
+			align-self: end
+			font-size: 1em
+			max-width: 11em
 		
 	#website-five
-		grid-column: 4 / span 3
-		grid-row: 1 / span 8
+		grid-column: 2 / span 10
+		
+		+square()
+			grid-column: 1 / span 4
+			grid-row: 1 / span 8
+
+		+wide()
+			grid-column: 4 / span 3
 		
 	#website-six
-		grid-column: 7 / span 3
-		grid-row: 2 / span 8
+		grid-column: 2 / span 10
+		
+		+square()
+			grid-column: 5 / span 4
+			grid-row: 2 / span 8
+			
+		+wide()
+			grid-column: 7 / span 3
 		
 	#website-seven
-		grid-column: 10 / span 3
-		grid-row: 3 / span 8
+		grid-column: 2 / span 10
+		
+		+square()
+			grid-column: 9 / span 4
+			grid-row: 3 / span 8
+
+		+wide()
+			grid-column: 10 / span 3
 		
 	#website-eight
 		grid-column: 1 / span 11
 		grid-row: 1 / span 8
 		
 	#website-nine
-		grid-column: 10 / span 3
-		grid-row: 7 / span 3
+			grid-column: 10 / span 3
+			grid-row: 7 / span 3
+			
+	#slide-3
+		display: none
+		
+		+square()
+			display: grid
+			
+	#slide-4
+		display: none
+		
+		+square()
+			display: grid
+			margin-top: 3em
+			
+	#website-carousel
+		grid-column: 1 / span 12
+		grid-12()
+		margin-top: 5em
+		margin-bottom: 2em
+		
+		+square()
+			display: none
+			
+		.website
+			position: absolute
+			left: 0
+			top: 0
+			
+			&.first
+				position: relative
+			
+		#the-carousel
+			grid-column: 3 / span 8
+			position: relative
+			transition: all 0.3s ease
+			
+			&.position-1
+				left: 0
+				
+			&.position-2
+				left: calc(-100% - 2em)
+				
+			&.position-3
+				left: calc(-200% - 4em)
+			
+		#website-carousel-one
+			left: 0
+			
+		#website-carousel-two
+			left: calc(100% + 2em)
+			
+		#website-carousel-three
+			left: calc(200% + 4em)
+			
+		#dots
+			grid-column: 1 / span 12
+			flexRow()
+			width: 100%
+			margin: 1em auto
+			justify-content: center
+			position: relative
+			transition: all 0.3s ease
+			
+			+portrait()
+				display: none
+			
+			.dot
+				width: 9px
+				height: 9px
+				border-radius: 100%
+				background: rgba(black, 0)
+				border: 2px solid rgba(black, 0.2)
+				margin: 0.3em
+				
+				&:hover
+					cursor: pointer
+				
+				&.current
+					background: rgba(black, 0.2)
+					border: 2px solid rgba(black, 0.05)
+					
+					&:hover
+						cursor: default
 
 	#download-cards
 		grid-column: 1 / span 12
 		grid-12()
-		margin: 14em 0
+		margin: 30vh 0
 		
 		img
-			grid-column: 5 / span 8
-			grid-row: 1 / span 1
-			max-width: 20em
+			grid-column: 2 / span 10
 			transform: rotate(5deg)
-		
+			
+			+square()
+				max-width: 20em
+				margin-left: auto
+				margin-right: auto
+
+			+landscape()
+				grid-column: 6 / span 7
+				grid-row: 1 / span 1
+						
 	#download-card-text
-		grid-column: 1 / span 3
-		grid-row: 1 / span 1
-		max-width: none
+		grid-column: 1 / span 12
+		margin-top: 5em
+		font-size: 1em
+		
+		+landscape()
+			grid-column: 1 / span 4
+			grid-row: 1 / span 1
+			margin-top: 0
+			max-width: none
+			align-self: center
 		
 
 

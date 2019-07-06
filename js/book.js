@@ -7,7 +7,7 @@ $( document ).ready(function() {
     	$("#colophon").fadeIn()
     })
 
-    // Swipe to scroll between images
+    // Carousel
     $(".front-and-back").swipe( {
         //Generic swipe handler for all directions
         swipe:function(event, direction, distance) {
