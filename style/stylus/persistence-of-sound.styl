@@ -307,6 +307,7 @@
 		#video-factitious-airs
 			grid-column: 2 / span 10
 			grid-row: 3 / span 1
+			width: 100%
 			
 		#video-thames
 			grid-column: 3 / span 10
@@ -321,13 +322,8 @@
 		.front
 			z-index: 3
 			
-		#click-to-unmute
-			grid-column: 2 / span 10
-			text-align: right
-			display: inline-block
-			max-width: none
-			margin-top: -0.8em
-			font-style: italic
+		.video iframe
+			width:100%
 			
 	#videos-text
 		grid-column: 1 / span 12
@@ -454,6 +450,7 @@
 			grid-column: 3 / span 8
 			position: relative
 			transition: all 0.3s ease
+			text-align: center
 			
 			&.position-1
 				left: 0
@@ -463,6 +460,9 @@
 				
 			&.position-3
 				left: calc(-200% - 4em)
+				
+			img
+				max-height: calc(100vh - 8em)
 			
 		#website-carousel-one
 			left: 0
@@ -482,7 +482,7 @@
 			position: relative
 			transition: all 0.3s ease
 			
-			+portrait()
+			+square()
 				display: none
 			
 			.dot
@@ -533,7 +533,9 @@
 			max-width: none
 			align-self: center
 		
-
+	.video
+		width: 100%
+		height: "calc( (100vw - 6em - (%s * 2) ) * (9 / 16) )" % col
 
 
 

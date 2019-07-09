@@ -72,4 +72,88 @@ $( document ).ready(function() {
 		$("#the-carousel").removeClass().addClass("position-3")
 	})
 
+	// Vimeo
+	var optionsFactitiousAirs = {
+		url: "https://vimeo.com/337317583",
+		width: 800,
+		portrait: "false",
+		title: "false",
+		byline: "false",
+		transparent: "true",
+		autoplay: "false",
+		autopause: "true",
+	};
+
+	var optionsTheEccentricPress = {
+		url: "https://vimeo.com/337316761",
+		width: 800,
+		portrait: "false",
+		title: "false",
+		byline: "false",
+		transparent: "true",
+		autoplay: "false",
+		autopause: "true",
+	};
+
+	var optionsThames = {
+		url: "https://vimeo.com/337321737",
+		width: 800,
+		portrait: "false",
+		title: "false",
+		byline: "false",
+		transparent: "true",
+		autoplay: "false",
+		autopause: "true",
+	};
+
+	var playerFactitiousAirs = new Vimeo.Player('video-factitious-airs', optionsFactitiousAirs);
+	var playerTheEccentricPress = new Vimeo.Player('video-the-eccentric-press', optionsTheEccentricPress);
+	var playerThames = new Vimeo.Player('video-thames', optionsThames);
+
+	// Video changer
+	$(".video").on("click", function(e) {
+		console.log("click")
+		if ( $(this).hasClass("front") ) {
+			console.log("clicked on front")
+		} else {
+			$(".video.middle").removeClass().addClass("video back")
+			$(".video.front").removeClass().addClass("video middle")
+			$(this).removeClass().addClass("video front")
+			console.log("clicked on not-front")
+		}
+	})
+	playerFactitiousAirs.on('play', function() {
+		if ( !$("#video-factitious-airs").hasClass("front") ) {
+			playerTheEccentricPress.pause()
+			playerThames.pause()
+			$(".video.middle").removeClass().addClass("video back")
+			$(".video.front").removeClass().addClass("video middle")
+			$("#video-factitious-airs").removeClass().addClass("video front")
+		}
+	});
+
+	playerTheEccentricPress.on('play', function() {
+		if ( !$("#video-the-eccentric-press").hasClass("front") ) {
+			$(".video.middle").removeClass().addClass("video back")
+			$(".video.front").removeClass().addClass("video middle")
+			$("#video-the-eccentric-press").removeClass().addClass("video front")
+			playerFactitiousAirs.pause()
+			playerThames.pause()
+		}
+	});
+
+	playerThames.on('play', function() {
+		if ( !$("#video-thames").hasClass("front") ) {
+			playerFactitiousAirs.pause()
+			playerTheEccentricPress.pause()
+			$(".video.middle").removeClass().addClass("video back")
+			$(".video.front").removeClass().addClass("video middle")
+			$("#video-thames").removeClass().addClass("video front")
+		}
+	});
+
+	// $("#video-the-eccentric-press").fitVids()
+	// $("#video-factitious-airs").fitVids()
+	// $("#video-thames").fitVids()
+
 });

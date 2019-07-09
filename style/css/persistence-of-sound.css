@@ -483,6 +483,7 @@ nav#prev-and-next a {
 #persistence-of-sound #videos #video-factitious-airs {
   grid-column: 2/span 10;
   grid-row: 3/span 1;
+  width: 100%;
 }
 #persistence-of-sound #videos #video-thames {
   grid-column: 3/span 10;
@@ -497,13 +498,8 @@ nav#prev-and-next a {
 #persistence-of-sound #videos .front {
   z-index: 3;
 }
-#persistence-of-sound #videos #click-to-unmute {
-  grid-column: 2/span 10;
-  text-align: right;
-  display: inline-block;
-  max-width: none;
-  margin-top: -0.8em;
-  font-style: italic;
+#persistence-of-sound #videos .video iframe {
+  width: 100%;
 }
 #persistence-of-sound #videos-text {
   grid-column: 1/span 12;
@@ -677,6 +673,7 @@ nav#prev-and-next a {
   grid-column: 3/span 8;
   position: relative;
   transition: all 0.3s ease;
+  text-align: center;
 }
 #persistence-of-sound #website-carousel #the-carousel.position-1 {
   left: 0;
@@ -686,6 +683,9 @@ nav#prev-and-next a {
 }
 #persistence-of-sound #website-carousel #the-carousel.position-3 {
   left: calc(-200% - 4em);
+}
+#persistence-of-sound #website-carousel #the-carousel img {
+  max-height: calc(100vh - 8em);
 }
 #persistence-of-sound #website-carousel #website-carousel-one {
   left: 0;
@@ -707,7 +707,7 @@ nav#prev-and-next a {
   position: relative;
   transition: all 0.3s ease;
 }
-@media (min-aspect-ratio: 6/10) {
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #website-carousel #dots {
     display: none;
   }
@@ -772,4 +772,8 @@ nav#prev-and-next a {
     max-width: none;
     align-self: center;
   }
+}
+#persistence-of-sound .video {
+  width: 100%;
+  height: calc( (100vw - 6em - (calc((100vw - 13em) / 12) * 2) ) * (9 / 16) );
 }
