@@ -531,6 +531,11 @@ nav#prev-and-next a {
   width: 100%;
   height: calc( (100vw - 10vw - 20px - (calc((100vw - 13em) / 12) * 2) ) );
 }
+@media (max-width: 400px) {
+  #persistence-of-sound #videos .video iframe {
+    height: 90vw;
+  }
+}
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #videos .video iframe {
     height: calc( (100vw - 10vw - 2em - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
@@ -547,6 +552,12 @@ nav#prev-and-next a {
   height: calc( (100vw - 10vw - 20px - (calc((100vw - 13em) / 12) * 2) ) );
   position: relative;
   transition: all 0.3s ease;
+}
+@media (max-width: 400px) {
+  #persistence-of-sound #video-carousel {
+    grid-column: 1/span 12;
+    height: 90vw;
+  }
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #video-carousel {

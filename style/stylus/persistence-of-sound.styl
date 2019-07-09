@@ -339,6 +339,9 @@
 		.video iframe
 			width: 100%
 			height: "calc( (100vw - 10vw - 20px - (%s * 2) ) )" % col
+			
+			@media(max-width: 400px)
+				height: 90vw
 
 			+square()
 				height: "calc( (100vw - 10vw - 2em - (%s * 2) ) * ( 9 / 16 ) )" % col
@@ -352,6 +355,10 @@
 		height: "calc( (100vw - 10vw - 20px - (%s * 2) ) )" % col
 		position: relative
 		transition: all 0.3s ease
+		
+		@media(max-width: 400px)
+			grid-column: 1 / span 12
+			height: 90vw
 
 		+square()
 			height: "calc( (100vw - 10vw - 2em - (%s * 2) ) * ( 9 / 16 ) )" % col
