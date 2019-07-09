@@ -9,36 +9,37 @@ $( document ).ready(function() {
 
 	// Carousel
 	$(".front-and-back").swipe( { fingers:'all', swipeLeft:swipe1, swipeRight:swipe1, allowPageScroll:"auto"} );
+	console.log("swipe")
 
 	function swipe1(event, direction, distance) {
 		if ( direction == "left" ) {
-				// console.log("swipe left")
-				$(".front-and-back").removeClass("show-front")
-				$(".front-and-back").addClass("show-back")
-				$("#dot-1").removeClass("current")
-				$("#dot-2").addClass("current")
-			} else if (direction == "right") {
-				// console.log("swipe right")
-				$(".front-and-back").removeClass("show-back")
-				$(".front-and-back").addClass("show-front")
-				$("#dot-2").removeClass("current")
-				$("#dot-1").addClass("current")
-			}
-		}
-
-		// Make dots clickable
-		$("#dot-1").on("click", function() {
-			$(".dot").removeClass("current")
-			$("#dot-1").addClass("current")
-			$(".front-and-back").removeClass("show-back")
-			$(".front-and-back").addClass("show-front")
-		})
-
-		$("#dot-2").on("click", function() {
-			$(".dot").removeClass("current")
-			$("#dot-2").addClass("current")
+			console.log("swipe left")
 			$(".front-and-back").removeClass("show-front")
 			$(".front-and-back").addClass("show-back")
-		})
+			$("#dot-1").removeClass("current")
+			$("#dot-2").addClass("current")
+		} else if (direction == "right") {
+			console.log("swipe right")
+			$(".front-and-back").removeClass("show-back")
+			$(".front-and-back").addClass("show-front")
+			$("#dot-2").removeClass("current")
+			$("#dot-1").addClass("current")
+		}
+	}
 
-	};
+	// Make dots clickable
+	$("#dot-1").on("click", function() {
+		$(".dot").removeClass("current")
+		$("#dot-1").addClass("current")
+		$(".front-and-back").removeClass("show-back")
+		$(".front-and-back").addClass("show-front")
+	})
+
+	$("#dot-2").on("click", function() {
+		$(".dot").removeClass("current")
+		$("#dot-2").addClass("current")
+		$(".front-and-back").removeClass("show-front")
+		$(".front-and-back").addClass("show-back")
+	})
+
+});
