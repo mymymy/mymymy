@@ -134,6 +134,20 @@ $( document ).ready(function() {
 		playerFactitiousAirs.pause()
 	})
 
+	// Play next video when current video ends
+	playerTheEccentricPress.on("ended", function() {
+		$(".video-dot").removeClass("current")
+		$("#video-dot-2").addClass("current")
+		$("#video-carousel").removeClass().addClass("position-2")
+		playerFactitiousAirs.play()
+	})
+
+	playerFactitiousAirs.on("ended", function() {
+		$(".video-dot").removeClass("current")
+		$("#video-dot-3").addClass("current")
+		$("#video-carousel").removeClass().addClass("position-3")
+		playerThames.play()
+	})
 
 
 
