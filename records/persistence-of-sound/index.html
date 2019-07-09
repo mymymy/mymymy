@@ -28,7 +28,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script type="text/javascript" src="../../js/touchSwipe.min.js"></script>
 	<script src="https://player.vimeo.com/api/player.js"></script>
-	<script type="text/javascript" src="../../js/fitVids.js"></script>
+	<!-- <script type="text/javascript" src="../../js/fitVids.js"></script> -->
 
 	<!-- My scripts -->
 	<script type="text/javascript" src="../../js/persistence-of-sound.js"></script>
@@ -100,11 +100,15 @@
 	</figure>
 
 	<div id="videos">
-		<div id="video-the-eccentric-press" class="video middle">
+		<div id="video-carousel" class="position-1">
+			<div class="video first" id="video-the-eccentric-press"></div>
+			<div class="video second" id="video-factitious-airs"></div>
+			<div class="video third" id="video-thames"></div>
 		</div>
-		<div id="video-factitious-airs" class="video front">
-		</div>
-		<div id="video-thames" class="video back">
+		<div id="video-dots">
+			<div class="video-dot current" id="video-dot-1"></div>
+			<div class="video-dot" id="video-dot-2"></div>
+			<div class="video-dot" id="video-dot-3"></div>
 		</div>
 
 		<div id="videos-text">

@@ -475,30 +475,68 @@ nav#prev-and-next a {
     grid-gap: 1rem;
   }
 }
-#persistence-of-sound #videos #video-the-eccentric-press {
-  grid-column: 3/span 10;
-}
-#persistence-of-sound #videos #video-factitious-airs {
-  grid-column: 1/span 10;
-}
-#persistence-of-sound #videos #video-thames {
-  grid-column: 2/span 10;
-}
-#persistence-of-sound #videos .back {
-  z-index: 1;
-}
-#persistence-of-sound #videos .middle {
-  z-index: 2;
-}
-#persistence-of-sound #videos .front {
-  z-index: 3;
-}
 #persistence-of-sound #videos .video {
   width: 100%;
-  margin-top: -4em;
+  position: absolute;
+  top: 0;
+}
+#persistence-of-sound #videos .video.first {
+  left: 0;
+}
+#persistence-of-sound #videos .video.second {
+  left: calc(100% + 2em);
+}
+#persistence-of-sound #videos .video.third {
+  left: calc(200% + 4em);
 }
 #persistence-of-sound #videos .video iframe {
   width: 100%;
+  min-height: calc(100vh - 8em);
+}
+#persistence-of-sound #video-carousel {
+  grid-column: 2/span 10;
+  with: 100%;
+  height: calc(100vh - 8em);
+  position: relative;
+  transition: all 0.3s ease;
+}
+#persistence-of-sound #video-carousel.position-1 {
+  left: 0;
+}
+#persistence-of-sound #video-carousel.position-2 {
+  left: calc(-100% - 2em);
+}
+#persistence-of-sound #video-carousel.position-3 {
+  left: calc(-200% - 4em);
+}
+#persistence-of-sound #video-dots {
+  grid-column: 1/span 12;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 100%;
+  margin: 1em auto;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#persistence-of-sound #video-dots .video-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  background: rgba(0,0,0,0);
+  border: 2px solid rgba(0,0,0,0.2);
+  margin: 0.3em;
+}
+#persistence-of-sound #video-dots .video-dot:hover {
+  cursor: pointer;
+}
+#persistence-of-sound #video-dots .video-dot.current {
+  background: rgba(0,0,0,0.2);
+  border: 2px solid rgba(0,0,0,0.05);
+}
+#persistence-of-sound #video-dots .video-dot.current:hover {
+  cursor: default;
 }
 #persistence-of-sound #videos-text {
   grid-column: 1/span 12;
