@@ -298,20 +298,15 @@
 		grid-column: 1 / span 12
 		grid-12()
 		margin-top: 30vh
-		grid-template-rows: 3em 3em auto
 		
 		#video-the-eccentric-press
-			grid-column: 1 / span 10
-			grid-row: 2 / span 1
+			grid-column: 3 / span 10
 			
 		#video-factitious-airs
-			grid-column: 2 / span 10
-			grid-row: 3 / span 1
-			width: 100%
+			grid-column: 1 / span 10
 			
 		#video-thames
-			grid-column: 3 / span 10
-			grid-row: 1 / span 1
+			grid-column: 2 / span 10
 			
 		.back
 			z-index: 1
@@ -322,8 +317,13 @@
 		.front
 			z-index: 3
 			
+		.video
+			width: 100%
+			margin-top: -4em
+			
 		.video iframe
-			width:100%
+			width: 100%
+			// min-height: calc(100vh - 8em)
 			
 	#videos-text
 		grid-column: 1 / span 12
@@ -532,11 +532,6 @@
 			margin-top: 0
 			max-width: none
 			align-self: center
-		
-	.video
-		width: 100%
-		height: "calc( (100vw - 6em - (%s * 2) ) * (9 / 16) )" % col
-
 
 
 			

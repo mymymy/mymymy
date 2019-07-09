@@ -73,8 +73,8 @@ $( document ).ready(function() {
 	})
 
 	// Vimeo
-	var optionsFactitiousAirs = {
-		url: "https://vimeo.com/337317583",
+	var optionsTheEccentricPress = {
+		url: "https://vimeo.com/337316761",
 		width: 800,
 		portrait: "false",
 		title: "false",
@@ -84,8 +84,8 @@ $( document ).ready(function() {
 		autopause: "true",
 	};
 
-	var optionsTheEccentricPress = {
-		url: "https://vimeo.com/337316761",
+	var optionsFactitiousAirs = {
+		url: "https://vimeo.com/337317583",
 		width: 800,
 		portrait: "false",
 		title: "false",
@@ -106,22 +106,35 @@ $( document ).ready(function() {
 		autopause: "true",
 	};
 
-	var playerFactitiousAirs = new Vimeo.Player('video-factitious-airs', optionsFactitiousAirs);
 	var playerTheEccentricPress = new Vimeo.Player('video-the-eccentric-press', optionsTheEccentricPress);
+	var playerFactitiousAirs = new Vimeo.Player('video-factitious-airs', optionsFactitiousAirs);
 	var playerThames = new Vimeo.Player('video-thames', optionsThames);
 
+	// playerTheEccentricPress.ready().then(function() {
+	// 	$("#video-the-eccentric-press").fitVids()
+	// });
+
+	// playerFactitiousAirs.ready().then(function() {
+	// 	$("#video-factitious-airs").fitVids()
+	// });
+
+	// playerThames.ready().then(function() {
+	// 	$("#video-thames").fitVids()
+	// });	
+
 	// Video changer
-	$(".video").on("click", function(e) {
-		console.log("click")
-		if ( $(this).hasClass("front") ) {
-			console.log("clicked on front")
-		} else {
-			$(".video.middle").removeClass().addClass("video back")
-			$(".video.front").removeClass().addClass("video middle")
-			$(this).removeClass().addClass("video front")
-			console.log("clicked on not-front")
-		}
-	})
+	// $(".video").on("click", function(e) {
+	// 	console.log("click")
+	// 	if ( $(this).hasClass("front") ) {
+	// 		console.log("clicked on front")
+	// 	} else {
+	// 		$(".video.middle").removeClass().addClass("video back")
+	// 		$(".video.front").removeClass().addClass("video middle")
+	// 		$(this).removeClass().addClass("video front")
+	// 		console.log("clicked on not-front")
+	// 	}
+	// })
+	
 	playerFactitiousAirs.on('play', function() {
 		if ( !$("#video-factitious-airs").hasClass("front") ) {
 			playerTheEccentricPress.pause()
@@ -152,8 +165,8 @@ $( document ).ready(function() {
 		}
 	});
 
-	// $("#video-the-eccentric-press").fitVids()
-	// $("#video-factitious-airs").fitVids()
-	// $("#video-thames").fitVids()
+	$("#video-the-eccentric-press").fitVids()
+	$("#video-factitious-airs").fitVids()
+	$("#video-thames").fitVids()
 
 });

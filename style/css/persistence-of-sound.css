@@ -469,7 +469,6 @@ nav#prev-and-next a {
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
   margin-top: 30vh;
-  grid-template-rows: 3em 3em auto;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #videos {
@@ -477,17 +476,13 @@ nav#prev-and-next a {
   }
 }
 #persistence-of-sound #videos #video-the-eccentric-press {
-  grid-column: 1/span 10;
-  grid-row: 2/span 1;
+  grid-column: 3/span 10;
 }
 #persistence-of-sound #videos #video-factitious-airs {
-  grid-column: 2/span 10;
-  grid-row: 3/span 1;
-  width: 100%;
+  grid-column: 1/span 10;
 }
 #persistence-of-sound #videos #video-thames {
-  grid-column: 3/span 10;
-  grid-row: 1/span 1;
+  grid-column: 2/span 10;
 }
 #persistence-of-sound #videos .back {
   z-index: 1;
@@ -497,6 +492,10 @@ nav#prev-and-next a {
 }
 #persistence-of-sound #videos .front {
   z-index: 3;
+}
+#persistence-of-sound #videos .video {
+  width: 100%;
+  margin-top: -4em;
 }
 #persistence-of-sound #videos .video iframe {
   width: 100%;
@@ -772,8 +771,4 @@ nav#prev-and-next a {
     max-width: none;
     align-self: center;
   }
-}
-#persistence-of-sound .video {
-  width: 100%;
-  height: calc( (100vw - 6em - (calc((100vw - 13em) / 12) * 2) ) * (9 / 16) );
 }
