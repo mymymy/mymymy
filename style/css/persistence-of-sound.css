@@ -511,7 +511,7 @@ nav#prev-and-next a {
   left: 0;
 }
 #persistence-of-sound #videos .video.second {
-  left: calc(100% + 20px);
+  left: calc(100% + 10px);
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #videos .video.second {
@@ -519,7 +519,7 @@ nav#prev-and-next a {
   }
 }
 #persistence-of-sound #videos .video.third {
-  left: calc(200% + 40px);
+  left: calc(200% + 20px);
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #videos .video.third {
@@ -528,7 +528,7 @@ nav#prev-and-next a {
 }
 #persistence-of-sound #videos .video iframe {
   width: 100%;
-  height: calc( (100vw - 10vw - 20px - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
+  height: calc(90vw * (9 / 16));
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #videos .video iframe {
@@ -541,14 +541,15 @@ nav#prev-and-next a {
   }
 }
 #persistence-of-sound #video-carousel {
-  grid-column: 2/span 10;
+  grid-column: 1/span 12;
   with: 100%;
-  height: calc( (100vw - 10vw - 20px - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
+  height: calc(90vw * (9 / 16));
   position: relative;
   transition: all 0.3s ease;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #video-carousel {
+    grid-column: 2/span 10;
     height: calc( (100vw - 10vw - 2em - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
   }
 }
@@ -561,7 +562,7 @@ nav#prev-and-next a {
   left: 0;
 }
 #persistence-of-sound #video-carousel.position-2 {
-  left: calc(-100% - 20px);
+  left: calc(-100% - 10px);
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #video-carousel.position-2 {
@@ -569,7 +570,7 @@ nav#prev-and-next a {
   }
 }
 #persistence-of-sound #video-carousel.position-3 {
-  left: calc(-200% - 40px);
+  left: calc(-200% - 20px);
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #video-carousel.position-3 {
@@ -757,7 +758,7 @@ nav#prev-and-next a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
-  margin-top: 5em;
+  margin-top: 2em;
   margin-bottom: 2em;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
@@ -768,6 +769,7 @@ nav#prev-and-next a {
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #website-carousel {
     display: none;
+    margin-top: 5em;
   }
 }
 #persistence-of-sound #website-carousel .website {

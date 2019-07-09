@@ -324,20 +324,20 @@
 				left: 0
 				
 			&.second
-				left: calc(100% + 20px)
+				left: calc(100% + 10px)
 
 				+square()
 					left: calc(100% + 2em)
 								
 			&.third
-				left: calc(200% + 40px)
+				left: calc(200% + 20px)
 				
 				+square()
 					left: calc(200% + 4em)
 
 		.video iframe
 			width: 100%
-			height: "calc( (100vw - 10vw - 20px - (%s * 2) ) * ( 9 / 16 ) )" % col
+			height: calc( 90vw * ( 9 / 16 ) )
 
 			+square()
 				height: "calc( (100vw - 10vw - 2em - (%s * 2) ) * ( 9 / 16 ) )" % col
@@ -346,13 +346,14 @@
 				height: "calc( (100vw - 4em - 2em - (%s * 2) ) * ( 9 / 16 ) )" % col
 			
 	#video-carousel
-		grid-column: 2 / span 10
+		grid-column: 1 / span 12
 		with: 100%
-		height: "calc( (100vw - 10vw - 20px - (%s * 2) ) * ( 9 / 16 ) )" % col
+		height: calc( 90vw * ( 9 / 16 ) )
 		position: relative
 		transition: all 0.3s ease
 
 		+square()
+			grid-column: 2 / span 10
 			height: "calc( (100vw - 10vw - 2em - (%s * 2) ) * ( 9 / 16 ) )" % col
 
 		+landscape()
@@ -362,13 +363,13 @@
 			left: 0
 			
 		&.position-2
-			left: calc(-100% - 20px)
+			left: calc(-100% - 10px)
 			
 			+square()
 				left: calc(-100% - 2em)
 			
 		&.position-3
-			left: calc(-200% - 40px)
+			left: calc(-200% - 20px)
 			
 			+square()
 				left: calc(-200% - 4em)
@@ -510,11 +511,12 @@
 	#website-carousel
 		grid-column: 1 / span 12
 		grid-12()
-		margin-top: 5em
+		margin-top: 2em
 		margin-bottom: 2em
 		
 		+square()
 			display: none
+			margin-top: 5em
 			
 		.website
 			position: absolute
