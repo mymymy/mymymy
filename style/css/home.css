@@ -79,6 +79,9 @@ square()
   font-style: italic;
   display: inline-block;
 }
+#home h3 a {
+  border-bottom: none;
+}
 #home figure {
   position: relative;
   grid-column: 2/span 10;
@@ -129,6 +132,9 @@ portrait()
   grid-column: 1/span 12;
   display: block;
 square()
+}
+#home figure#persistence-of-sound a.record {
+  border-bottom: none;
 }
 #home figure#persistence-of-sound .images {
   grid-column: 1/span 12;

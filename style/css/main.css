@@ -268,6 +268,9 @@ li,
 dd {
   margin-bottom: 0.2em;
 }
+.italic {
+  font-style: italic;
+}
 html,
 body {
   width: 100vw;
@@ -530,6 +533,9 @@ nav#prev-and-next a {
   font-style: italic;
   display: inline-block;
 }
+#home h3 a {
+  border-bottom: none;
+}
 #home figure {
   position: relative;
   grid-column: 2/span 10;
@@ -582,6 +588,9 @@ nav#prev-and-next a {
 #home figure#persistence-of-sound {
   grid-column: 1/span 12;
   display: block;
+}
+#home figure#persistence-of-sound a.record {
+  border-bottom: none;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #home figure#persistence-of-sound {
