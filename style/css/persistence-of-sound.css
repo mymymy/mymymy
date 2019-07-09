@@ -469,6 +469,7 @@ nav#prev-and-next a {
 #persistence-of-sound #logo-two-line {
   display: block;
   grid-column: 1/span 12;
+  margin-bottom: 1em;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #logo-two-line {
@@ -528,7 +529,7 @@ nav#prev-and-next a {
 }
 #persistence-of-sound #videos .video iframe {
   width: 100%;
-  height: calc(90vw * (9 / 16));
+  height: calc( (100vw - 10vw - 20px - (calc((100vw - 13em) / 12) * 2) ) );
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #videos .video iframe {
@@ -541,15 +542,14 @@ nav#prev-and-next a {
   }
 }
 #persistence-of-sound #video-carousel {
-  grid-column: 1/span 12;
+  grid-column: 2/span 10;
   with: 100%;
-  height: calc(90vw * (9 / 16));
+  height: calc( (100vw - 10vw - 20px - (calc((100vw - 13em) / 12) * 2) ) );
   position: relative;
   transition: all 0.3s ease;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #video-carousel {
-    grid-column: 2/span 10;
     height: calc( (100vw - 10vw - 2em - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
   }
 }

@@ -44,6 +44,24 @@ $( document ).ready(function() {
 	var playerFactitiousAirs = new Vimeo.Player('video-factitious-airs', optionsFactitiousAirs);
 	var playerThames = new Vimeo.Player('video-thames', optionsThames);
 
+	var pyong = function() {
+		if ( $(window).width() < 800 ) {
+			playerTheEccentricPress.loadVideo(347171066)
+			playerFactitiousAirs.loadVideo(347171621)
+			playerThames.loadVideo(347172128)
+		} else {
+			playerTheEccentricPress.loadVideo(337316761)
+			playerFactitiousAirs.loadVideo(337317583)
+			playerThames.loadVideo(337321737)
+		}
+	}
+
+	pyong()
+
+	$(window).resize(function() {
+		pyong()
+	})
+
 	// Video Carousel
 	$("#video-carousel").swipe( {
 
