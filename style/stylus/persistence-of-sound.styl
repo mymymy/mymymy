@@ -391,7 +391,10 @@
 	#website
 		grid-column: 1 / span 12
 		grid-12()
-		margin-top: 2em
+		margin-top: 7em
+		
+		+landscape()
+			margin-top: 2em
 		
 	.website
 		border-radius: 5px
@@ -566,11 +569,15 @@
 	#download-cards
 		grid-column: 1 / span 12
 		grid-12()
-		margin: 12em 0
+		margin: 7em 0
+
+		+landscape()
+			margin: 12em 0
 		
 		img
 			grid-column: 2 / span 10
 			transform: rotate(5deg)
+			filter: drop-shadow(0.1em 0.1em 0.2em rgba(black, 0.3))
 			
 			+square()
 				max-width: 20em

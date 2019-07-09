@@ -589,11 +589,16 @@ nav#prev-and-next a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
-  margin-top: 2em;
+  margin-top: 7em;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #website {
     grid-gap: 1rem;
+  }
+}
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
+  #persistence-of-sound #website {
+    margin-top: 2em;
   }
 }
 #persistence-of-sound .website {
@@ -815,16 +820,22 @@ nav#prev-and-next a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
-  margin: 12em 0;
+  margin: 7em 0;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #download-cards {
     grid-gap: 1rem;
   }
 }
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
+  #persistence-of-sound #download-cards {
+    margin: 12em 0;
+  }
+}
 #persistence-of-sound #download-cards img {
   grid-column: 2/span 10;
   transform: rotate(5deg);
+  filter: drop-shadow(0.1em 0.1em 0.2em rgba(0,0,0,0.3));
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #download-cards img {
