@@ -279,7 +279,7 @@ body {
   grid-gap: 10px;
   width: 100%;
   padding: 1em 5vw;
-  background: #f8f7f3;
+  background: #fcfbfa;
   color: #16181a;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -408,7 +408,7 @@ body {
   grid-gap: 10px;
   width: 100%;
   padding: 1em 5vw;
-  background: #f8f7f3;
+  background: #fcfbfa;
   color: #16181a;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -525,6 +525,9 @@ nav#prev-and-next a {
 }
 #work-in-progress p {
   max-width: none;
+}
+#home a.find-out-more {
+  font-style: italic;
 }
 #home figure {
   position: relative;
@@ -718,7 +721,7 @@ body {
   grid-gap: 10px;
   width: 100%;
   padding: 1em 5vw;
-  background: #f8f7f3;
+  background: #fcfbfa;
   color: #16181a;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;

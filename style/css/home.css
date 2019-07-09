@@ -75,6 +75,9 @@ square()
 #work-in-progress p {
   max-width: none;
 }
+#home a.find-out-more {
+  font-style: italic;
+}
 #home figure {
   position: relative;
   grid-column: 2/span 10;
