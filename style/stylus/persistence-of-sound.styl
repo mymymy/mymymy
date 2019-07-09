@@ -265,7 +265,7 @@
 	#logo
 		grid-column: 1 / span 12
 		grid-12()
-		margin-top: 5em
+		margin-top: 7em
 		
 		img
 			background: rgba(black, 0.04)
@@ -297,7 +297,7 @@
 	#videos
 		grid-column: 1 / span 12
 		grid-12()
-		margin-top: 30vh
+		margin-top: 7em
 			
 		.video
 			width: 100%
@@ -315,12 +315,12 @@
 
 		.video iframe
 			width: 100%
-			min-height: calc(100vh - 8em)
+			height: "calc( (100vw - 6em - (%s * 2) ) * ( 9 / 16 ) )" % col
 			
 	#video-carousel
 		grid-column: 2 / span 10
 		with: 100%
-		height: calc(100vh - 8em)
+		height: "calc( (100vw - 6em - (%s * 2) ) * ( 9 / 16 ) )" % col
 		position: relative
 		transition: all 0.3s ease
 		
@@ -337,7 +337,7 @@
 		grid-column: 1 / span 12
 		flexRow()
 		width: 100%
-		margin: 1em auto
+		margin-bottom: 1em
 		justify-content: center
 		position: relative
 		transition: all 0.3s ease
@@ -366,7 +366,7 @@
 	#website
 		grid-column: 1 / span 12
 		grid-12()
-		margin-top: 30vh
+		margin-top: 2em
 		
 	.website
 		border-radius: 5px
@@ -541,7 +541,7 @@
 	#download-cards
 		grid-column: 1 / span 12
 		grid-12()
-		margin: 30vh 0
+		margin: 12em 0
 		
 		img
 			grid-column: 2 / span 10

@@ -421,7 +421,7 @@ nav#prev-and-next a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
-  margin-top: 5em;
+  margin-top: 7em;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #logo {
@@ -468,7 +468,7 @@ nav#prev-and-next a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
-  margin-top: 30vh;
+  margin-top: 7em;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #videos {
@@ -491,12 +491,12 @@ nav#prev-and-next a {
 }
 #persistence-of-sound #videos .video iframe {
   width: 100%;
-  min-height: calc(100vh - 8em);
+  height: calc( (100vw - 6em - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
 }
 #persistence-of-sound #video-carousel {
   grid-column: 2/span 10;
   with: 100%;
-  height: calc(100vh - 8em);
+  height: calc( (100vw - 6em - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
   position: relative;
   transition: all 0.3s ease;
 }
@@ -515,7 +515,7 @@ nav#prev-and-next a {
   flex-wrap: nowrap;
   flex-direction: row;
   width: 100%;
-  margin: 1em auto;
+  margin-bottom: 1em;
   justify-content: center;
   position: relative;
   transition: all 0.3s ease;
@@ -546,7 +546,7 @@ nav#prev-and-next a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
-  margin-top: 30vh;
+  margin-top: 2em;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #website {
@@ -772,7 +772,7 @@ nav#prev-and-next a {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 10px;
-  margin: 30vh 0;
+  margin: 12em 0;
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #persistence-of-sound #download-cards {
