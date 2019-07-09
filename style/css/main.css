@@ -528,6 +528,7 @@ nav#prev-and-next a {
 }
 #home a.find-out-more {
   font-style: italic;
+  display: inline-block;
 }
 #home figure {
   position: relative;
@@ -629,6 +630,7 @@ nav#prev-and-next a {
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) {
   #home figure#persistence-of-sound figcaption {
     grid-column: 1/span 4;
+    margin-right: 1em;
   }
 }
 @media (min-aspect-ratio: 9/10) and (min-height: 500px) and (min-aspect-ratio: 9/10) and (min-height: 500px) {
