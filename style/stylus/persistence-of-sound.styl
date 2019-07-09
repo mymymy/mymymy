@@ -3,6 +3,7 @@
 @import 'flexbox'
 
 #persistence-of-sound
+	overflow: visible
 	
 	+wide()
 		max-width: 90%
@@ -308,30 +309,54 @@
 				left: 0
 				
 			&.second
-				left: calc(100% + 2em)
-			
+				left: calc(100% + 20px)
+
+				+square()
+					left: calc(100% + 2em)
+								
 			&.third
-				left: calc(200% + 4em)
+				left: calc(200% + 40px)
+				
+				+square()
+					left: calc(200% + 4em)
 
 		.video iframe
 			width: 100%
-			height: "calc( (100vw - 6em - (%s * 2) ) * ( 9 / 16 ) )" % col
+			height: "calc( (100vw - 10vw - 20px - (%s * 2) ) * ( 9 / 16 ) )" % col
+
+			+square()
+				height: "calc( (100vw - 10vw - 2em - (%s * 2) ) * ( 9 / 16 ) )" % col
+
+			+landscape()
+				height: "calc( (100vw - 4em - 2em - (%s * 2) ) * ( 9 / 16 ) )" % col
 			
 	#video-carousel
 		grid-column: 2 / span 10
 		with: 100%
-		height: "calc( (100vw - 6em - (%s * 2) ) * ( 9 / 16 ) )" % col
+		height: "calc( (100vw - 10vw - 20px - (%s * 2) ) * ( 9 / 16 ) )" % col
 		position: relative
 		transition: all 0.3s ease
+
+		+square()
+			height: "calc( (100vw - 10vw - 2em - (%s * 2) ) * ( 9 / 16 ) )" % col
+
+		+landscape()
+			height: "calc( (100vw - 4em - 2em - (%s * 2) ) * ( 9 / 16 ) )" % col
 		
 		&.position-1
 			left: 0
 			
 		&.position-2
-			left: calc(-100% - 2em)
+			left: calc(-100% - 20px)
+			
+			+square()
+				left: calc(-100% - 2em)
 			
 		&.position-3
-			left: calc(-200% - 4em)
+			left: calc(-200% - 40px)
+			
+			+square()
+				left: calc(-200% - 4em)
 			
 	#video-dots
 		grid-column: 1 / span 12

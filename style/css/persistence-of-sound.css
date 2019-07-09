@@ -119,6 +119,9 @@ nav#prev-and-next a {
 #work-in-progress p {
   max-width: none;
 }
+#persistence-of-sound {
+  overflow: visible;
+}
 @media (min-aspect-ratio: 3/2) and (min-height: 500px) {
   #persistence-of-sound {
     max-width: 90%;
@@ -484,30 +487,70 @@ nav#prev-and-next a {
   left: 0;
 }
 #persistence-of-sound #videos .video.second {
-  left: calc(100% + 2em);
+  left: calc(100% + 20px);
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #persistence-of-sound #videos .video.second {
+    left: calc(100% + 2em);
+  }
 }
 #persistence-of-sound #videos .video.third {
-  left: calc(200% + 4em);
+  left: calc(200% + 40px);
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #persistence-of-sound #videos .video.third {
+    left: calc(200% + 4em);
+  }
 }
 #persistence-of-sound #videos .video iframe {
   width: 100%;
-  height: calc( (100vw - 6em - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
+  height: calc( (100vw - 10vw - 20px - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #persistence-of-sound #videos .video iframe {
+    height: calc( (100vw - 10vw - 2em - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
+  }
+}
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
+  #persistence-of-sound #videos .video iframe {
+    height: calc( (100vw - 4em - 2em - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
+  }
 }
 #persistence-of-sound #video-carousel {
   grid-column: 2/span 10;
   with: 100%;
-  height: calc( (100vw - 6em - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
+  height: calc( (100vw - 10vw - 20px - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
   position: relative;
   transition: all 0.3s ease;
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #persistence-of-sound #video-carousel {
+    height: calc( (100vw - 10vw - 2em - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
+  }
+}
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
+  #persistence-of-sound #video-carousel {
+    height: calc( (100vw - 4em - 2em - (calc((100vw - 13em) / 12) * 2) ) * ( 9 / 16 ) );
+  }
 }
 #persistence-of-sound #video-carousel.position-1 {
   left: 0;
 }
 #persistence-of-sound #video-carousel.position-2 {
-  left: calc(-100% - 2em);
+  left: calc(-100% - 20px);
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #persistence-of-sound #video-carousel.position-2 {
+    left: calc(-100% - 2em);
+  }
 }
 #persistence-of-sound #video-carousel.position-3 {
-  left: calc(-200% - 4em);
+  left: calc(-200% - 40px);
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #persistence-of-sound #video-carousel.position-3 {
+    left: calc(-200% - 4em);
+  }
 }
 #persistence-of-sound #video-dots {
   grid-column: 1/span 12;
