@@ -63,52 +63,49 @@ $( document ).ready(function() {
 	})
 
 	// Video Carousel
-	$("#video-carousel").swipe( {
+	$("#video-carousel").swipe( { fingers:'all', swipeLeft:swipe1, swipeRight:swipe1, allowPageScroll:"auto"} );
 
-		//Generic swipe handler for all directions
-		swipe:function(event, direction, distance) {
+	function swipe1(event, direction, distance) {
 
-			if ( $(this).hasClass("position-1") ) {
+		if ( $("#video-carousel").hasClass("position-1") ) {
 
-				console.log("position-1")
+			console.log("position-1")
 
-				if ( direction == "left" ) {
-					console.log("swipe left")
-					$(this).removeClass("position-1").addClass("position-2")
-					console.log("position-2")
-					$("#video-dot-1").removeClass("current")
-					$("#video-dot-2").addClass("current")
-				}
-
-			} else if ( $(this).hasClass("position-2") ) {
-
-				if ( direction == "left" ) {
-					console.log("swipe left")
-					$(this).removeClass("position-2").addClass("position-3")
-					console.log("position-3")
-					$("#video-dot-2").removeClass("current")
-					$("#video-dot-3").addClass("current")
-				} else if ( direction == "right" ) {
-					console.log("swipe right")
-					$(this).removeClass("position-2").addClass("position-1")
-					console.log("position-1")
-					$("#video-dot-2").removeClass("current")
-					$("#video-dot-1").addClass("current")
-				}
-
-			} else if ( $(this).hasClass("position-3") ) {
-
-				if ( direction == "right" ) {
-					console.log("swipe right")
-					$(this).removeClass("position-3").addClass("position-2")
-					console.log("position-2")
-					$("#video-dot-3").removeClass("current")
-					$("#video-dot-2").addClass("current")
-				}
+			if ( direction == "left" ) {
+				console.log("swipe left")
+				$("#video-carousel").removeClass("position-1").addClass("position-2")
+				console.log("position-2")
+				$("#video-dot-1").removeClass("current")
+				$("#video-dot-2").addClass("current")
 			}
-		},
-		 threshold: 75 // how many px before event is triggered
-		});
+
+		} else if ( $("#video-carousel").hasClass("position-2") ) {
+
+			if ( direction == "left" ) {
+				console.log("swipe left")
+				$("#video-carousel").removeClass("position-2").addClass("position-3")
+				console.log("position-3")
+				$("#video-dot-2").removeClass("current")
+				$("#video-dot-3").addClass("current")
+			} else if ( direction == "right" ) {
+				console.log("swipe right")
+				$("#video-carousel").removeClass("position-2").addClass("position-1")
+				console.log("position-1")
+				$("#video-dot-2").removeClass("current")
+				$("#video-dot-1").addClass("current")
+			}
+
+		} else if ( $("#video-carousel").hasClass("position-3") ) {
+
+			if ( direction == "right" ) {
+				console.log("swipe right")
+				$("#video-carousel").removeClass("position-3").addClass("position-2")
+				console.log("position-2")
+				$("#video-dot-3").removeClass("current")
+				$("#video-dot-2").addClass("current")
+			}
+		}
+	}
 
 	// Make video-dots clickable
 	$("#video-dot-1").on("click", function() {
@@ -171,52 +168,50 @@ $( document ).ready(function() {
 
 
 	// Website Carousel
-	$("#the-carousel").swipe( {
+	$("#the-carousel").swipe( { fingers:'all', swipeLeft:swipe2, swipeRight:swipe2, allowPageScroll:"auto"} );
 
 		//Generic swipe handler for all directions
-		swipe:function(event, direction, distance) {
+		function swipe2(event, direction, distance) {
 
-			if ( $(this).hasClass("position-1") ) {
+			if ( $("#the-carousel").hasClass("position-1") ) {
 
 				console.log("position-1")
 
 				if ( direction == "left" ) {
 					console.log("swipe left")
-					$(this).removeClass("position-1").addClass("position-2")
+					$("#the-carousel").removeClass("position-1").addClass("position-2")
 					console.log("position-2")
 					$("#dot-1").removeClass("current")
 					$("#dot-2").addClass("current")
 				}
 
-			} else if ( $(this).hasClass("position-2") ) {
+			} else if ( $("#the-carousel").hasClass("position-2") ) {
 
 				if ( direction == "left" ) {
 					console.log("swipe left")
-					$(this).removeClass("position-2").addClass("position-3")
+					$("#the-carousel").removeClass("position-2").addClass("position-3")
 					console.log("position-3")
 					$("#dot-2").removeClass("current")
 					$("#dot-3").addClass("current")
 				} else if ( direction == "right" ) {
 					console.log("swipe right")
-					$(this).removeClass("position-2").addClass("position-1")
+					$("#the-carousel").removeClass("position-2").addClass("position-1")
 					console.log("position-1")
 					$("#dot-2").removeClass("current")
 					$("#dot-1").addClass("current")
 				}
 
-			} else if ( $(this).hasClass("position-3") ) {
+			} else if ( $("#the-carousel").hasClass("position-3") ) {
 
 				if ( direction == "right" ) {
 					console.log("swipe right")
-					$(this).removeClass("position-3").addClass("position-2")
+					$("#the-carousel").removeClass("position-3").addClass("position-2")
 					console.log("position-2")
 					$("#dot-3").removeClass("current")
 					$("#dot-2").addClass("current")
 				}
 			}
-		},
-		 threshold: 75 // how many px before event is triggered
-		});
+		}
 
 	// Make dots clickable
 	$("#dot-1").on("click", function() {
