@@ -665,6 +665,9 @@ nav#prev-and-next a {
   #home figure#statistics-without-tears {
     grid-column: 8/span 4;
   }
+  #home figure#monarchs {
+    grid-column: 1/span 12;
+  }
   #home figure#the-language-of-cities {
     grid-column: 2/span 4;
   }
