@@ -3,6 +3,7 @@ html, body
 	overflow-x: hidden
 	
 col = calc((100vw - 13em) / 12)
+colSmall = calc((100vw - 130px) / 12)
 
 grid-12()
 	display: grid
@@ -46,7 +47,11 @@ body
 
 	+landscape()
 		padding: 1em 2em 2em 2em
-	
+			
+	+wide()
+		max-width: 90%
+		margin: 0 auto
+
 	background: white
 	color: black
 	fontSmoothing()

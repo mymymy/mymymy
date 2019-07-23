@@ -27,6 +27,12 @@ body {
     padding: 1em 2em 2em 2em;
   }
 }
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
+  body {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
 header {
   grid-column: 1/span 12;
   display: grid;

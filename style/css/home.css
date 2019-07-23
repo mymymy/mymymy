@@ -12,6 +12,7 @@ square()
   padding: 1em 5vw;
 square()
 landscape()
+wide()
   background: #fff;
   color: #000;
 }
@@ -163,6 +164,18 @@ square()
   grid-column: 1/span 12;
   grid-row: 2/span 1;
   margin-bottom: calc(calc((100vw - 13em) / 12) * 3);
+square()
+}
+#home figure #monarchs-spines {
+  height: calc( (90vw - (2 * calc((100vw - 130px) / 12)) - (2 * 10px)) * 2.436 );
+square()
+}
+#home figure #monarchs-spines img {
+  width: calc( (90vw - (2 * calc((100vw - 130px) / 12)) - (2 * 10px)) * 2.436 );
+  max-width: none;
+  transform: rotate(-90deg) translateY(-244%);
+  transform-origin: top right;
+  filter: drop-shadow(0em 0.6em 0.6em rgba(22,24,26,0.5));
 square()
 }
 #home figcaption {
