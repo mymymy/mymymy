@@ -127,8 +127,8 @@ nav#prev-and-next a {
 }
 #persistence-of-sound {
   display: block;
-  margin: 0;
   padding: 0;
+  overflow-x: visible;
 }
 #persistence-of-sound #body-wrapper {
   display: grid;
