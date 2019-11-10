@@ -10,11 +10,12 @@ body {
 square()
   width: 100%;
   padding: 1em 5vw;
+  background: #fafafa;
 square()
 landscape()
 wide()
-  background: #fff;
-  color: #000;
+  background: #fafafa;
+  color: #16181a;
 }
 header {
   grid-column: 1/span 12;
@@ -45,7 +46,7 @@ figure img {
   }
 }
 .keyline {
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(22,24,26,0.1);
 }
 nav#prev-and-next {
   margin-top: 4em;
@@ -58,7 +59,7 @@ nav#prev-and-next #next {
   max-width: 100%;
   text-align: center;
   padding: 1em 0 1.3em 0;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(22,24,26,0.1);
 square()
 }
 nav#prev-and-next a {
@@ -69,7 +70,7 @@ nav#prev-and-next a {
   margin-top: 1em;
   padding-top: 2em;
   padding-bottom: 2em;
-  border-top: 1px solid #000;
+  border-top: 1px solid #16181a;
   text-align: left;
 square()
 }
@@ -109,7 +110,7 @@ landscape()
 wide()
 }
 body.book figure.book img {
-  filter: drop-shadow(0.8em 0.8em 0.6em rgba(0,0,0,0.5));
+  filter: drop-shadow(0.8em 0.8em 0.6em rgba(22,24,26,0.5));
 }
 body.book #dots {
   width: 100%;
@@ -125,16 +126,16 @@ body.book #dots .dot {
   width: 9px;
   height: 9px;
   border-radius: 100%;
-  background: rgba(0,0,0,0);
-  border: 2px solid rgba(0,0,0,0.2);
+  background: rgba(22,24,26,0);
+  border: 2px solid rgba(22,24,26,0.2);
   margin: 0.3em;
 }
 body.book #dots .dot:hover {
   cursor: pointer;
 }
 body.book #dots .dot.current {
-  background: rgba(0,0,0,0.2);
-  border: 2px solid rgba(0,0,0,0.05);
+  background: rgba(22,24,26,0.2);
+  border: 2px solid rgba(22,24,26,0.05);
 }
 body.book #dots .dot.current:hover {
   cursor: default;

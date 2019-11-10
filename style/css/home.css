@@ -10,11 +10,12 @@ body {
 square()
   width: 100%;
   padding: 1em 5vw;
+  background: #fafafa;
 square()
 landscape()
 wide()
-  background: #fff;
-  color: #000;
+  background: #fafafa;
+  color: #16181a;
 }
 header {
   grid-column: 1/span 12;
@@ -45,7 +46,7 @@ figure img {
   }
 }
 .keyline {
-  border: 1px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(22,24,26,0.1);
 }
 nav#prev-and-next {
   margin-top: 4em;
@@ -58,7 +59,7 @@ nav#prev-and-next #next {
   max-width: 100%;
   text-align: center;
   padding: 1em 0 1.3em 0;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid rgba(22,24,26,0.1);
 square()
 }
 nav#prev-and-next a {
@@ -69,7 +70,7 @@ nav#prev-and-next a {
   margin-top: 1em;
   padding-top: 2em;
   padding-bottom: 2em;
-  border-top: 1px solid #000;
+  border-top: 1px solid #16181a;
   text-align: left;
 square()
 }
@@ -96,7 +97,7 @@ square()
   margin-top: 0;
 }
 #home figure.book img {
-  filter: drop-shadow(0.8em 0.8em 0.6em rgba(0,0,0,0.5));
+  filter: drop-shadow(0.8em 0.8em 0.6em rgba(22,24,26,0.5));
 }
 #home figure.book.demy img {
   max-height: calc(100vh - 6em);
@@ -105,7 +106,7 @@ square()
   max-height: calc(100vh - 9em);
 }
 #home figure.vinyl img {
-  filter: drop-shadow(0.2em 0.2em 0.2em rgba(0,0,0,0.5));
+  filter: drop-shadow(0.2em 0.2em 0.2em rgba(22,24,26,0.5));
 }
 #home figure.website {
   grid-column: 1/span 12;
@@ -165,6 +166,28 @@ square()
   grid-row: 2/span 1;
   margin-bottom: calc(calc((100vw - 13em) / 12) * 3);
 square()
+}
+#home figure#penguin-classics-book {
+  grid-column: 1/span 12;
+  margin-top: 0;
+  margin-bottom: 10em;
+  width: 120%;
+  margin-left: -10%;
+square()
+}
+#home figure#penguin-classics-book img {
+  filter: none;
+  max-width: 100%;
+  max-height: none;
+  width: 97.5%;
+  margin-left: 0.7em;
+wide()
+}
+#home figure#penguin-classics-book figcaption {
+  margin-top: -4vw;
+  margin-left: calc(calc((100vw - 13em) / 12) + 1.8em);
+square()
+wide()
 }
 #home figure #monarchs-spines {
   height: calc( (90vw - (2 * calc((100vw - 130px) / 12)) - (2 * 10px)) * 2.436 );

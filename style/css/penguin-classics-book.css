@@ -1,0 +1,168 @@
+html,
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+body {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  padding: 1em 5vw;
+  background: #fafafa;
+  background: #fafafa;
+  color: #16181a;
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  body {
+    grid-gap: 1rem;
+  }
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  body {
+    padding-bottom: 2em;
+  }
+}
+@media (min-aspect-ratio: 105/100) and (min-height: 500px) {
+  body {
+    padding: 1em 2em 2em 2em;
+  }
+}
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
+  body {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+header {
+  grid-column: 1/span 12;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  align-items: baseline;
+  height: 20vh;
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  header {
+    grid-gap: 1rem;
+  }
+}
+header h1,
+header h2 {
+  grid-column: 1/span 9;
+}
+header h2 a {
+  border-bottom: none;
+}
+header div {
+  grid-column: 10/span 3;
+  text-align: right;
+}
+figure img {
+  max-width: 100%;
+}
+@media (min-height: 500px) {
+  figure img {
+    max-height: calc(100vh - 8em);
+  }
+}
+.keyline {
+  border: 1px solid rgba(22,24,26,0.1);
+}
+nav#prev-and-next {
+  margin-top: 4em;
+  grid-column: 1/span 12;
+  justify-content: space-between;
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next {
+    margin-top: 2em;
+    padding-top: 1.2em;
+    border-top: 1px solid rgba(22,24,26,0.1);
+  }
+}
+nav#prev-and-next #prev,
+nav#prev-and-next #next {
+  max-width: 100%;
+  text-align: center;
+  padding: 1em 0 1.3em 0;
+  border-top: 1px solid rgba(22,24,26,0.1);
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next #prev,
+  nav#prev-and-next #next {
+    border-top: none;
+    padding: 0;
+  }
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next #prev {
+    text-align: left;
+    margin-right: 1em;
+  }
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  nav#prev-and-next #next {
+    text-align: right;
+    margin-left: 1em;
+  }
+}
+nav#prev-and-next a {
+  display: inline;
+}
+#work-in-progress {
+  grid-column: 2/span 10;
+  margin-top: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  border-top: 1px solid #16181a;
+  text-align: left;
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #work-in-progress {
+    text-align: center;
+  }
+}
+#work-in-progress p {
+  max-width: none;
+}
+#penguin-classics-book h1,
+#penguin-classics-book h3,
+#penguin-classics-book h4,
+#penguin-classics-book h5,
+#penguin-classics-book p,
+#penguin-classics-book ul,
+#penguin-classics-book li,
+#penguin-classics-book aside,
+#penguin-classics-book img,
+#penguin-classics-book section,
+#penguin-classics-book video {
+  grid-column: 1/span 12;
+}
+#penguin-classics-book #title {
+  grid-column: 1/span 12;
+}
+#penguin-classics-book img {
+  grid-column: 1/span 12;
+  max-width: 120%;
+  margin: 12vh auto;
+  margin-left: -10%;
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #penguin-classics-book img {
+    max-width: 100%;
+    margin: 2em auto;
+  }
+}
+#penguin-classics-book img#front {
+  width: 180%;
+  max-width: none;
+  margin-left: -40%;
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #penguin-classics-book img#front {
+    width: auto;
+    max-width: 100%;
+    margin: 2em auto;
+  }
+}

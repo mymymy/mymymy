@@ -1,7 +1,6 @@
 @import layout
 
-#home
-	
+#home	
 	a.find-out-more
 		font-style: italic
 		display: inline-block
@@ -143,6 +142,47 @@
 			&#shakespeares-sonnets
 				grid-column: 5 / span 4
 				
+		&#penguin-classics-book 
+			grid-column: 1 / span 12
+			margin-top: 0
+			margin-bottom: 10em
+			
+			width: 120%
+			margin-left: -10%
+			
+			+square()
+				width: 100%
+				margin-left: 0
+			
+			a
+				+wide()
+					grid-12()
+
+			img
+				filter: none
+				max-width: 100%
+				max-height: none
+				width: 97.5%
+				margin-left: 0.7em
+				
+				+wide()
+					width: 100%
+					margin-left: 0
+					grid-column: 1 / span 11
+					
+			figcaption
+				margin-top: -4vw
+				margin-left: "calc(%s + 1.8em)" % col
+				
+				+square()
+					margin-left: "calc(%s + 1.1em)" % col
+				
+				+wide()
+					grid-column: 12 / span 1
+					align-self: end
+					margin-bottom: 6.6vw
+					margin-left: -4vw
+				
 		#monarchs-spines
 			height: "calc( (90vw - (2 * %s) - (2 * 10px)) * 2.436 )" %colSmall
 
@@ -160,7 +200,7 @@
 					width: 100%
 					max-width: 100%
 					transform: none
-					filter: drop-shadow(0.8em 0.8em 0.6em rgba(black, 0.5))					
+					filter: drop-shadow(0.8em 0.8em 0.6em rgba(black, 0.5))				
 				
 	figcaption
 		margin-top: 1em

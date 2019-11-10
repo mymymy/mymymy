@@ -282,7 +282,8 @@ body {
   grid-gap: 10px;
   width: 100%;
   padding: 1em 5vw;
-  background: #fcfbfa;
+  background: #fafafa;
+  background: #fafafa;
   color: #16181a;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -417,7 +418,8 @@ body {
   grid-gap: 10px;
   width: 100%;
   padding: 1em 5vw;
-  background: #fcfbfa;
+  background: #fafafa;
+  background: #fafafa;
   color: #16181a;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -690,6 +692,62 @@ nav#prev-and-next a {
     grid-column: 5/span 4;
   }
 }
+#home figure#penguin-classics-book {
+  grid-column: 1/span 12;
+  margin-top: 0;
+  margin-bottom: 10em;
+  width: 120%;
+  margin-left: -10%;
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #home figure#penguin-classics-book {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
+  #home figure#penguin-classics-book a {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 10px;
+  }
+}
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) and (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #home figure#penguin-classics-book a {
+    grid-gap: 1rem;
+  }
+}
+#home figure#penguin-classics-book img {
+  filter: none;
+  max-width: 100%;
+  max-height: none;
+  width: 97.5%;
+  margin-left: 0.7em;
+}
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
+  #home figure#penguin-classics-book img {
+    width: 100%;
+    margin-left: 0;
+    grid-column: 1/span 11;
+  }
+}
+#home figure#penguin-classics-book figcaption {
+  margin-top: -4vw;
+  margin-left: calc(calc((100vw - 13em) / 12) + 1.8em);
+}
+@media (min-aspect-ratio: 9/10) and (min-height: 500px) {
+  #home figure#penguin-classics-book figcaption {
+    margin-left: calc(calc((100vw - 13em) / 12) + 1.1em);
+  }
+}
+@media (min-aspect-ratio: 3/2) and (min-height: 500px) {
+  #home figure#penguin-classics-book figcaption {
+    grid-column: 12/span 1;
+    align-self: end;
+    margin-bottom: 6.6vw;
+    margin-left: -4vw;
+  }
+}
 #home figure #monarchs-spines {
   height: calc( (90vw - (2 * calc((100vw - 130px) / 12)) - (2 * 10px)) * 2.436 );
 }
@@ -770,7 +828,8 @@ body {
   grid-gap: 10px;
   width: 100%;
   padding: 1em 5vw;
-  background: #fcfbfa;
+  background: #fafafa;
+  background: #fafafa;
   color: #16181a;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
