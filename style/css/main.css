@@ -1390,3 +1390,34 @@ body.book p + p {
 #info p {
   max-width: 20em;
 }
+#subterranea-references {
+  margin-bottom: 30vh;
+}
+#subterranea-references .text-area {
+  width: 100%;
+  grid-column: 1/span all;
+}
+#subterranea-references dt {
+  font-weight: 600;
+  margin: 3em 0 0.5em 0;
+}
+#subterranea-references dd {
+  margin-inline-start: 1em;
+  display: list-item;
+  list-style: "–  " outside none;
+}
+#subterranea-references dd a:link {
+/* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+/* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+/* Instead use this non-standard one: */
+  word-break: break-word;
+/* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
