@@ -1,138 +1,24 @@
-@import colors
+margin()
+	margin-left: 10vw
+	margin-right: 10vw
 
-html, body
-	width: 100vw
+	+below(800px)
+		margin-left: 5vw
+		margin-right: 5vw
+
+html
+	margin-top: 3em
+	margin-bottom: 3em
+	margin()
 	overflow-x: hidden
+	color: rgb(100, 50, 25)
 	
-col = calc((100vw - 13em) / 12)
-colSmall = calc((100vw - 130px) / 12)
+	::selection
+		color: coral
+		background-color: brown
 
-grid-12()
-	display: grid
-	grid-template-columns: repeat(12, 1fr)
-	grid-gap: 10px
-	
-	+square()
-		grid-gap: 1rem
-		
-grid-8()
-	display: grid
-	grid-template-columns: repeat(8, 1fr)
-	grid-gap: 10px
-	
-	+square()
-		grid-gap: 1rem
-		
-grid-4()
-	display: grid
-	grid-template-columns: repeat(4, 1fr)
-	grid-gap: 10px
-	
-	+square()
-		grid-gap: 1rem
-		
-grid-2()
-	display: grid
-	grid-template-columns: repeat(2, 1fr)
-	grid-gap: 10px
-	
-	+square()
-		grid-gap: 1rem
-						
-body
-	grid-12()
-	width: 100%
-	padding: 1em 5vw
-	background: white
-	
-	+square()
-		padding-bottom: 2em
+.large
+	font-size: calc(1em + 1.2vmin)
 
-	+landscape()
-		padding: 1em 2em 2em 2em
-			
-	+wide()
-		max-width: 90%
-		margin: 0 auto
-
-	background: white
-	color: black
-	fontSmoothing()
-	
-header
-	grid-column: 1 / span 12
-	grid-12()
-	align-items: baseline
-	height: 20vh
-		
-	h1, h2
-		grid-column: 1 / span 9
-		
-	h2 a
-		border-bottom: none
-		
-	div
-		grid-column: 10 / span 3
-		text-align: right
-
-figure img
-	max-width: 100% // Make images width of div
-	
-	@media(min-height: 500px)
-		max-height: calc(100vh - 8em) // Make image no taller than screen, but only on screens taller than 500px
-		
-.keyline
-	border: 1px solid rgba(black, 0.1)
-
-nav#prev-and-next
-	margin-top: 4em
-	grid-column: 1 / span 12
-	flexColumn()
-	justify-content: space-between
-
-	+square()
-		margin-top: 2em
-		flexRow()
-		padding-top: 1.2em
-		border-top: 1px solid rgba(black, 0.1)
-	
-	#prev, #next
-		max-width: 100%
-		text-align: center
-		padding: 1em 0 1.3em 0
-		border-top: 1px solid rgba(black, 0.1)
-		
-		+square()
-			border-top: none
-			padding: 0
-		
-	#prev
-		+square()
-			text-align: left
-			margin-right: 1em
-		
-	#next
-		+square()
-			text-align: right
-			margin-left: 1em
-		
-	a
-		display: inline
-		
-#work-in-progress
-	grid-column: 2 / span 10
-	margin-top: 1em
-	padding-top: 2em
-	padding-bottom: 2em
-	border-top: 1px solid black
-	text-align: left
-	
-	+square()
-		text-align: center
-	
-	p
-		max-width: none
-
-
-
-	
+p + p
+	margin-top: 0.8em
